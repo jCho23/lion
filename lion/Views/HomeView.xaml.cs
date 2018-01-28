@@ -8,10 +8,14 @@ namespace lion.Views
 {
     public partial class HomeView : TabbedPage
     {
-        void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
+            if (e.SelectedItem == null)
+                return;
+            
             var feedDetails = e.SelectedItem as FeedDetails;
-            Navigation.PushAsync(new PostsDetailsPage(feedDetails));
+            await Navigation.PushAsync(new PostsDetailsPage(feedDetails));
+            listViewFeed.SelectedItem = null;
         }
 
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)

@@ -11,6 +11,9 @@ namespace lion.Views
         {
             if (feedDetails == null)
                 throw new ArgumentNullException();
+
+            BindingContext = feedDetails;
+
             InitializeComponent();
         }
     }
