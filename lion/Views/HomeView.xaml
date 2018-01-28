@@ -5,6 +5,9 @@
     x:Class="lion.Views.HomeView">
 
     <ContentPage>
+        <SearchBar
+            />
+        
         <ListView
             x:Name= "listViewFeed"
             HasUnevenRows="true"
