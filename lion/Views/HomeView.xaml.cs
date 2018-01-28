@@ -14,7 +14,6 @@ namespace lion.Views
 				new FeedDetails {Post= "1", UserUrl = "http://lorempixel.com/100/100/people/1"},
 				new FeedDetails { Post = "2", UserUrl = "http://lorempixel.com/100/100/people/4", Status= "Hiya!" } 
             };
-			
 		}
 		
 		void Handle_Refreshing(object sender, System.EventArgs e)
@@ -23,6 +22,7 @@ namespace lion.Views
 
             listViewFeed.EndRefresh();
 		}
+
         public HomeView()
         {
             InitializeComponent();
