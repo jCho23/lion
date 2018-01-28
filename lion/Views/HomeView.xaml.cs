@@ -24,5 +24,15 @@ namespace lion.Views
                 new FeedDetails { Post = "2", UserUrl = "http://lorempixel.com/100/100/people/4", Status= "Hiya!" } };
 
         }
+
+        List<Post> GetPosts()
+        {
+            //Call to a remote service, placeholder for now
+        }
+
+        void Handle_Refreshing(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
