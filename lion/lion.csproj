@@ -41,6 +41,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginPages\FacebookProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -56,6 +60,9 @@
     </Compile>
     <Compile Include="LoginPages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPages\FacebookProfilePage.xaml.cs">
+      <DependentUpon>FacebookProfilePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
