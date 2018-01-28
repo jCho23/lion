@@ -6,11 +6,18 @@
 
     <ContentPage>
         <ListView
-            x:Name= "listViewFeed" 
-            SeparatorColor="Blue"/>
-           
-    </ContentPage>
+            x:Name= "listViewFeed">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell 
+                        Text="{Binding Post}"
+                        Detail="{Binding Status}"
+                        ImageSource="{Binding UserUrl"/>
 
-  
-    
+                     
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage>
+   
 </TabbedPage>
