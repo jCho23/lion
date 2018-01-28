@@ -64,6 +64,7 @@
     <Compile Include="LoginPages\FacebookProfilePage.xaml.cs">
       <DependentUpon>FacebookProfilePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\FacebookViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
