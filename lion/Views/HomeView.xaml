@@ -9,12 +9,17 @@
             x:Name= "listViewFeed">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ImageCell 
-                        Text="{Binding Post}"
-                        Detail="{Binding Status}"
-                        ImageSource="{Binding UserUrl}"/>
-
-                     
+                    <ViewCell>
+                        <StackLayout
+                            Orientation="Horizontal">
+                                <Image Source="{Binding UserUrl}" />
+                                    <StackLayout>
+                                        <Label Text="{Binding Post}"/>
+                                        <Label Text="{Binding Status}"
+                                               TextColor="Gray"/>
+                                    </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
