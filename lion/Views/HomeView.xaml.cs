@@ -18,7 +18,7 @@ namespace lion.Views
                 "Post3"
             };
 
-            ListView.ItemsSource = posts;
+            listViewFeed.ItemsSource = posts;
         }
     }
 }

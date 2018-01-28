@@ -6,8 +6,9 @@
 
     <ContentPage>
         <ListView
-            x:Name= "feed" />
-
+            x:Name= "listViewFeed" 
+            SeparatorColor="Blue"/>
+           
     </ContentPage>
 
   
