@@ -7,7 +7,9 @@
     <ContentPage>
         <ListView
             x:Name= "listViewFeed"
-            HasUnevenRows="true">
+            HasUnevenRows="true"
+            IsPullToRefreshEnabled="true"
+            Refreshing="Handle_Refreshing">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

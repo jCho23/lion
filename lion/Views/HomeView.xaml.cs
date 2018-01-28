@@ -20,6 +20,8 @@ namespace lion.Views
 		void Handle_Refreshing(object sender, System.EventArgs e)
 		{
             listViewFeed.ItemsSource = GetPosts();
+
+            listViewFeed.EndRefresh();
 		}
         public HomeView()
         {
