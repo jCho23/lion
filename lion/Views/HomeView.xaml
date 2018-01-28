@@ -9,7 +9,7 @@
             Padding="0,20,0,0">
 
             <SearchBar
-                Placeholder="Search Posts"
+                Placeholder="Search Posts..."
                 TextChanged="Handle_TextChanged"/>
         
                 <ListView
