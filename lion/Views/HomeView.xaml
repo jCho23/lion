@@ -6,12 +6,14 @@
 
     <ContentPage>
         <ListView
-            x:Name= "listViewFeed">
+            x:Name= "listViewFeed"
+            HasUnevenRows="true">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout
-                            Orientation="Horizontal">
+                            Orientation="Horizontal"
+                            Padding="5">
                                 <Image Source="{Binding UserUrl}" />
                                     <StackLayout
                                         HorizontalOptions="StartAndExpand">
