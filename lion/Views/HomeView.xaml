@@ -13,11 +13,14 @@
                         <StackLayout
                             Orientation="Horizontal">
                                 <Image Source="{Binding UserUrl}" />
-                                    <StackLayout>
-                                        <Label Text="{Binding Post}"/>
-                                        <Label Text="{Binding Status}"
-                                               TextColor="Gray"/>
+                                    <StackLayout
+                                        HorizontalOptions="StartAndExpand">
+                                            <Label Text="{Binding Post}"/>
+                                            <Label Text="{Binding Status}"
+                                                   TextColor="Gray"/>
                                     </StackLayout>
+                                <Button
+                                    Text="Respond"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
