@@ -33,7 +33,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormsDetailsView.xaml">
+    <EmbeddedResource Include="Views\PostsDetailsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -47,8 +47,8 @@
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\FeedDetails.cs" />
-    <Compile Include="Views\FormsDetailsView.xaml.cs">
-      <DependentUpon>FormsDetailsView.xaml</DependentUpon>
+    <Compile Include="Views\PostsDetailsPage.xaml.cs">
+      <DependentUpon>PostsDetailsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
