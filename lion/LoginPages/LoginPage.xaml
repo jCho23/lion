@@ -5,7 +5,10 @@
     x:Class="lion.LoginPages.LoginPage"
     Title="commUNITY">
 
-    <StackLayout>
+    <StackLayout
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+
         <Button
             Text= "Login with FaceBook"
             TextColor="White"
@@ -13,6 +16,6 @@
             Font="Bold"
             FontSize="26"
             Clicked="LoginWithFacebook_Clicked"/>
-           
+        
     </StackLayout>
 </ContentPage>
