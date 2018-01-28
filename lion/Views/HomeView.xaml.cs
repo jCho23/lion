@@ -10,8 +10,9 @@ namespace lion.Views
     {
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            listViewFeed.ItemsSource= GetPosts(e.NewTextValue);
         }
+
 
         IEnumerable<FeedDetails> GetPosts(string searchText= null)
 		{

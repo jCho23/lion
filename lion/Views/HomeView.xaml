@@ -5,28 +5,36 @@
     x:Class="lion.Views.HomeView">
 
     <ContentPage>
-        <SearchBar
-            />
+        <StackLayout
+            Padding="0,20,0,0">
+
+            <SearchBar
+                Placeholder="Search Posts"
+                TextChanged="Handle_TextChanged"/>
         
-        <ListView
-            x:Name= "listViewFeed"
-            HasUnevenRows="true"
-            IsPullToRefreshEnabled="true"
-            Refreshing="Handle_Refreshing">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout
-                            Orientation="Horizontal"
-                            Padding="5"
-                            HorizontalOptions="StartAndExpand">
-                                <Image Source="{Binding UserUrl}" />
-                                <Label Text="{Binding Post}"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                <ListView
+                    x:Name= "listViewFeed"
+                    HasUnevenRows="true"
+                    IsPullToRefreshEnabled="true"
+                    Refreshing="Handle_Refreshing">
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+
+                                    <StackLayout
+                                        Orientation="Horizontal"
+                                        Padding="5"
+                                        HorizontalOptions="StartAndExpand">
+                                            <Image Source="{Binding UserUrl}" />
+                                            <Label Text="{Binding Post}"/>
+                                    </StackLayout>
+                            
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                
+                </ListView>
+        </StackLayout>
     </ContentPage>
-   
 </TabbedPage>
