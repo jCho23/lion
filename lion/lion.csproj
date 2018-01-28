@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="ViewModels\FacebookViewModel.cs" />
     <Compile Include="Models\FacebookProfile.cs" />
+    <Compile Include="Services\FacebookServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
