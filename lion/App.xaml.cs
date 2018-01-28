@@ -8,7 +8,7 @@ namespace lion
         {
             InitializeComponent();
 
-            MainPage = new lionPage();
+            MainPage = new Views.HomeView();
         }
 
         protected override void OnStart()
