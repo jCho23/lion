@@ -12,7 +12,7 @@
                     <ImageCell 
                         Text="{Binding Post}"
                         Detail="{Binding Status}"
-                        ImageSource="{Binding UserUrl"/>
+                        ImageSource="{Binding UserUrl}"/>
 
                      
                 </DataTemplate>
