@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using lion.Models;
+using lion.Pages;
 using Xamarin.Forms;
 
 namespace lion.Views

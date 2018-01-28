@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using lion.Models;
 using Xamarin.Forms;
 
-namespace lion.Views
+namespace lion.Pages
 {
     public partial class PostsDetailsPage : ContentPage
     {
