@@ -11,6 +11,7 @@ namespace lion.Views
         void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
             var feedDetails = e.SelectedItem as FeedDetails;
+            Navigation.PushAsync(new PostsDetailsPage(feedDetails));
         }
 
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
