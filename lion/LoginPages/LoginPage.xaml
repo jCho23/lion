@@ -9,25 +9,38 @@
     <StackLayout
          VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center">
-          
+        <Image
+            Source="bears.png"/>
+        
         <Label
             Text="community"
             FontAttributes="Italic"
             FontSize="60"
-            TextColor="White"
-            />
+            TextColor="White"/>
         <BoxView
             WidthRequest="150"
-            HeightRequest="250">
+            HeightRequest="200">
         </BoxView>
-       
-        <Button
-            Text= "Login with Facebook"
-            TextColor="White"
-            BackgroundColor="#3b5998"
-            FontSize="26"
-            BorderRadius="10"
-            Clicked="LoginWithFacebook_Clicked"/>
+
+            <Entry
+                Placeholder="Email"
+                Keyboard="Email"/>
+
+            <Entry
+                Placeholder="Password"
+                IsPassword="true"/>
+
+            <Button
+                Text="Login"
+                FontSize="26"/>
+
+            <Button
+                Text= "Login with Facebook"
+                TextColor="White"
+                BackgroundColor="#3b5998"
+                FontSize="26"
+                BorderRadius="10"
+                Clicked="LoginWithFacebook_Clicked"/>
     </StackLayout>
     
 </ContentPage>
