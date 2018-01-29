@@ -9,6 +9,8 @@ namespace lion
             InitializeComponent();
 
             MainPage = new NavigationPage(new LoginPages.LoginPage());
+
+
         }
 
         protected override void OnStart()

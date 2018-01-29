@@ -3,21 +3,33 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.LoginPages.LoginPage"
-    BackgroundImage="background.png">
+    BackgroundImage="background.png"
+    NavigationPage.HasNavigationBar="false" >
+   
 
+
+    
     <StackLayout
-        HorizontalOptions="Center"
-        VerticalOptions="Center">
+         VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center">
 
         <Label
             Text="community"
             FontAttributes="Italic"
             FontSize="60"
-            TextColor="White"/>
+            TextColor="White"
+            />
+
+        <BoxView
+            WidthRequest="150"
+            HeightRequest="250">
+        </BoxView>
         
-        <StackLayout
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
+
+            
+      
+       
+                
         <Button
             Text= "Login with Facebook"
             TextColor="White"
@@ -25,6 +37,8 @@
             FontSize="26"
             BorderRadius="10"
             Clicked="LoginWithFacebook_Clicked"/>
-        </StackLayout>
+
+         
+        
     </StackLayout>
 </ContentPage>
