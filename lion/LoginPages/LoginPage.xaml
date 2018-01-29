@@ -19,7 +19,7 @@
             TextColor="White"/>
         <BoxView
             WidthRequest="150"
-            HeightRequest="200">
+            HeightRequest="100">
         </BoxView>
 
             <Entry
@@ -32,7 +32,8 @@
 
             <Button
                 Text="Login"
-                FontSize="26"/>
+                FontSize="26"
+                TextColor="#FDB900"/>
 
             <Button
                 Text= "Login with Facebook"
