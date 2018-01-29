@@ -52,10 +52,10 @@ namespace lion.LoginPages
             {
                 var at = url.Replace("https://www.facebook.com/connect/login_success.html#access_token=", "");
 
-                if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
-                {
-                    at = url.Replace("http://www.facebook.com/connect/login_success.html#access_token=", "");
-                }
+                //if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                //{
+                //    at = url.Replace("http://www.facebook.com/connect/login_success.html#access_token=", "");
+                //}
 
                 var accessToken = at.Remove(at.IndexOf("&expires_in="));
 

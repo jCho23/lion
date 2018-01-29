@@ -19,21 +19,24 @@
             TextColor="White"/>
         <BoxView
             WidthRequest="150"
-            HeightRequest="100">
+            HeightRequest="220">
         </BoxView>
 
-            <Entry
+            <!--<Entry
                 Placeholder="Email"
-                Keyboard="Email"/>
+                Keyboard="Email"
+                HorizontalTextAlignment="Center"
+                />
 
             <Entry
                 Placeholder="Password"
+                HorizontalTextAlignment="Center"
                 IsPassword="true"/>
 
             <Button
                 Text="Login"
                 FontSize="26"
-                TextColor="#FDB900"/>
+                TextColor="#FDB900"/>-->
 
             <Button
                 Text= "Login with Facebook"
