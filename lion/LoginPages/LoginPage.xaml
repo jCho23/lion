@@ -5,31 +5,22 @@
     x:Class="lion.LoginPages.LoginPage"
     BackgroundImage="background.png"
     NavigationPage.HasNavigationBar="false" >
-   
-
-
-    
+  
     <StackLayout
          VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center">
-
+          
         <Label
             Text="community"
             FontAttributes="Italic"
             FontSize="60"
             TextColor="White"
             />
-
         <BoxView
             WidthRequest="150"
             HeightRequest="250">
         </BoxView>
-        
-
-            
-      
        
-                
         <Button
             Text= "Login with Facebook"
             TextColor="White"
@@ -37,8 +28,6 @@
             FontSize="26"
             BorderRadius="10"
             Clicked="LoginWithFacebook_Clicked"/>
-
-         
-        
     </StackLayout>
+    
 </ContentPage>
