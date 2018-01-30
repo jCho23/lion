@@ -42,7 +42,7 @@
                 Text= "Login with Facebook"
                 TextColor="White"
                 BackgroundColor="#3b5998"
-                FontSize="26"
+                FontSize="23"
                 BorderRadius="10"
                 Clicked="LoginWithFacebook_Clicked"/>
     </StackLayout>
