@@ -45,6 +45,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\DMs.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -67,6 +71,9 @@
     <Compile Include="ViewModels\FacebookViewModel.cs" />
     <Compile Include="Models\FacebookProfile.cs" />
     <Compile Include="Services\FacebookServices.cs" />
+    <Compile Include="Pages\DMs.xaml.cs">
+      <DependentUpon>DMs.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
