@@ -4,6 +4,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Pages.DMs">
 
+    <StackLayout>
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Viewcell>
+                        <Stacklayout
+                            >
 
+
+
+                        </Stacklayout>
+                    </Viewcell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
     
 </ContentPage>
