@@ -45,7 +45,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\DMs.xaml">
+    <EmbeddedResource Include="Pages\DMsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -71,8 +71,8 @@
     <Compile Include="ViewModels\FacebookViewModel.cs" />
     <Compile Include="Models\FacebookProfile.cs" />
     <Compile Include="Services\FacebookServices.cs" />
-    <Compile Include="Pages\DMs.xaml.cs">
-      <DependentUpon>DMs.xaml</DependentUpon>
+    <Compile Include="Pages\DMsPage.xaml.cs">
+      <DependentUpon>DMsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

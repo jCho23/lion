@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    public partial class DMs : ContentPage
+    public partial class DMsPage : ContentPage
     {
-        public DMs()
+        public DMsPage()
         {
             InitializeComponent();
         }
