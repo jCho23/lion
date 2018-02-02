@@ -44,7 +44,8 @@
     </ContentPage>
         
     <ContentPage
-        Title="DMs">
+        Title="DMs"
+        Icon="BearPaw.png">
         <localPages.DMsPage>
 
         </localPages.DMsPage>
