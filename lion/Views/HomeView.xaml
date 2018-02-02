@@ -3,9 +3,13 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Views.HomeView"
-    Title="commUNITY">
+    Title="commUNITY"
 
-    <ContentPage>
+    xmlns:localPages="clr-namespace:lion.Pages;assembly=lion">
+
+    <ContentPage
+        Title="Feed"
+        Icon="bears.png">
         <StackLayout >
 
             <SearchBar
@@ -37,5 +41,14 @@
                 
                 </ListView>
         </StackLayout>
+    </ContentPage>
+        
+    <ContentPage
+        Title="DMs">
+        <localPages.DMsPage>
+
+        </localPages.DMsPage>
+
+
     </ContentPage>
 </TabbedPage>

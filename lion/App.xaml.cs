@@ -8,7 +8,7 @@ namespace lion
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPages.LoginPage());
+            MainPage = new NavigationPage(new Views.HomeView());
 
 
         }
