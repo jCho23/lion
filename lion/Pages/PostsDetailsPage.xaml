@@ -7,7 +7,5 @@
 
     <Label
         Text="{Binding Post}" />
-
-
     
 </ContentPage>
