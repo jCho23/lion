@@ -9,7 +9,7 @@
 
     <ContentPage
         Title="Feed"
-        Icon="bears.png">
+        Icon="BearsTabLogo.png">
         <StackLayout >
 
             <SearchBar
