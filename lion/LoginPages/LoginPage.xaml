@@ -11,10 +11,12 @@
         VerticalOptions="CenterAndExpand"
         >
         <Image
+           
             Source="bears.png"/>
         
         <Label
-            Text="community"
+            
+            Text="scholars"
             FontAttributes="Italic"
             FontSize="60"
             TextColor="White"/>
