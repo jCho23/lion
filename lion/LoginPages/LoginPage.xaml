@@ -5,7 +5,7 @@
     x:Class="lion.LoginPages.LoginPage"
     BackgroundImage="background.png"
     NavigationPage.HasNavigationBar="false" >
-  
+
     <StackLayout
         HorizontalOptions="Center"
         VerticalOptions="CenterAndExpand"
