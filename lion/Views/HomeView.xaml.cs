@@ -31,7 +31,7 @@ namespace lion.Views
 			var posts= new List<FeedDetails>{
                 new FeedDetails {
                     Post= "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. ", 
-                    UserUrl = "https://lion.blob.core.windows.net/pic1"},
+                    UserUrl = "https://lion.blob.core.windows.net/pic1/pic1.jpeg"},
                 new FeedDetails { 
                     Post = "And the only way to do great work is to love what you do. ", 
                     UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg", 
