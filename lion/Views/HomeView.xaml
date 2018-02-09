@@ -7,10 +7,13 @@
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion">
 
     <ContentPage.ToolbarItems>
-    <ToolbarItem 
-        Name="MenuItem1" 
-        Order="Primary" Icon="" Text="Item 1" Priority="0" />
-</ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Name="MenuItem1" 
+            Order="Primary" 
+            Icon="" 
+            Text="Item 1" 
+            Priority="0" />
+    </ContentPage.ToolbarItems>
     
     <ContentPage
         Title="Feed"
