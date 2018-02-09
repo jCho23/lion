@@ -58,10 +58,8 @@
     <ContentPage
         Title="DMs"
         Icon="BearPaw.png">
-        <localPages.DMsPage>
-
-        </localPages.DMsPage>
-
-
+            <localPages.DMsPage>
+            </localPages.DMsPage>
     </ContentPage>
+    
 </TabbedPage>
