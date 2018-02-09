@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Views.HomeView"
-    Title="commUNITY"
+    Title="Scholars"
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion">
 
     <ContentPage.ToolbarItems>
@@ -23,6 +23,7 @@
                 Placeholder="Search Posts..."
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
+                BackgroundColor="#AEB8D4"
                 />
   
                 <ListView
@@ -30,7 +31,8 @@
                     HasUnevenRows="true"
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
-                    ItemSelected="Handle_ItemSelected">
+                    ItemSelected="Handle_ItemSelected"
+                BackgroundColor="#AEB8D4">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>                                 
