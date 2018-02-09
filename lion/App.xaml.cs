@@ -10,7 +10,6 @@ namespace lion
 
             MainPage = new NavigationPage(new Views.HomeView());
 
-
         }
 
         protected override void OnStart()
