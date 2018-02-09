@@ -7,7 +7,9 @@
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion">
 
     <ContentPage.ToolbarItems>
-    <ToolbarItem Name="MenuItem1" Order="Primary" Icon="" Text="Item 1" Priority="0" />
+    <ToolbarItem 
+        Name="MenuItem1" 
+        Order="Primary" Icon="" Text="Item 1" Priority="0" />
 </ContentPage.ToolbarItems>
     
     <ContentPage
@@ -20,7 +22,7 @@
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
                 />
-        
+         
                 <ListView
                     x:Name= "listViewFeed"
                     HasUnevenRows="true"
@@ -30,8 +32,11 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
+                                   
                                     <StackLayout
                                         Orientation="Horizontal"
+                                       
+
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
                                             <Image Source="{Binding UserUrl}" />
@@ -49,6 +54,7 @@
                         </ListView.ItemTemplate>
                 
                 </ListView>
+                                    
         </StackLayout>
     </ContentPage>
         
