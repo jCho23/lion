@@ -34,7 +34,7 @@ namespace lion.Views
                     UserUrl = "https://lion.blob.core.windows.net/pic1"},
                 new FeedDetails { 
                     Post = "And the only way to do great work is to love what you do. ", 
-                    UserUrl = "http://lorempixel.com/100/100/people/4", 
+                    UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg", 
                     Status= "Hiya!" } 
             };
 
