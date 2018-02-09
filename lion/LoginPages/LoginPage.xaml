@@ -5,16 +5,18 @@
     x:Class="lion.LoginPages.LoginPage"
     BackgroundImage="background.png"
     NavigationPage.HasNavigationBar="false" >
-  
+
     <StackLayout
         HorizontalOptions="Center"
         VerticalOptions="CenterAndExpand"
         >
         <Image
+           
             Source="bears.png"/>
         
         <Label
-            Text="community"
+            
+            Text="scholars"
             FontAttributes="Italic"
             FontSize="60"
             TextColor="White"/>
