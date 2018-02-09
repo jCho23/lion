@@ -27,24 +27,23 @@
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
                     ItemSelected="Handle_ItemSelected">
-
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-
                                     <StackLayout
                                         Orientation="Horizontal"
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
                                             <Image Source="{Binding UserUrl}" />
-                                            <Label Text="{Binding Post}"/>
-                                            <Label 
-                                                Text="{Binding Status}"
-                                                HorizontalOptions="EndAndExpand"
-                                                VerticalOptions="EndAndExpand"
-                                                FontSize="8"/>
+                                            <StackLayout>
+                                                <Label Text="{Binding Post}"/>
+                                                <Label 
+                                                    Text="{Binding Status}"
+                                                    HorizontalOptions="EndAndExpand"
+                                                    VerticalOptions="EndAndExpand"
+                                                    FontSize="8"/>
+                                            </StackLayout>
                                     </StackLayout>
-                            
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
