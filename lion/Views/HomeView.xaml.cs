@@ -31,11 +31,12 @@ namespace lion.Views
             var posts = new List<FeedDetails>{
                 new FeedDetails {
                     Post = "And the only way to do great work is to love what you do. ",
-                    UserUrl = "https://lion.blob.core.windows.net/pic1/pic1.jpeg"},
+                    UserUrl = "https://lion.blob.core.windows.net/pic1/pic1.jpeg",
+                    Status= "replies"},
                 new FeedDetails {
                     Post = "And the only way to do great work is to love what you do. ",
                     UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
-                    Status= "Hiya!" }
+                    Status= "replies" }
             };
 
             if (String.IsNullOrWhiteSpace(searchText))
