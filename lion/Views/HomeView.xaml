@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Views.HomeView"
     Title="commUNITY"
-
+    BackgroundColor="Aqua"
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion">
 
     <ContentPage.ToolbarItems>
