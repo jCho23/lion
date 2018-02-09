@@ -7,8 +7,9 @@
     NavigationPage.HasNavigationBar="false" >
   
     <StackLayout
-         VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center">
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"
+        >
         <Image
             Source="bears.png"/>
         
