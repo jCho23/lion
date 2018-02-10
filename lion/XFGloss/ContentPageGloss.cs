@@ -4,10 +4,6 @@ using XFGloss;
 
 namespace lion.XFGloss
 {
-
-    /// Provides attached bindable properties for use with <see cref="T:Xamarin.Forms.ContentPage"/> derived classes and
-    /// CellGloss instance-based accessors.
-    /// </summary>
     public class ContentPageGloss
     {
         #region BackgroundGradient

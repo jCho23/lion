@@ -6,7 +6,7 @@
     Title="Scholars"
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion"
 
-    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss">
+    xmlns:xfg="clr-namespace:lion.XFGloss;assembly=XFGloss">
 
     
          <xfg:ContentPageGloss.BackgroundGradient>
