@@ -8,9 +8,8 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem 
-            Name="MenuItem1" 
             Order="Primary" 
-            Icon="" 
+            Icon="add.png" 
             Text="Item 1" 
             Priority="0" />
     </ContentPage.ToolbarItems>
