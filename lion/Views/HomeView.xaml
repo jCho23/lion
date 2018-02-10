@@ -4,7 +4,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Views.HomeView"
     Title="Scholars"
-    xmlns:localPages="clr-namespace:lion.Pages;assembly=lion">
+    xmlns:localPages="clr-namespace:lion.Pages;assembly=lion"
+
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss">
+
+    
+         <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="150">
+            <xfg:GradientStep StepColor="White" StepPercentage="0" />
+            <xfg:GradientStep StepColor="White" StepPercentage=".5" />
+            <xfg:GradientStep StepColor="#ccd9ff" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem 
@@ -18,6 +29,8 @@
     <ContentPage
         Title="Feed"
         Icon="BearsTabLogo.png">
+
+        
         <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
@@ -32,7 +45,7 @@
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
                     ItemSelected="Handle_ItemSelected"
-                    BackgroundColor="#AEB8D4">
+                    >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>                                 
