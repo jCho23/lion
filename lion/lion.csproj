@@ -81,6 +81,7 @@
     <Compile Include="Pages\FeedPage.xaml.cs">
       <DependentUpon>FeedPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="XFGloss\ContentPageGloss.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
