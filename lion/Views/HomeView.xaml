@@ -11,7 +11,7 @@
             Name="MenuItem1" 
             Order="Primary" 
             Icon="add.png" 
-             
+            Activated="Handle_Activated" 
             Priority="0" />
     </ContentPage.ToolbarItems>
     
@@ -32,7 +32,7 @@
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
                     ItemSelected="Handle_ItemSelected"
-                BackgroundColor="#AEB8D4">
+                    BackgroundColor="#AEB8D4">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>                                 
@@ -48,7 +48,8 @@
                                                         Text="{Binding Status}"
                                                         HorizontalOptions="EndAndExpand"
                                                         VerticalOptions="EndAndExpand"
-                                                        FontSize="8"/>
+                                                        FontSize="8"
+                                                        TextColor="Gray"/>
                                             </StackLayout>
                                     </StackLayout>
                                 </ViewCell>
