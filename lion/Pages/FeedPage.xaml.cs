@@ -46,7 +46,7 @@ namespace lion.Pages
                     Status= "48 replies" },
                 new FeedDetails {
                     Post = "Everything around you that you call life was made up by people that were no smarter than you",
-                    UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
+                    UserUrl = "https://cdn.inquisitr.com/wp-content/uploads/2016/04/kylie-jenner-paper-photoshoot.png",
                     Status= "8 replies" },
                 new FeedDetails {
                     Post = "Everything around you that you call life was made up by people that were no smarter than you",
