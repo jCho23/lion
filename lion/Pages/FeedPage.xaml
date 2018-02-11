@@ -27,10 +27,9 @@
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
                                             <ic:CircleImage
-                                                WidthRequest="30"
+                                                WidthRequest="55"
                                                 HeightRequest="30"
                                                 Aspect="AspectFill"
-                                          
                                                 Source="{Binding UserUrl}" />
                                                 <StackLayout>
                                                     <Label Text="{Binding Post}"/>
