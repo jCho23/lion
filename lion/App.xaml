@@ -7,30 +7,20 @@
 	<Application.Resources>
 		<!-- Application resource dictionary -->
            
-    <ResourceDictionary>
-        <Style TargetType="NavigationPage">
-            <Setter Property="HasNavigationBar" Value="True" />
-            <Setter Property="BarTextColor" Value="Gold" />
-            <Setter Property="BarBackgroundColor" Value="#191970" />
-        </Style>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="HasNavigationBar" Value="True" />
+                <Setter Property="BarTextColor" Value="Gold" />
+                <Setter Property="BarBackgroundColor" Value="#191970" />
+            </Style>
 
-        <Style
-            x:Name="LabelStyle"    
-            TargetType="Label">    
-            <Setter Property="NavigationPage.FontFamily" >
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguements="x:String">
-                            <OnPlatform.Android>
-                                Supreme.ttf#Supreme
-                            </OnPlatform.Android>
-                            <OnPlatform.iOS>
-                                Supreme
-                            </OnPlatform.iOS>    
-                        </OnPlatform>
-                    </Setter.Value> 
-            </Setter>
-        </Style>
+            <OnPlatform 
+                x:Key="SupremeFont"
+                x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="SUPREME" />
+                    <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
+            </OnPlatform>
 
-    </ResourceDictionary>
+        </ResourceDictionary>
 	</Application.Resources>
 </Application>
