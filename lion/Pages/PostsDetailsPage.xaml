@@ -6,11 +6,9 @@
     Title="{}">
 
     <StackLayout>
-    <Label
+        <Label
         Text="{Binding Post}" />
 
-    <Entry Placeholder="Reply"/>
+        <Entry Placeholder="Reply"/>
     </StackLayout>
-  
-    
 </ContentPage>
