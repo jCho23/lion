@@ -22,6 +22,8 @@ namespace lion.Views
         public HomeView()
         {
             InitializeComponent();
+
+            this.BarBackgroundColor = Color.Gold;
         }
     }
 }
