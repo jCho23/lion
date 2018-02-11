@@ -5,9 +5,18 @@
     x:Class="lion.App">
     
 	<Application.Resources>
-		<!-- Application resource dictionary -->
-           
         <ResourceDictionary>
+            <!--Colors-->
+            <Color x:Key="HeaderTextColor">#585858</Color>
+            <Color x:Key="BodyTextColor">#C3C3C3</Color>
+            <Color x:Key="ButtonBackgroundColor">#85bb65</Color>
+            <Color x:Key="BackgroundColor">#FFFFFF</Color>
+            <Color x:Key="LoginButtonBackgroundColor">#000000</Color>
+
+
+
+
+            
             <Style TargetType="NavigationPage">
                 <Setter Property="HasNavigationBar" Value="True" />
                 <Setter Property="BarTextColor" Value="Gold" />
