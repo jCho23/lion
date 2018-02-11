@@ -6,6 +6,7 @@
     
 	<Application.Resources>
         <ResourceDictionary>
+
             <!--Colors-->
             <Color x:Key="HeaderTextColor">#585858</Color>
             <Color x:Key="BodyTextColor">#C3C3C3</Color>
@@ -13,6 +14,12 @@
             <Color x:Key="BackgroundColor">#FFFFFF</Color>
             <Color x:Key="LoginButtonBackgroundColor">#000000</Color>
 
+            <!--FONT FAMILIES-->
+            <OnPlatform 
+                x:Key="SUPREME" x:TypeArguments="x:String">
+                <On Platform="iOS">SUPREME</On> 
+                <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
+            </OnPlatform>
 
 
 
@@ -29,12 +36,6 @@
 
             </Style>
 
-            <OnPlatform 
-                x:Key="SUPREME"
-                x:TypeArguments="x:String">
-                    <On Platform="iOS" Value="SUPREME" />
-                    <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
-            </OnPlatform>
 
         </ResourceDictionary>
 	</Application.Resources>
