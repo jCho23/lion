@@ -7,7 +7,7 @@
 	<Application.Resources>
         <ResourceDictionary>
 
-            <!--Colors-->
+            <!--COLORS-->
             <Color x:Key="HeaderTextColor">#585858</Color>
             <Color x:Key="BodyTextColor">#C3C3C3</Color>
             <Color x:Key="ButtonBackgroundColor">#85bb65</Color>
@@ -22,12 +22,14 @@
             </OnPlatform>
 
             <!--PAGES-->
-            <Style TargetType="NavigationPage">
-                <Setter Property="HasNavigationBar" Value="True" />
-                <Setter Property="BarTextColor" Value="Gold" />
-                <Setter Property="BarBackgroundColor" Value="#191970" />
+            <Style 
+                TargetType="NavigationPage">
+                    <Setter Property="HasNavigationBar" Value="True" />
+                    <Setter Property="BarTextColor" Value="Gold" />
+                    <Setter Property="BarBackgroundColor" Value="#191970" />
             </Style>
 
+           <!-- LABELS-->
             <Style
                 TargetType= "Label">
                     <Setter Property="TextColor" Value="Black"/>
