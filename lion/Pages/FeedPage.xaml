@@ -27,17 +27,20 @@
                 </ListView.RowHeight>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <ViewCell>                                 
+                                <ViewCell>
+                                    <ContentView 
+                                        Padding="5">
                                     <StackLayout
                                         Orientation="Horizontal"
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
                                             <ic:CircleImage
-                                                WidthRequest="55"
-                                                HeightRequest="30"
+                                                WidthRequest="62"
+                                                HeightRequest="40"
                                                 Aspect="AspectFill"
                                                 Source="{Binding UserUrl}" />
-                                                <StackLayout>
+                                                <StackLayout
+                                                    Padding="5">
                                                     <Label Text="{Binding Post}"/>
                                                     <Label 
                                                         Text="{Binding Status}"
@@ -47,6 +50,7 @@
                                                         TextColor="Gray"/>
                                             </StackLayout>
                                     </StackLayout>
+                            </ContentView>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>              
