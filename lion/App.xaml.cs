@@ -10,7 +10,15 @@ namespace lion
 
             MainPage = new NavigationPage(new Views.HomeView());
 
+
+
         }
+
+        NavigationPage navPage = new NavigationPage
+        {
+            BarBackgroundColor = Color.FromHex("#1FBED6"),
+            BarTextColor = Color.FromHex("#000000")
+        };
 
         protected override void OnStart()
         {
