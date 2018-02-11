@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Pages.FeedPage">
 
+    <NavigationPage>
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
@@ -41,5 +42,5 @@
                         </ListView.ItemTemplate>              
                 </ListView>
         </StackLayout>
-    
+    </NavigationPage>
 </ContentPage>
