@@ -56,7 +56,8 @@
                                                     <StackLayout
                                                         Padding="5">
                                                             <Label 
-                                                                Text="{Binding Post}"/>
+                                                                Text="{Binding Post}"
+                                                                Style="{StaticResource LabelStyle}"/>
                                                             <Label 
                                                                 Text="{Binding Status}"
                                                                 HorizontalOptions="EndAndExpand"

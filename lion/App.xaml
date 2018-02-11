@@ -13,7 +13,24 @@
             <Setter Property="BarTextColor" Value="Gold" />
             <Setter Property="BarBackgroundColor" Value="#191970" />
         </Style>
-    </ResourceDictionary>
 
+        <Style
+            x:Name="LabelStyle"    
+            TargetType="Label">    
+            <Setter Property="NavigationPage.FontFamily" >
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguements="x:String">
+                            <OnPlatform.Android>
+                                Supreme.ttf#Supreme
+                            </OnPlatform.Android>
+                            <OnPlatform.iOS>
+                                Supreme
+                            </OnPlatform.iOS>    
+                        </OnPlatform>
+                    </Setter.Value> 
+            </Setter>
+        </Style>
+
+    </ResourceDictionary>
 	</Application.Resources>
 </Application>
