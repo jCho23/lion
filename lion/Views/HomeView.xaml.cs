@@ -24,6 +24,7 @@ namespace lion.Views
             InitializeComponent();
 
             this.BarBackgroundColor = Color.Gold;
+
         }
     }
 }
