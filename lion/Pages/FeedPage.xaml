@@ -11,7 +11,7 @@
                 PlaceholderColor="Blue"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="#191970"/>
+                BackgroundColor="#191970" />
   
                 <ListView
                     x:Name= "listViewFeed"
@@ -19,8 +19,7 @@
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
                     ItemSelected="Handle_ItemSelected"
-                    SeparatorVisibility= "None"
-                    >
+                    SeparatorVisibility= "None">
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
                         <On Platform="iOS, Android" Value="120" />
@@ -44,19 +43,20 @@
                                                             HeightRequest="40"
                                                             Aspect="AspectFill"
                                                             Source="{Binding UserUrl}"/>
-                                                <StackLayout
-                                                    Padding="5">
-                                                    <Label Text="{Binding Post}"/>
-                                                    <Label 
-                                                        Text="{Binding Status}"
-                                                        HorizontalOptions="EndAndExpand"
-                                                        VerticalOptions="EndAndExpand"
-                                                        FontSize="8"
-                                                        TextColor="Blue"/>
-                                                </StackLayout>
+                                                    <StackLayout
+                                                        Padding="5">
+                                                            <Label 
+                                                                Text="{Binding Post}"/>
+                                                            <Label 
+                                                                Text="{Binding Status}"
+                                                                HorizontalOptions="EndAndExpand"
+                                                                VerticalOptions="EndAndExpand"
+                                                                FontSize="8"
+                                                                TextColor="Blue"/>
+                                                    </StackLayout>
                                                 </StackLayout>
                                         </Frame>
-                                      </ContentView>
+                                    </ContentView>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>              
