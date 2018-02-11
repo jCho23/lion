@@ -14,7 +14,8 @@
             Order="Primary" 
             Icon="add.png" 
             Activated="Handle_Activated" 
-            Priority="0" />
+            Priority="0" 
+            />
     </ContentPage.ToolbarItems>
 
     <localPages:FeedPage
