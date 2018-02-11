@@ -32,7 +32,7 @@ namespace lion.Pages
                     UserUrl = "https://lion.blob.core.windows.net/pic1/pic1.jpeg",
                     Status= "23 replies"},
                 new FeedDetails {
-                    Post = "And the only way to do great work is to love what you do. ",
+                    Post = "Everything around you that you call life was made up by people that were no smarter than you",
                     UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
                     Status= "8 replies" }
             };

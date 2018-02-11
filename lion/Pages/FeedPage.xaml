@@ -8,7 +8,7 @@
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
-                PlaceholderColor="Aqua"
+
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
                 BackgroundColor="#191970"/>
@@ -23,7 +23,7 @@
                     >
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
-                        <On Platform="iOS, Android" Value="90" />
+                        <On Platform="iOS, Android" Value="120" />
                     </OnPlatform>
                 </ListView.RowHeight>
                         <ListView.ItemTemplate>
@@ -40,7 +40,7 @@
                                                      Padding="5"
                                                      HorizontalOptions="StartAndExpand">
                                                         <ic:CircleImage
-                                                            WidthRequest="50"
+                                                            WidthRequest="75"
                                                             HeightRequest="40"
                                                             Aspect="AspectFill"
                                                             Source="{Binding UserUrl}"/>
