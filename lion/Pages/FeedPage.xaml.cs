@@ -41,7 +41,7 @@ namespace lion.Pages
                 return posts;
 
 
-            return posts.Where(x => x.Post.StartsWith(searchText));
+            return posts.Where(x => x.Post.Contains(searchText));
         }
 
         void Handle_Refreshing(object sender, System.EventArgs e)
