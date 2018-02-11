@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
+
+using Xamarin.Forms;
+
 using lion.Models;
 using lion.Pages;
-using Xamarin.Forms;
 
 namespace lion.Views
 {
@@ -14,14 +16,9 @@ namespace lion.Views
             DisplayAlert("Post new message", "Post new message", "OK");
         }
 
-
-
         public HomeView()
         {
             InitializeComponent();
-
-
         }
-
     }
 }
