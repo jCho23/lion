@@ -52,7 +52,7 @@
                                                             WidthRequest="80"
                                                             HeightRequest="40"
                                                             Aspect="AspectFill"
-                                                            BorderColor="#191970"
+                                                            BorderColor="gray"
                                                             BorderThickness="3"
                                                             Source="{Binding UserUrl}"/>
                                                     <StackLayout
