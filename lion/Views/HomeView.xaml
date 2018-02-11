@@ -2,14 +2,10 @@
 <TabbedPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="lion.Views.HomeView"
-    Title="Scholars"
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion"
-
-    xmlns:xfg="clr-namespace:lion.XFGloss;assembly=lion">
-
+    x:Class="lion.Views.HomeView"
+    Title="Scholars">
    
-
     <localPages:FeedPage
         Title="Feed"
         Icon="BearsTabLogo.png" />
