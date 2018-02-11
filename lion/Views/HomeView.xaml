@@ -24,14 +24,12 @@
     <localPages:FeedPage
         Title="Feed"
         Icon="BearsTabLogo.png" />
-    
-  
-        
-    <ContentPage
+
+    <localPages:DMsPage
         Title="DMs"
-        Icon="BearPaw.png">
-            <localPages.DMsPage>
-            </localPages.DMsPage>
-    </ContentPage>
+        Icon="BearPaw.png" />
+    
+    
+
     
 </TabbedPage>
