@@ -2,9 +2,10 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="lion.Pages.FeedPage">
+    xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    x:Class="lion.Pages.FeedPage" >
 
-    <NavigationPage>
+    
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
@@ -25,7 +26,11 @@
                                         Orientation="Horizontal"
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
-                                            <Image 
+                                            <ic:CircleImage
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                Aspect="AspectFill"
+                                          
                                                 Source="{Binding UserUrl}" />
                                                 <StackLayout>
                                                     <Label Text="{Binding Post}"/>
@@ -42,5 +47,5 @@
                         </ListView.ItemTemplate>              
                 </ListView>
         </StackLayout>
-    </NavigationPage>
+    
 </ContentPage>
