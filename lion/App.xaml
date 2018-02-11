@@ -11,8 +11,8 @@
     <ResourceDictionary>
         <Style TargetType="NavigationPage">
             <Setter Property="HasNavigationBar" Value="True" />
-            <Setter Property="BarTextColor" Value="Black" />
-            <Setter Property="BarBackgroundColor" Value="Red" />
+            <Setter Property="BarTextColor" Value="Gold" />
+            <Setter Property="BarBackgroundColor" Value="#191970" />
         </Style>
     </ResourceDictionary>
 
