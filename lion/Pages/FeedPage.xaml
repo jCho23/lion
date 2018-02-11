@@ -5,6 +5,15 @@
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="lion.Pages.FeedPage" >
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Name="AddPost" 
+            Order="Primary" 
+            Icon="add.png" 
+            Activated="Handle_Activated" 
+            Priority="0" />
+    </ContentPage.ToolbarItems>
+    
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."

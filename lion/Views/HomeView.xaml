@@ -8,15 +8,7 @@
 
     xmlns:xfg="clr-namespace:lion.XFGloss;assembly=lion">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem 
-            Name="AddPost" 
-            Order="Primary" 
-            Icon="add.png" 
-            Activated="Handle_Activated" 
-            Priority="0" 
-            />
-    </ContentPage.ToolbarItems>
+   
 
     <localPages:FeedPage
         Title="Feed"

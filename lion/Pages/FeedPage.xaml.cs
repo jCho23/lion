@@ -8,6 +8,11 @@ namespace lion.Pages
 {
     public partial class FeedPage : ContentPage
     {
+        void Handle_Activated(object sender, System.EventArgs e)
+        {
+            DisplayAlert("Post new message", "Post new message", "OK");
+        }
+
         async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null)
