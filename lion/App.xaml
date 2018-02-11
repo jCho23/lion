@@ -14,10 +14,16 @@
                 <Setter Property="BarBackgroundColor" Value="#191970" />
             </Style>
 
+            <Style
+                TargetType= "Label">
+                    <Setter Property="TextColor" Value="Black"/>
+
+            </Style>
+
             <OnPlatform 
-                x:Key="SupremeFont"
+                x:Key="Aaargh"
                 x:TypeArguments="x:String">
-                    <On Platform="iOS" Value="Aaargh" />
+                    <On Platform="iOS" Value="SUPREME" />
                     <On Platform="Android" Value="Aaargh.ttf#Aaargh" />
             </OnPlatform>
 

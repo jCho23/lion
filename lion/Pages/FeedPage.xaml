@@ -57,8 +57,8 @@
                                                         Padding="5">
                                                             <Label 
                                                                 Text="{Binding Post}"
-                                                                FontFamily="{StaticResource SupremeFont}" />
-                                                                />
+                                                                FontFamily="{StaticResource SUPREME}" />
+
                                                             <Label 
                                                                 Text="{Binding Status}"
                                                                 HorizontalOptions="EndAndExpand"
