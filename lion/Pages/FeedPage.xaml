@@ -32,17 +32,19 @@
                                     <ContentView 
                                         Padding="5">
                                         <Frame
-                                            OutlineColor="Accent"
-                                            Padding="10" >
+                                            OutlineColor="Gold"
+                                            Padding="10"
+                                            HasShadow="true">
                                     <StackLayout
                                         Orientation="Horizontal"
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
                                             <ic:CircleImage
-                                                WidthRequest="40"
+                                                WidthRequest="50"
                                                 HeightRequest="40"
                                                 Aspect="AspectFill"
-                                                Source="{Binding UserUrl}" />
+                                                Source="{Binding UserUrl}"
+                                                />
                                                 <StackLayout
                                                     Padding="5">
                                                     <Label Text="{Binding Post}"/>
