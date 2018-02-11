@@ -5,7 +5,12 @@
     x:Class="lion.Pages.PostsDetailsPage"
     Title="{}">
 
+    <StackLayout>
     <Label
         Text="{Binding Post}" />
+
+    <Entry Placeholder="Reply"/>
+    </StackLayout>
+  
     
 </ContentPage>
