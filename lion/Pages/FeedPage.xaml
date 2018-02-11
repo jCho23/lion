@@ -8,9 +8,10 @@
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
+                PlaceholderColor="Aqua"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="#AEB8D4"/>
+                BackgroundColor="#191970"/>
   
                 <ListView
                     x:Name= "listViewFeed"
