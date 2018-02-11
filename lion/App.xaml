@@ -6,8 +6,7 @@
     
 	<Application.Resources>
 		<!-- Application resource dictionary -->
-
-        
+           
     <ResourceDictionary>
         <Style TargetType="NavigationPage">
             <Setter Property="HasNavigationBar" Value="True" />
@@ -16,20 +15,5 @@
         </Style>
     </ResourceDictionary>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 	</Application.Resources>
 </Application>
