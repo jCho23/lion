@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-using lion.Models;
 using lion.Pages;
+using lion.Models;
 
 namespace lion.Views
 {
@@ -15,9 +15,6 @@ namespace lion.Views
         {
             DisplayAlert("Post new message", "Post new message", "OK");
         }
-
-      
-
 
         public HomeView()
         {
