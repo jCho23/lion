@@ -10,7 +10,10 @@
         Text="{Binding Post}" />
         <StackLayout
             Orientation="Horizontal">
-            <Entry Placeholder="Reply"/>
+            <Entry 
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Placeholder="Reply"/>
 
             <Button Text="Post"/>
         </StackLayout>
