@@ -21,10 +21,10 @@
             </Style>
 
             <OnPlatform 
-                x:Key="Aaargh"
+                x:Key="SUPREME"
                 x:TypeArguments="x:String">
                     <On Platform="iOS" Value="SUPREME" />
-                    <On Platform="Android" Value="Aaargh.ttf#Aaargh" />
+                    <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
             </OnPlatform>
 
         </ResourceDictionary>
