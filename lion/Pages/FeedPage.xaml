@@ -19,10 +19,11 @@
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
                     ItemSelected="Handle_ItemSelected"
+                    SeparatorVisibility= "None"
                     >
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
-                        <On Platform="iOS, Android" Value="80" />
+                        <On Platform="iOS, Android" Value="90" />
                     </OnPlatform>
                 </ListView.RowHeight>
                         <ListView.ItemTemplate>
@@ -30,12 +31,15 @@
                                 <ViewCell>
                                     <ContentView 
                                         Padding="5">
+                                        <Frame
+                                            OutlineColor="Accent"
+                                            Padding="10" >
                                     <StackLayout
                                         Orientation="Horizontal"
                                         Padding="5"
                                         HorizontalOptions="StartAndExpand">
                                             <ic:CircleImage
-                                                WidthRequest="62"
+                                                WidthRequest="40"
                                                 HeightRequest="40"
                                                 Aspect="AspectFill"
                                                 Source="{Binding UserUrl}" />
@@ -50,6 +54,7 @@
                                                         TextColor="Blue"/>
                                             </StackLayout>
                                     </StackLayout>
+                                </Frame>
                             </ContentView>
                                 </ViewCell>
                             </DataTemplate>
