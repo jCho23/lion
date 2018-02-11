@@ -8,7 +8,12 @@
     <StackLayout>
         <Label
         Text="{Binding Post}" />
+        <StackLayout
+            Orientation="Horizontal">
+            <Entry Placeholder="Reply"/>
 
-        <Entry Placeholder="Reply"/>
+            <Button Text="Post"/>
+        </StackLayout>
+           
     </StackLayout>
 </ContentPage>
