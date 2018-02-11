@@ -54,7 +54,7 @@ namespace lion.Pages
                     Status= "8 replies" },
                 new FeedDetails {
                     Post = "Everything around you that you call life was made up by people that were no smarter than you",
-                    UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
+                    UserUrl = "https://i.ytimg.com/vi/RnSgCv2X0ns/hqdefault.jpg",
                     Status= "8 replies" }
             };
 
