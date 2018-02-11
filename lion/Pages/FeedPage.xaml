@@ -47,7 +47,7 @@
                                                         HorizontalOptions="EndAndExpand"
                                                         VerticalOptions="EndAndExpand"
                                                         FontSize="8"
-                                                        TextColor="Gray"/>
+                                                        TextColor="Blue"/>
                                             </StackLayout>
                                     </StackLayout>
                             </ContentView>
