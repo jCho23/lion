@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+
+
 namespace lion.iOS
 {
     [Register("AppDelegate")]
@@ -13,6 +15,8 @@ namespace lion.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+
 
             LoadApplication(new App());
 

@@ -9,6 +9,8 @@ namespace lion.Views
 {
     public partial class HomeView : TabbedPage
     {
+
+
         void Handle_Activated(object sender, System.EventArgs e)
         {
             DisplayAlert("Post new message", "Post new message", "OK");

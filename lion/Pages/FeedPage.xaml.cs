@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    public partial class FeedPage : ContentPage
+    public partial class FeedPage : TabbedPage
     {
         public FeedPage()
         {
