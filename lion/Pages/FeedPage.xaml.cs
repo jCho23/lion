@@ -8,8 +8,6 @@ namespace lion.Pages
 {
     public partial class FeedPage : ContentPage
     {
-        
-
         async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null)
@@ -24,7 +22,6 @@ namespace lion.Pages
         {
             listViewFeed.ItemsSource = GetPosts(e.NewTextValue);
         }
-
 
         IEnumerable<FeedDetails> GetPosts(string searchText = null)
         {

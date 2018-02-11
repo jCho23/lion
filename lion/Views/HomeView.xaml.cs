@@ -16,6 +16,9 @@ namespace lion.Views
             DisplayAlert("Post new message", "Post new message", "OK");
         }
 
+      
+
+
         public HomeView()
         {
             InitializeComponent();
