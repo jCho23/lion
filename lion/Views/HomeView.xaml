@@ -21,8 +21,8 @@
         Title="Feed"
         Icon="BearsTabLogo.png" />
 
-    <localPages:DMsPage
-        Title="DMs"
+    <localPages:MyPostsPage
+        Title="Posts"
         Icon="BearPaw.png" />
    
 </TabbedPage>

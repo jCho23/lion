@@ -4,22 +4,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Pages.FeedPage">
 
-
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="#AEB8D4"
-                />
+                BackgroundColor="#AEB8D4"/>
   
                 <ListView
                     x:Name= "listViewFeed"
                     HasUnevenRows="true"
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
-                    ItemSelected="Handle_ItemSelected"
-                    >
+                    ItemSelected="Handle_ItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>                                 
@@ -44,10 +41,5 @@
                         </ListView.ItemTemplate>              
                 </ListView>
         </StackLayout>
-
-
-
-
-
     
 </ContentPage>
