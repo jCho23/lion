@@ -21,9 +21,7 @@
                 <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
             </OnPlatform>
 
-
-
-            
+            <!--PAGES-->
             <Style TargetType="NavigationPage">
                 <Setter Property="HasNavigationBar" Value="True" />
                 <Setter Property="BarTextColor" Value="Gold" />
@@ -33,7 +31,6 @@
             <Style
                 TargetType= "Label">
                     <Setter Property="TextColor" Value="Black"/>
-
             </Style>
 
 
