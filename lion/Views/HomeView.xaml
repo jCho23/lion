@@ -10,64 +10,22 @@
 
     
        
-    <TabbedPage.BackgroundColor
-        BarBackgroundColor= "Aqua">
-        
-    </TabbedPage.BackgroundColor>
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem 
-            Name="MenuItem1" 
+            Name="AddPost" 
             Order="Primary" 
             Icon="add.png" 
             Activated="Handle_Activated" 
             Priority="0" />
     </ContentPage.ToolbarItems>
-    
-    <ContentPage
-        Title="Feed"
-        Icon="BearsTabLogo.png">
 
-        
-        <StackLayout >
-            <SearchBar
-                Placeholder="Search Posts..."
-                TextChanged="Handle_TextChanged"
-                HorizontalTextAlignment="Center"
-                BackgroundColor="#AEB8D4"
-                />
+
+    <localPages:FeedPage
+        Title="Feed"
+        Icon="BearsTabLogo.png" />
+    
   
-                <ListView
-                    x:Name= "listViewFeed"
-                    HasUnevenRows="true"
-                    IsPullToRefreshEnabled="true"
-                    Refreshing="Handle_Refreshing"
-                    ItemSelected="Handle_ItemSelected"
-                    >
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>                                 
-                                    <StackLayout
-                                        Orientation="Horizontal"
-                                        Padding="5"
-                                        HorizontalOptions="StartAndExpand">
-                                            <Image 
-                                                Source="{Binding UserUrl}" />
-                                                <StackLayout>
-                                                    <Label Text="{Binding Post}"/>
-                                                    <Label 
-                                                        Text="{Binding Status}"
-                                                        HorizontalOptions="EndAndExpand"
-                                                        VerticalOptions="EndAndExpand"
-                                                        FontSize="8"
-                                                        TextColor="Gray"/>
-                                            </StackLayout>
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>              
-                </ListView>
-        </StackLayout>
-    </ContentPage>
         
     <ContentPage
         Title="DMs"
