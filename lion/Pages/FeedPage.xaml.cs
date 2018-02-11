@@ -41,9 +41,9 @@ namespace lion.Pages
                     UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
                     Status= "8 replies" },
                 new FeedDetails {
-                    Post = "Everything around you that you call life was made up by people that were no smarter than you",
+                    Post = "What's the best pizza joint around campus? ",
                     UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "8 replies" },
+                    Status= "48 replies" },
                 new FeedDetails {
                     Post = "Everything around you that you call life was made up by people that were no smarter than you",
                     UserUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
