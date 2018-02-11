@@ -3,6 +3,11 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Pages.MyPostsPage"
+    xmlns:local="clr-namespace:lion;assembly=Awesome"
+    
     BackgroundColor="Aqua">
-	
+
+             <Label Text="\uf082" 
+                   FontSize="40" FontFamily="FontAwesome"  />
+    
 </ContentPage>
