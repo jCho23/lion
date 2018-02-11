@@ -8,9 +8,6 @@
 
     xmlns:xfg="clr-namespace:lion.XFGloss;assembly=lion">
 
-    
-       
-    
     <ContentPage.ToolbarItems>
         <ToolbarItem 
             Name="AddPost" 
@@ -20,7 +17,6 @@
             Priority="0" />
     </ContentPage.ToolbarItems>
 
-
     <localPages:FeedPage
         Title="Feed"
         Icon="BearsTabLogo.png" />
@@ -28,8 +24,5 @@
     <localPages:DMsPage
         Title="DMs"
         Icon="BearPaw.png" />
-    
-    
-
-    
+   
 </TabbedPage>
