@@ -19,4 +19,52 @@
         </StackLayout>
            
     </StackLayout>
+
+    
+    <!--<Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+           
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+       
+
+        
+
+        <Label Text="{Binding Post}" 
+        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+        
+    
+
+       
+        <ScrollView BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+            >
+            <StackLayout  
+                Padding="10,0,10,0"
+                Spacing="4"
+
+                HorizontalOptions="Fill"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"
+            >
+                <Label Text="History" />
+                <Label Text="4/8      Sandwich and OJ = $30 Points!" HorizontalOptions="Start"/>
+
+            </StackLayout>
+        </ScrollView>
+
+       
+        
+    </Grid>-->
+
 </ContentPage>
+
+
+    
+

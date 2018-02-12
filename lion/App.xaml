@@ -21,6 +21,12 @@
                 <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
             </OnPlatform>
 
+            <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue</On>
+                <On Platform="Android">sans-serif</On>
+            </OnPlatform>
+            
+
             <!--PAGES-->
             <Style 
                 TargetType="NavigationPage">
@@ -32,8 +38,12 @@
            <!-- LABELS-->
             <Style
                 TargetType= "Label">
-                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="TextColor" Value="MidnightBlue"/>
             </Style>
+
+
+
+            <x:Double x:Key="TagTextFontSize">18</x:Double>
 
 
         </ResourceDictionary>
