@@ -5,7 +5,7 @@
     x:Class="lion.Pages.PostsDetailsPage"
     Title="{}">
 
-    <StackLayout>
+ <!--   <StackLayout>
         <Label
         Text="{Binding Post}" />
         <StackLayout
@@ -18,19 +18,19 @@
             <Button Text="Post"/>
         </StackLayout>
            
-    </StackLayout>
+    </StackLayout>-->
 
     
-    <!--<Grid RowSpacing="0">
+    <Grid RowSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
            
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
        
@@ -54,14 +54,20 @@
                 BackgroundColor="Transparent"
             >
                 <Label Text="History" />
-                <Label Text="4/8      Sandwich and OJ = $30 Points!" HorizontalOptions="Start"/>
+                <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                
+                
 
             </StackLayout>
         </ScrollView>
 
        
         
-    </Grid>-->
+    </Grid>
 
 </ContentPage>
 
