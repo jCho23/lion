@@ -36,7 +36,7 @@
                     Padding="5">
                         <Label 
                             Text="{Binding Post}" 
-                            FontSize="Large"/>
+                            FontSize="15"/>
                         <Label
                             Text="{Binding Status}"
                             HorizontalOptions="EndAndExpand"
@@ -46,6 +46,7 @@
                 </StackLayout>
         </StackLayout>
 
+
         <Entry 
             Grid.Row="1"
             Grid.ColumnSpan="2"
@@ -53,13 +54,14 @@
             HorizontalOptions="Fill"
             Placeholder="Reply to Post..."
             Keyboard="Text"/>
+        
     
         <ScrollView 
             BackgroundColor="Transparent" 
             Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
                 <StackLayout  
                     Padding="10,0,10,0"
-                    Spacing="4"
+                    Spacing="8"
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand"
                     BackgroundColor="Transparent">

@@ -18,7 +18,7 @@
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
-                PlaceholderColor="#191970"
+                PlaceholderColor="gray"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
                 BackgroundColor="#191970" />
@@ -46,8 +46,8 @@
                                             HasShadow="true">
                                                 <StackLayout
                                                     Orientation="Horizontal"
-                                                     Padding="5"
-                                                     HorizontalOptions="StartAndExpand">
+                                                    Padding="5"
+                                                    HorizontalOptions="StartAndExpand">
                                                         <ic:CircleImage
                                                             WidthRequest="80"
                                                             HeightRequest="40"
