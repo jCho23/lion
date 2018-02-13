@@ -26,8 +26,6 @@ namespace lion.Droid
             ImageCircleRenderer.Init();
 
             LoadApplication(new App());
-
-
         }
     }
 }
