@@ -43,18 +43,17 @@
                             HorizontalOptions="EndAndExpand"
                             VerticalOptions="EndAndExpand"
                             FontSize="8"
-                            TextColor="Blue"/>
-                       
+                            TextColor="Blue"/> 
                 </StackLayout>
         </StackLayout>
-                         <Entry 
-                            
-                            Grid.Row="1"
-                            Grid.ColumnSpan="2"
-                            VerticalOptions="Start"
-                            HorizontalOptions="Fill"
-                            Placeholder="Reply"
-                            Keyboard="Text"/>
+
+        <Entry 
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            VerticalOptions="Start"
+            HorizontalOptions="Fill"
+            Placeholder="Reply to Post..."
+            Keyboard="Text"/>
     
         <ScrollView BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
             >
