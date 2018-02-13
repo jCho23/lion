@@ -6,22 +6,6 @@
 
     x:Class="lion.Pages.PostsDetailsPage"
     Title="{}">
-
- <!--   <StackLayout>
-        <Label
-        Text="{Binding Post}" />
-        <StackLayout
-            Orientation="Horizontal">
-            <Entry 
-                VerticalOptions="StartAndExpand"
-                HorizontalOptions="StartAndExpand"
-                Placeholder="Reply"/>
-
-            <Button Text="Post"/>
-        </StackLayout>
-           
-    </StackLayout>-->
-
     
     <Grid RowSpacing="0">
         <Grid.RowDefinitions>
