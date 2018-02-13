@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
 
        
-       <StackLayout
+        <StackLayout
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="2"
@@ -46,9 +46,10 @@
                             FontSize="8"
                             TextColor="Blue"/>
                          <Entry 
-                VerticalOptions="Start"
-                HorizontalOptions="Start"
-                Placeholder="Reply"/>
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            Placeholder="Reply"
+                            Keyboard="Text"/>
                        
                 </StackLayout>
         </StackLayout>
