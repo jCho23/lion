@@ -65,7 +65,7 @@
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand"
                     BackgroundColor="Transparent">
-                        <Label Text="History" FontSize="Large"/>
+                        <Label Text="Responses" FontSize="Large"/>
                         <Label Text="posted back to the original " HorizontalOptions="Start"/>
                         <Label Text="posted back to the original " HorizontalOptions="Start"/>
                         <Label Text="posted back to the original " HorizontalOptions="Start"/>
