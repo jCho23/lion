@@ -9,7 +9,7 @@
     <Grid RowSpacing="0"
            Padding="8">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="80"/>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto"/>          
         </Grid.RowDefinitions>
@@ -26,8 +26,8 @@
             Grid.ColumnSpan="2"
             HorizontalOptions="StartAndExpand">
                 <ic:CircleImage
-                    WidthRequest="100"
-                    HeightRequest="100"
+                    WidthRequest="80"
+                    HeightRequest="80"
                     Aspect="AspectFill"
                     BorderColor="gray"
                     BorderThickness="3"
@@ -44,8 +44,10 @@
                             VerticalOptions="EndAndExpand"
                             FontSize="8"
                             TextColor="Blue"/> 
-        <StackLayout
-            Orientation="Horizontal">
+                </StackLayout>
+        </StackLayout>
+
+
         <Entry 
             Grid.Row="1"
             Grid.ColumnSpan="2"
@@ -56,16 +58,14 @@
 
         <Button
             Grid.Row="1"
-            Grid.ColumnSpan="2"
+            Grid.Column= "1"
+           
             HorizontalOptions="End"
             VerticalOptions="End"
             Text="Post"
             BorderColor="Aqua"
             BackgroundColor="Aqua"/>
-        </StackLayout>
-                </StackLayout>
-        </StackLayout>
-
+        
     
         <ScrollView 
             BackgroundColor="Transparent" 
