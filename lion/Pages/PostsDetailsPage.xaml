@@ -61,6 +61,10 @@
                             VerticalOptions="EndAndExpand"
                             FontSize="8"
                             TextColor="Blue"/>
+                         <Entry 
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Placeholder="Reply"/>
                        
                 </StackLayout>
         </StackLayout>
