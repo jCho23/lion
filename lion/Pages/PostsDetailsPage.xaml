@@ -7,15 +7,17 @@
     x:Class="lion.Pages.PostsDetailsPage"
     Title="{}">
     
-    <Grid RowSpacing="0">
+    <Grid RowSpacing="0"
+           Padding="8">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
            
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -45,16 +47,19 @@
                             VerticalOptions="EndAndExpand"
                             FontSize="8"
                             TextColor="Blue"/>
-                         <Entry 
-                            VerticalOptions="Start"
-                            HorizontalOptions="Start"
-                            Placeholder="Reply"
-                            Keyboard="Text"/>
                        
                 </StackLayout>
         </StackLayout>
+                         <Entry 
+                            
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Fill"
+                            Placeholder="Reply"
+                            Keyboard="Text"/>
     
-        <ScrollView BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+        <ScrollView BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
             >
             <StackLayout  
                 Padding="10,0,10,0"
