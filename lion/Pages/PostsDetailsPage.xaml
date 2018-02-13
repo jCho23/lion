@@ -24,7 +24,6 @@
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Orientation="Horizontal"
-
             HorizontalOptions="StartAndExpand">
                 <ic:CircleImage
                     WidthRequest="100"
@@ -55,43 +54,34 @@
             Placeholder="Reply to Post..."
             Keyboard="Text"/>
     
-        <ScrollView BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-            >
-            <StackLayout  
-                Padding="10,0,10,0"
-                Spacing="4"
-
-                HorizontalOptions="Fill"
-                VerticalOptions="CenterAndExpand"
-                BackgroundColor="Transparent"
-            >
-                <Label Text="History" FontSize="Large"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                <Label Text="posted back to the original " HorizontalOptions="Start"/>
-                
-                
-                
-                
-
-            </StackLayout>
+        <ScrollView 
+            BackgroundColor="Transparent" 
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <StackLayout  
+                    Padding="10,0,10,0"
+                    Spacing="4"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="Transparent">
+                        <Label Text="History" FontSize="Large"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                        <Label Text="posted back to the original " HorizontalOptions="Start"/>
+                </StackLayout>
         </ScrollView>
 
-       
-        
     </Grid>
-
 </ContentPage>
 
 
