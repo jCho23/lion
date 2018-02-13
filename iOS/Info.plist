@@ -46,5 +46,7 @@
 	<array>
 		<string>SUPREME.ttf</string>
 	</array>
+	<key>Custom Property</key>
+	<string>SUPREME.ttf</string>
 </dict>
 </plist>
