@@ -54,16 +54,15 @@
         <Label
             Grid.Row="1"
             Grid.Column="0"
-                            Text="Kylie Jenner"
-                            VerticalOptions="Start"
-                            HorizontalOptions="Start" />
+            Text="Kylie Jenner"
+            VerticalOptions="Start"
+            HorizontalOptions="Start" />
 
         <BoxView
-                   Grid.Row="1"
+            Grid.Row="1"
             Grid.Column="1" 
-             WidthRequest="150"
+            WidthRequest="150"
             HeightRequest="220" >
-
         </BoxView>
 
         <Entry 
