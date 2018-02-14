@@ -13,6 +13,7 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="25"/>
+                <RowDefinition Height="10"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
         
@@ -70,7 +71,7 @@
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Keyboard="Text"
-            BackgroundColor="Purple"
+            BackgroundColor="Transparent"
             Placeholder="Reply to Post..."
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
@@ -80,20 +81,20 @@
             Grid.Column= "1"
             Text="Post"
             BorderColor="Aqua"
-            BackgroundColor="Aqua"
+            BackgroundColor="Gold"
             VerticalOptions="End"
             HorizontalOptions="End" />
        
         <ScrollView 
             BackgroundColor="Pink" 
-            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
                 <StackLayout  
                     Padding="10,0,10,0"
                     Spacing="8"
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand"
                     BackgroundColor="Transparent">
-                        <Label Text="Responses" FontSize="Large"/>
+                        <Label Text="Responses" FontSize="Large" FontAttributes="Bold"/>
                         <Label Text="posted back to the original " HorizontalOptions="Start"/>
                         <Label Text="posted back to the original " HorizontalOptions="Start"/>
                         <Label Text="posted back to the original " HorizontalOptions="Start"/>
