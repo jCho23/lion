@@ -59,7 +59,7 @@
                                                         Padding="5">
                                                             <Label 
                                                                 Text="{Binding Post}"
-                                                                FontFamily="{StaticResource SUPREME}" />
+                                                                 />
 
                                                             <Label
                                                                 
