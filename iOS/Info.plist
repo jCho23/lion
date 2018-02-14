@@ -45,6 +45,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>CaviarDreams.ttf</string>
+		<string>New element</string>
 	</array>
 </dict>
 </plist>
