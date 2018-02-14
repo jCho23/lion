@@ -16,7 +16,7 @@ namespace lion.Views
             InitializeComponent();
 
             this.BarBackgroundColor = Color.Gold;
-            this.BarTextColor = Color.MidnightBlue;
+            this.BarTextColor = Color.FromHex("#003366");
         }
     }
 }

@@ -33,14 +33,16 @@
                 TargetType="NavigationPage">
                     <Setter Property="HasNavigationBar" Value="True" />
                     <Setter Property="BarTextColor" Value="Gold" />
-                    <Setter Property="BarBackgroundColor" Value="#191970" />
+                    <Setter Property="BarBackgroundColor" Value="#003366 " />
+                    <Setter Property="TitleIcon" Value="bearpaw.png" />
+               
             </Style>
 
            <!-- LABELS-->
             <Style
                 TargetType= "Label">
                     <Setter Property="TextColor" Value="MidnightBlue" />
-                    <Setter Property="FontFamily" Value="Roboto-Thin"/>
+                    <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
 

@@ -27,7 +27,7 @@ namespace lion.Droid.CustomRenderers
             base.OnElementChanged(e);
 
             if (e.OldElement == null)
-                Control.Typeface = Typeface.CreateFromAsset(CurrentContext.Assets, "SUPREME.ttf");
+                Control.Typeface = Typeface.CreateFromAsset(CurrentContext.Assets, "Roboto-Thin.ttf");
         }
         #endregion
     }
