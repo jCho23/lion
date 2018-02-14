@@ -59,7 +59,7 @@
                                                         Padding="5">
                                                             <Label 
                                                                 Text="{Binding Post}"
-                                                                FontSize="15"
+                                                                FontSize="16"
                                                                  />
 
                                                             <Label
