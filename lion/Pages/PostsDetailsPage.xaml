@@ -24,10 +24,9 @@
         <StackLayout
             Grid.Row="0"
             Grid.Column="0"
-            Orientation="Horizontal"
             Grid.ColumnSpan="2"
-            HorizontalOptions="StartAndExpand"
-            >
+            Orientation="Horizontal"
+            HorizontalOptions="StartAndExpand">
                 <ic:CircleImage
                     WidthRequest="100"
                     HeightRequest="100"
@@ -36,26 +35,24 @@
                     BorderThickness="3"
                     Source="{Binding UserUrl}"/>
                 <StackLayout
-                     Grid.Row="0"
+                    Padding="5"
+                    Grid.Row="0"
                     Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Padding="5">
+                    Grid.ColumnSpan="2">
                         <Label 
                             Text="{Binding Post}" 
                             FontSize="18"/>
                         <Label
-                            Text="{Binding Status}"
-                            HorizontalOptions="EndAndExpand"
-                            VerticalOptions="EndAndExpand"
                             FontSize="8"
-                            TextColor="Blue"/> 
-                        
-                            
+                            TextColor="Blue"
+                            Text="{Binding Status}"
+                            VerticalOptions="EndAndExpand"
+                            HorizontalOptions="EndAndExpand"/>
                 </StackLayout>
         </StackLayout>
 
-                       <Label
-                             Grid.Row="1"
+        <Label
+            Grid.Row="1"
             Grid.Column="0"
                             Text="Kylie Jenner"
                             VerticalOptions="Start"
