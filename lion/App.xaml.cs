@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace lion
 {
@@ -8,10 +9,10 @@ namespace lion
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.HomeView());
+            var navigationPage = new Xamarin.Forms.NavigationPage(new Views.HomeView());
+            //navigationPage.On<Xamarin.Forms.PlatformConfiguration.iOS>().SetPrefersLargeTitles(true);
 
-
-
+            MainPage = navigationPage;
         }
 
 
