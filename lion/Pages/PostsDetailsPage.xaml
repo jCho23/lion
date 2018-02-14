@@ -12,9 +12,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="100"/>
-                <RowDefinition Height="25" />
-                <RowDefinition Height="*" />
-                     
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
         
             <Grid.ColumnDefinitions>
@@ -58,7 +57,7 @@
                        <Label
                              Grid.Row="1"
             Grid.Column="0"
-                            Text="Kylie"
+                            Text="Kylie Jenner"
                             VerticalOptions="Start"
                             HorizontalOptions="Start" />
 
@@ -73,7 +72,8 @@
         <Entry 
             Grid.Row="2"
             Grid.Column="0"
-            VerticalOptions="Fill"
+            Grid.ColumnSpan="2"
+            VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand"
             Placeholder="Reply to Post..."
             Keyboard="Text"
