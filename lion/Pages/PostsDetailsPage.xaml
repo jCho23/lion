@@ -69,21 +69,20 @@
             Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            VerticalOptions="FillAndExpand"
-            HorizontalOptions="FillAndExpand"
-            Placeholder="Reply to Post..."
             Keyboard="Text"
-            BackgroundColor="Purple"/>
+            BackgroundColor="Purple"
+            Placeholder="Reply to Post..."
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" />
 
         <Button
             Grid.Row="2"
             Grid.Column= "1"
-           
-            HorizontalOptions="End"
-            VerticalOptions="End"
             Text="Post"
             BorderColor="Aqua"
-            BackgroundColor="Aqua"/>
+            BackgroundColor="Aqua"
+            VerticalOptions="End"
+            HorizontalOptions="End" />
         
     
         <ScrollView 
