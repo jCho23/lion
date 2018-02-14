@@ -83,8 +83,7 @@
             BackgroundColor="Aqua"
             VerticalOptions="End"
             HorizontalOptions="End" />
-        
-    
+       
         <ScrollView 
             BackgroundColor="Pink" 
             Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
@@ -114,7 +113,3 @@
 
     </Grid>
 </ContentPage>
-
-
-    
-
