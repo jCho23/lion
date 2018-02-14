@@ -44,7 +44,7 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SUPREME.ttf</string>
+		<string>CaviarDreams.ttf</string>
 	</array>
 </dict>
 </plist>
