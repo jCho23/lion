@@ -28,8 +28,8 @@
             HorizontalOptions="StartAndExpand"
             >
                 <ic:CircleImage
-                    WidthRequest="100"
-                    HeightRequest="100"
+                    WidthRequest="80"
+                    HeightRequest="80"
                     Aspect="AspectFill"
                     BorderColor="gray"
                     BorderThickness="3"
@@ -39,7 +39,7 @@
                     Padding="5">
                         <Label 
                             Text="{Binding Post}" 
-                            FontSize="15"/>
+                            FontSize="12"/>
                         <Label
                             Text="{Binding Status}"
                             HorizontalOptions="EndAndExpand"
@@ -56,7 +56,7 @@
 
         <Entry 
             Grid.Row="1"
-            Grid.ColumnSpan="2"
+            Grid.Column="1"
             VerticalOptions="Start"
             HorizontalOptions="Fill"
             Placeholder="Reply to Post..."

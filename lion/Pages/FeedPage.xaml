@@ -47,10 +47,10 @@
                                                 <StackLayout
                                                     Orientation="Horizontal"
                                                     Padding="5"
-                                                    HorizontalOptions="StartAndExpand">
+                                                    HorizontalOptions="Start">
                                                         <ic:CircleImage
                                                             WidthRequest="80"
-                                                            HeightRequest="40"
+                                                            HeightRequest="60"
                                                             Aspect="AspectFill"
                                                             BorderColor="gray"
                                                             BorderThickness="3"
@@ -59,6 +59,7 @@
                                                         Padding="5">
                                                             <Label 
                                                                 Text="{Binding Post}"
+                                                                FontSize="15"
                                                                  />
 
                                                             <Label
