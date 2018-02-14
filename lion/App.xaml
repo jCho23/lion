@@ -40,7 +40,7 @@
             <Style
                 TargetType= "Label">
                     <Setter Property="TextColor" Value="MidnightBlue" />
-                    <Setter Property="FontFamily" Value="Raleway-SemiBold"/>
+                    <Setter Property="FontFamily" Value="Roboto-Thin"/>
             </Style>
 
 

@@ -171,6 +171,7 @@
     <AndroidAsset Include="Assets\SUPREME.ttf" />
     <AndroidAsset Include="Assets\CaviarDreams.ttf" />
     <AndroidAsset Include="Assets\Raleway-SemiBold.ttf" />
+    <AndroidAsset Include="Assets\Roboto-Thin.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderers\" />
