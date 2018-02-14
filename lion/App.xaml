@@ -17,13 +17,14 @@
             <!--FONT FAMILIES-->
             <OnPlatform 
                 x:Key="SUPREME" x:TypeArguments="x:String">
-                <On Platform="iOS">SUPREME</On> 
-                <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
+                    <On Platform="iOS">SUPREME</On> 
+                    <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
             </OnPlatform>
 
-            <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
-                <On Platform="iOS">HelveticaNeue</On>
-                <On Platform="Android">sans-serif</On>
+            <OnPlatform 
+                x:Key="RegularFontFamily" x:TypeArguments="x:String">
+                    <On Platform="iOS">HelveticaNeue</On>
+                    <On Platform="Android">sans-serif</On>
             </OnPlatform>
             
 
@@ -39,7 +40,7 @@
             <Style
                 TargetType= "Label">
                     <Setter Property="TextColor" Value="MidnightBlue" />
-                    <Setter Property="FontFamily" Value="SUPREME"/>
+                    <Setter Property="FontFamily" Value="SUPREMEBW90-Bold"/>
             </Style>
 
 
