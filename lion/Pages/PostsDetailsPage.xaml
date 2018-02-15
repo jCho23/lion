@@ -92,9 +92,26 @@
             Clicked="OnReplyPost_Clicked"/>
        
         <ListView
-            BackgroundColor="Fuchsia"
+           
             Grid.Row="4"
             Grid.ColumnSpan="2">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                            <Label
+                                Text="This is where the replies live"
+                                TextColor="Black"/>
+                        </StackLayout>
+
+
+                        </ViewCell>
+
+
+
+                    </DataTemplate>
+
+            </ListView.ItemTemplate>
 
         </ListView>
 
