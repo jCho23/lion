@@ -6,7 +6,6 @@ using Xamarin.Forms.Xaml;
 
 namespace lion
 
-
 {
     public partial class App : Application
     {
