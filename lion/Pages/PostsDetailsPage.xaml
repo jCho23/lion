@@ -77,6 +77,7 @@
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand"
             Text="{Binding ReplyPost}"
+            TextChanged="Handle_TextChanged"
             Completed="Handle_Completed">
          
             </Entry>

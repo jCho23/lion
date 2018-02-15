@@ -7,7 +7,7 @@ namespace lion.Pages
 {
     public partial class PostsDetailsPage : ContentPage
     {
-
+        
 
         public PostsDetailsPage(FeedDetails feedDetails)
         {
@@ -19,38 +19,16 @@ namespace lion.Pages
             InitializeComponent();
         }
 
-        public class EntryLengthValidatorBehavior : Behavior<Entry>
+
+
+        void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
-            public int MaxLength { get; set; }
-
-            protected override void OnAttachedTo(Entry bindable)
+            if (e.NewTextValue.Length > 20)
             {
-                base.OnAttachedTo(bindable);
-                bindable.TextChanged += OnEntryTextChanged;
-            }
+                replyPostInput.Text = replyPostInput.Text.Remove(2);
 
-            protected override void OnDetachingFrom(Entry bindable)
-            {
-                base.OnDetachingFrom(bindable);
-                bindable.TextChanged -= OnEntryTextChanged;
-            }
-
-            void OnEntryTextChanged(object sender, TextChangedEventArgs e)
-            {
-                var entry = (Entry)sender;
-
-                // if Entry text is longer then valid length
-                if (entry.Text.Length > this.MaxLength)
-                {
-                    string entryText = entry.Text;
-
-                    entryText = entryText.Remove(entryText.Length - 1); // remove last char
-
-                    entry.Text = entryText;
-                }
             }
         }
-
 
 		void Handle_Completed(object sender, System.EventArgs e)
 		{
