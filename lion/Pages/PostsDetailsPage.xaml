@@ -89,7 +89,7 @@
             BackgroundColor="Gold"
             VerticalOptions="End"
             HorizontalOptions="End" 
-            Clicked="Handle_Clicked"/>
+            Clicked="OnReplyPost_Clicked"/>
        
         <ScrollView 
             BackgroundColor="Pink" 
