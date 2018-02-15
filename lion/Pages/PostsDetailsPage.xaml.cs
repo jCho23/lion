@@ -1,11 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using lion.Models;
 using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    public partial class PostsDetailsPage : ContentPage
+    
+
+
+
+
+
+
+    public partial class PostsDetailsPage 
     {
         
 
@@ -32,7 +40,7 @@ namespace lion.Pages
             }
         }
 
-		void Handle_Completed(object sender, System.EventArgs e)
+		void OnPostEntry_Completed(object sender, System.EventArgs e)
 		{
 			throw new NotImplementedException();
 		}
