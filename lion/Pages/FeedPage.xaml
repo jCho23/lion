@@ -16,7 +16,13 @@
     </ContentPage.ToolbarItems>
     
     <StackLayout >
-           
+            <SearchBar
+                Placeholder="Search Posts..."
+                PlaceholderColor="gray"
+                TextChanged="Handle_TextChanged"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="#003366" />
+  
                 <ListView
                     x:Name= "listViewFeed"
                     HasUnevenRows="true"
