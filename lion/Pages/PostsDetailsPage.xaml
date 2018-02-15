@@ -67,7 +67,7 @@
         </BoxView>
 
         <Entry
-            
+            x:Name="replyPostInput"
             Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
@@ -78,9 +78,7 @@
             VerticalOptions="FillAndExpand"
             Text="{Binding ReplyPost}"
             Completed="Handle_Completed">
-            <Entry.Behaviors> 
-                <behaviors.EntryLengthValidatorBehavior MaxLength= "3" />
-            </Entry.Behaviors>
+         
             </Entry>
         <Button
             Grid.Row="2"

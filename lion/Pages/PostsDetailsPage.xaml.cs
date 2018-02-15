@@ -7,7 +7,6 @@ namespace lion.Pages
 {
     public partial class PostsDetailsPage : ContentPage
     {
-        public event EventHandler<Post> PostAdded;
 
 
         public PostsDetailsPage(FeedDetails feedDetails)
