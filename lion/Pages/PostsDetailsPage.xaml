@@ -66,7 +66,8 @@
             HeightRequest="220" >
         </BoxView>
 
-        <Entry 
+        <Entry
+            
             Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
@@ -75,8 +76,12 @@
             Placeholder="Reply to Post..."
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand"
-            Text="{Binding ReplyPost}"/>
-
+            Text="{Binding ReplyPost}"
+            Completed="Handle_Completed">
+            <Entry.Behaviors> 
+                <behaviors.EntryLengthValidatorBehavior MaxLength= "3" />
+            </Entry.Behaviors>
+            </Entry>
         <Button
             Grid.Row="2"
             Grid.Column= "1"
@@ -84,7 +89,8 @@
             BorderColor="Aqua"
             BackgroundColor="Gold"
             VerticalOptions="End"
-            HorizontalOptions="End" />
+            HorizontalOptions="End" 
+            Clicked="Handle_Clicked"/>
        
         <ScrollView 
             BackgroundColor="Pink" 
