@@ -62,7 +62,7 @@ namespace lion.Pages
                 return posts;
 
 
-            return posts.Where(x => x.Post.Contains(searchText));
+            return posts.Where(x => x.Post.ToLower().Contains(searchText.ToLower()));
         }
 
         void Handle_Refreshing(object sender, System.EventArgs e)
