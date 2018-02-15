@@ -22,6 +22,8 @@ namespace lion.iOS
 
             ImageCircleRenderer.Init();
 
+            XFGloss.iOS.Library.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
