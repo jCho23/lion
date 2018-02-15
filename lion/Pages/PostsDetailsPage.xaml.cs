@@ -40,10 +40,10 @@ namespace lion.Pages
             }
         }
 
-		void OnPostEntry_Completed(object sender, System.EventArgs e)
-		{
-			throw new NotImplementedException();
-		}
+		//void OnPostEntry_Completed(object sender, System.EventArgs e)
+		//{
+		//	throw new NotImplementedException();
+		//}
 		
 		
 		

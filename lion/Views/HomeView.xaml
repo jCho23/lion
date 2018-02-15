@@ -5,7 +5,14 @@
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion"
     x:Class="lion.Views.HomeView"
     Title="Scholars">
-   
+
+       <SearchBar
+                Placeholder="Search Posts..."
+                PlaceholderColor="Gray"
+          
+                HorizontalTextAlignment="Center"
+                BackgroundColor="#003366" />
+    
     <localPages:FeedPage
         Title="Feed"
         Icon="BearsTabLogo.png" />

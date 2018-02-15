@@ -18,7 +18,7 @@
     <StackLayout >
             <SearchBar
                 Placeholder="Search Posts..."
-                PlaceholderColor="gray"
+                PlaceholderColor="Gray"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
                 BackgroundColor="#003366" />
@@ -52,7 +52,7 @@
                                                             WidthRequest="80"
                                                             HeightRequest="60"
                                                             Aspect="AspectFill"
-                                                            BorderColor="gray"
+                                                            BorderColor="Gray"
                                                             BorderThickness="3"
                                                             Source="{Binding UserUrl}"/>
                                                     <StackLayout
