@@ -17,6 +17,8 @@ namespace lion.Pages
             BindingContext = feedDetails;
 
             InitializeComponent();
+
+          
         }
 
 
@@ -37,7 +39,7 @@ namespace lion.Pages
 		
 		
 		
-		void Handle_Clicked(object sender, System.EventArgs e)
+		void OnReplyPost_Clicked(object sender, System.EventArgs e)
 		{
 			throw new NotImplementedException();
 		}

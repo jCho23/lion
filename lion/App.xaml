@@ -14,19 +14,7 @@
             <Color x:Key="BackgroundColor">#FFFFFF</Color>
             <Color x:Key="LoginButtonBackgroundColor">#000000</Color>
 
-            <!--FONT FAMILIES-->
-            <OnPlatform 
-                x:Key="SUPREME" x:TypeArguments="x:String">
-                    <On Platform="iOS">SUPREME</On> 
-                    <On Platform="Android" Value="SUPREME.ttf#SUPREME" />
-            </OnPlatform>
 
-            <OnPlatform 
-                x:Key="RegularFontFamily" x:TypeArguments="x:String">
-                    <On Platform="iOS">HelveticaNeue</On>
-                    <On Platform="Android">sans-serif</On>
-            </OnPlatform>
-            
 
             <!--PAGES-->
             <Style 
@@ -35,6 +23,7 @@
                     <Setter Property="BarTextColor" Value="Gold" />
                     <Setter Property="BarBackgroundColor" Value="#003366 " />
                     <Setter Property="TitleIcon" Value="bearpaw.png" />
+                    
                
             </Style>
 
