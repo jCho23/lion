@@ -74,7 +74,8 @@
             BackgroundColor="Transparent"
             Placeholder="Reply to Post..."
             HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand" />
+            VerticalOptions="FillAndExpand"
+            Text="{Binding ReplyPost}"/>
 
         <Button
             Grid.Row="2"
