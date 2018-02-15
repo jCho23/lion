@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xamarin.Forms.2.5.0.122203\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.122203\build\netstandard1.0\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -54,21 +53,6 @@
     </Reference>
     <Reference Include="ImageCircle.Forms.Plugin.Android">
       <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.2.0.2\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="FormsViewGroup">
-      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform.Android">
-      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform">
-      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.CurrentActivity">
       <HintPath>..\packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
@@ -130,6 +114,21 @@
     <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
       <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
     </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.274780\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.274780\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.274780\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.274780\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.274780\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lion\lion.csproj">
@@ -149,6 +148,82 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
+    <None Include="Xamarin.Forms.toolbox.xml" />
+    <None Include="icons\win\view-WebView-16.png" />
+    <None Include="icons\win\view-TimePicker-16.png" />
+    <None Include="icons\win\view-TableView-16.png" />
+    <None Include="icons\win\view-Switch-16.png" />
+    <None Include="icons\win\view-Stepper-16.png" />
+    <None Include="icons\win\view-Slider-16.png" />
+    <None Include="icons\win\view-SearchBar-16.png" />
+    <None Include="icons\win\view-ProgressBar-16.png" />
+    <None Include="icons\win\view-Picker-16.png" />
+    <None Include="icons\win\view-Map-16.png" />
+    <None Include="icons\win\view-ListView-16.png" />
+    <None Include="icons\win\view-Label-16.png" />
+    <None Include="icons\win\view-Image-16.png" />
+    <None Include="icons\win\view-Entry-16.png" />
+    <None Include="icons\win\view-Editor-16.png" />
+    <None Include="icons\win\view-DatePicker-16.png" />
+    <None Include="icons\win\view-Button-16.png" />
+    <None Include="icons\win\view-ActivityIndicator-16.png" />
+    <None Include="icons\win\layout-StackLayout-16.png" />
+    <None Include="icons\win\layout-ScrollView-16.png" />
+    <None Include="icons\win\layout-RelativeLayout-16.png" />
+    <None Include="icons\win\layout-Grid-16.png" />
+    <None Include="icons\win\layout-Frame-16.png" />
+    <None Include="icons\win\layout-ContentView-16.png" />
+    <None Include="icons\win\layout-AbsoluteLayout-16.png" />
+    <None Include="icons\win\cell-ViewCell-16.png" />
+    <None Include="icons\win\cell-TextCell-16.png" />
+    <None Include="icons\win\cell-SwitchCell-16.png" />
+    <None Include="icons\win\cell-ImageCell-16.png" />
+    <None Include="icons\win\cell-EntryCell-16.png" />
+    <None Include="icons\win\BoxView-16.png" />
+    <None Include="icons\mac\view-WebView-16~sel%402x.png" />
+    <None Include="icons\mac\view-WebView-16~sel.png" />
+    <None Include="icons\mac\view-WebView-16~dark~sel%402x.png" />
+    <None Include="icons\mac\view-WebView-16~dark~sel.png" />
+    <None Include="icons\mac\view-WebView-16~dark%402x.png" />
+    <None Include="icons\mac\view-WebView-16~dark.png" />
+    <None Include="icons\mac\view-WebView-16%402x.png" />
+    <None Include="icons\mac\view-WebView-16.png" />
+    <None Include="icons\mac\view-TimePicker-16~sel%402x.png" />
+    <None Include="icons\mac\view-TimePicker-16~sel.png" />
+    <None Include="icons\mac\view-TimePicker-16~dark~sel%402x.png" />
+    <None Include="icons\mac\view-TimePicker-16~dark~sel.png" />
+    <None Include="icons\mac\view-TimePicker-16~dark%402x.png" />
+    <None Include="icons\mac\view-TimePicker-16~dark.png" />
+    <None Include="icons\mac\view-TimePicker-16%402x.png" />
+    <None Include="icons\mac\view-TimePicker-16.png" />
+    <None Include="icons\mac\view-TableView-16~sel%402x.png" />
+    <None Include="icons\mac\view-TableView-16~sel.png" />
+    <None Include="icons\mac\view-TableView-16~dark~sel%402x.png" />
+    <None Include="icons\mac\view-TableView-16~dark~sel.png" />
+    <None Include="icons\mac\view-TableView-16~dark%402x.png" />
+    <None Include="icons\mac\view-TableView-16~dark.png" />
+    <None Include="icons\mac\view-TableView-16%402x.png" />
+    <None Include="icons\mac\view-TableView-16.png" />
+    <None Include="icons\mac\view-Switch-16~sel%402x.png" />
+    <None Include="icons\mac\view-Switch-16~sel.png" />
+    <None Include="icons\mac\view-Switch-16~dark~sel%402x.png" />
+    <None Include="icons\mac\view-Switch-16~dark~sel.png" />
+    <None Include="icons\mac\view-Switch-16~dark%402x.png" />
+    <None Include="icons\mac\view-Switch-16~dark.png" />
+    <None Include="icons\mac\view-Switch-16%402x.png" />
+    <None Include="icons\mac\view-Switch-16.png" />
+    <None Include="icons\mac\view-Stepper-16~sel%402x.png" />
+    <None Include="icons\mac\view-Stepper-16~sel.png" />
+    <None Include="icons\mac\view-Stepper-16~dark~sel%402x.png" />
+    <None Include="icons\mac\view-Stepper-16~dark~sel.png" />
+    <None Include="icons\mac\view-Stepper-16~dark%402x.png" />
+    <None Include="icons\mac\view-Stepper-16~dark.png" />
+    <None Include="icons\mac\view-Stepper-16%402x.png" />
+    <None Include="icons\mac\view-Stepper-16.png" />
+    <None Include="icons\mac\view-Slider-16~sel%402x.png" />
+    <None Include="icons\mac\view-Slider-16~sel.png" />
+    <None Include="icons\mac\view-Slider-16~dark~sel%402x.png" />
+    <None Include="icons\mac\view-Slider-16~dark~sel.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -178,7 +253,6 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Forms.2.5.0.122203\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.122203\build\netstandard1.0\Xamarin.Forms.targets')" />
   <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
   <Import Project="..\packages\Xamarin.Android.Arch.Core.Common.1.0.0\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Core.Common.1.0.0\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets')" />
