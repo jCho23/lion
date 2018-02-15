@@ -21,11 +21,11 @@ namespace lion.Pages
 
 
 
-        void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
-            if (e.NewTextValue.Length > 20)
+            if (e.NewTextValue.Length > 23)
             {
-                replyPostInput.Text = replyPostInput.Text.Remove(2);
+                replyPostInput.Text = replyPostInput.Text.Remove(23);
 
             }
         }
