@@ -9,6 +9,8 @@ using Android.Widget;
 using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
 
+using XFGloss;
+
 namespace lion.Droid
 {
     [Activity(Label = "lion.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -26,6 +28,8 @@ namespace lion.Droid
             ImageCircleRenderer.Init();
 
             LoadApplication(new App());
+
+            //XFGloss.Droid.Library.Init(this, savedInstanceState);
         }
     }
 }
