@@ -106,6 +106,12 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.5.0.274780\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="XFGloss">
+      <HintPath>..\packages\Ansuria.XFGloss.1.0.6.59\lib\Xamarin.iOS10\XFGloss.dll</HintPath>
+    </Reference>
+    <Reference Include="XFGloss.iOS">
+      <HintPath>..\packages\Ansuria.XFGloss.1.0.6.59\lib\Xamarin.iOS10\XFGloss.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lion\lion.csproj">
