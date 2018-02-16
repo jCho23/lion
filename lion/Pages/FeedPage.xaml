@@ -55,7 +55,7 @@
                                             OutlineColor="#f6b93b"
                                             Padding="10"
                                             HasShadow="false"
-                                BackgroundColor="Transparent">
+                                            BackgroundColor="Transparent">
                                                 <StackLayout
                                                     Orientation="Horizontal"
                                                     Padding="5"

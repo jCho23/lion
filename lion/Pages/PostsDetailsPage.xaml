@@ -55,8 +55,7 @@
                             FontSize="20"
                            />
                         <Label
-                            Margin="0, 80, 5,0"
-
+                            Margin="0, 50, 5,0"
                             FontSize="10"
                             TextColor="Silver"
                             Text="{Binding Status}"
@@ -123,31 +122,37 @@
                 <DataTemplate>
                     <ViewCell>
                         <ContentView 
-                            Padding="5">  
-                        <StackLayout
-                            Orientation="Horizontal"
-                            Padding="5"
-                            HorizontalOptions="Start">
-                                <ic:CircleImage
-                                    WidthRequest="80"
-                                    HeightRequest="60"
-                                    Aspect="AspectFill"
-                                    BorderColor="Gray"
-                                    BorderThickness="3"
-                                    Source="{Binding UserUrl}"/>
-                                        <StackLayout
-                                            Padding="5">
-                                                <Label 
-                                                    Text="{Binding Post}"
-                                                    FontSize="16" />
-                                                <Label
-                                                    Text="{Binding Status}"
-                                                    HorizontalOptions="EndAndExpand"
-                                                    VerticalOptions="EndAndExpand"
-                                                    FontSize="10"
-                                                    TextColor="Silver"/>
-                                        </StackLayout>
-                        </StackLayout>                       
+                            Padding="5">
+                            <Frame
+                                OutlineColor="#f6b93b"
+                                Padding="10"
+                                HasShadow="false"
+                                BackgroundColor="Transparent">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Padding="5"
+                                HorizontalOptions="Start">
+                                    <ic:CircleImage
+                                        WidthRequest="80"
+                                        HeightRequest="60"
+                                        Aspect="AspectFill"
+                                        BorderColor="Gray"
+                                        BorderThickness="3"
+                                        Source="{Binding UserUrl}"/>
+                                            <StackLayout
+                                                Padding="5">
+                                                    <Label 
+                                                        Text="{Binding Post}"
+                                                        FontSize="16" />
+                                                    <Label
+                                                        Text="{Binding Status}"
+                                                        HorizontalOptions="EndAndExpand"
+                                                        VerticalOptions="EndAndExpand"
+                                                        FontSize="10"
+                                                        TextColor="Silver"/>
+                                            </StackLayout>
+                            </StackLayout> 
+                            </Frame>    
                     </ContentView>
                 </ViewCell>
             </DataTemplate>
