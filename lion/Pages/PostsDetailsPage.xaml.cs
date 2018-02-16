@@ -6,17 +6,8 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    
-
-
-
-
-
-
     public partial class PostsDetailsPage 
     {
-        
-
         public PostsDetailsPage(PostMessage feedDetails)
         {
             if (feedDetails == null)
@@ -51,12 +42,8 @@ namespace lion.Pages
                     Post = "Everything around you that you call life was made up by people that were no smarter than you",
                     UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
                     Status= "8 replies" }
-
             };
-          
         }
-
-
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
@@ -71,8 +58,6 @@ namespace lion.Pages
 		//{
 		//	throw new NotImplementedException();
 		//}
-		
-		
 		
 		void OnReplyPost_Clicked(object sender, System.EventArgs e)
 		{
