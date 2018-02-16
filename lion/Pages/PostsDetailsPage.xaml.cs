@@ -17,7 +17,7 @@ namespace lion.Pages
     {
         
 
-        public PostsDetailsPage(FeedDetails feedDetails)
+        public PostsDetailsPage(PostMessage feedDetails)
         {
             if (feedDetails == null)
                 throw new ArgumentNullException();

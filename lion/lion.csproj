@@ -62,7 +62,6 @@
     <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\FeedDetails.cs" />
     <Compile Include="Pages\PostsDetailsPage.xaml.cs">
       <DependentUpon>PostsDetailsPage.xaml</DependentUpon>
     </Compile>

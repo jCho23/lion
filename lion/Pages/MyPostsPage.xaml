@@ -12,13 +12,28 @@
             <xfg:GradientStep StepColor="#ccd9ff" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
-
-    
+     
    <ListView
         x:Name="MyPostsListView"
+        HasUnevenRows="true"
         BackgroundColor="Transparent">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+
+                    <Label
+                    Text="{Binding Post}"
+                    />
+
+                      
 
 
+
+                    
+
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
     </ListView>
           
 </ContentPage>

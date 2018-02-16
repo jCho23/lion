@@ -1,7 +1,7 @@
 ﻿using System;
 namespace lion.Models
 {
-    public class FeedDetails
+    public class PostMessage
     {
         public string Post { get; set; }
         public string UserUrl { get; set; }
