@@ -24,44 +24,44 @@
                 <On Platform="iOS, Android" Value="120" />
             </OnPlatform>
         </ListView.RowHeight>
+
+
         
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
+                    <ContentView 
+                        Padding="5">
+                        <Frame
+                                            OutlineColor="Gold"
+                                            Padding="10"
+                                            HasShadow="true">
                     <StackLayout
                         Orientation="Horizontal"
                         Padding="5"
                         HorizontalOptions="Start">
                             <ic:CircleImage
                                 WidthRequest="60"
-                                HeightRequest="50"
+                                HeightRequest="40"
                                 Aspect="AspectFill"
                                 BorderColor="Gray"
                                 BorderThickness="3"
                                 Source="{Binding UserUrl}"/>
-                                                    <StackLayout
-                                                        Padding="5">
-                                                            <Label 
-                                                                Text="{Binding Post}"
-                                                                FontSize="16"
-                                                                 />
-
-                                                            <Label
-                                                                
-                                                                Text="{Binding Status}"
-                                                                HorizontalOptions="EndAndExpand"
-                                                                VerticalOptions="EndAndExpand"
-                                                                FontSize="8"
-                                                                TextColor="Blue"/>
-
-                                                    </StackLayout>
-                                                        </StackLayout>
-                      
-
-
-
-                    
-
+                                    <StackLayout
+                                        Padding="5">
+                                            <Label 
+                                                Text="{Binding Post}"
+                                                FontSize="16" />
+                                            <Label
+                                                Text="{Binding Status}"
+                                                HorizontalOptions="EndAndExpand"
+                                                VerticalOptions="EndAndExpand"
+                                                FontSize="8"
+                                                TextColor="Gray"/>
+                                    </StackLayout>
+                    </StackLayout>
+                         </Frame>
+                    </ContentView>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
