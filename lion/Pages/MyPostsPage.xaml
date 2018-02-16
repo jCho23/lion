@@ -7,7 +7,6 @@
     x:Class="lion.Pages.MyPostsPage"
     Title="My Posts">
 
-
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="180">
             <xfg:GradientStep StepColor="#0c2461" StepPercentage="0" />
@@ -20,14 +19,11 @@
         x:Name="MyPostsListView"
         HasUnevenRows="true"
         BackgroundColor="Transparent">
-
-        <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32">
-                <On Platform="iOS, Android" Value="100" />
-            </OnPlatform>
-        </ListView.RowHeight>
-
-
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32">
+                    <On Platform="iOS, Android" Value="100" />
+                </OnPlatform>
+            </ListView.RowHeight>
 
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -57,8 +53,7 @@
                                                 FontSize="8"
                                                 TextColor="Black"/>
                                     </StackLayout>
-                    </StackLayout>
-                         
+                    </StackLayout>                       
                     </ContentView>
                 </ViewCell>
             </DataTemplate>
