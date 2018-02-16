@@ -25,24 +25,18 @@
             </OnPlatform>
         </ListView.RowHeight>
 
-
-        
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <ContentView 
-                        Padding="5">
-                        <Frame
-                                            OutlineColor="Gold"
-                                            Padding="10"
-                                            HasShadow="true">
+                        Padding="5">  
                     <StackLayout
                         Orientation="Horizontal"
                         Padding="5"
                         HorizontalOptions="Start">
                             <ic:CircleImage
                                 WidthRequest="60"
-                                HeightRequest="40"
+                                HeightRequest="10"
                                 Aspect="AspectFill"
                                 BorderColor="Gray"
                                 BorderThickness="3"
@@ -57,10 +51,10 @@
                                                 HorizontalOptions="EndAndExpand"
                                                 VerticalOptions="EndAndExpand"
                                                 FontSize="8"
-                                                TextColor="Gray"/>
+                                                TextColor="Black"/>
                                     </StackLayout>
                     </StackLayout>
-                         </Frame>
+                         
                     </ContentView>
                 </ViewCell>
             </DataTemplate>
