@@ -6,8 +6,6 @@
     x:Class="lion.Views.HomeView"
     Title="Scholars">
 
-
-    
     <localPages:FeedPage
         Title="Feed"
         Icon="BearsTabLogo.png" />
