@@ -82,6 +82,7 @@
       <DependentUpon>FeedPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="FontAwesome.cs" />
+    <Compile Include="Models\PostMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
