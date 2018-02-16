@@ -110,46 +110,44 @@
        
         <ListView
             x:Name="PostsDetailsPageListView"
-           BackgroundColor="Transparent"
+            BackgroundColor="Transparent"
             Grid.Row="4"
             Grid.ColumnSpan="2">
-
-              <ListView.RowHeight>
+            <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
                     <On Platform="iOS, Android" Value="100" />
                 </OnPlatform>
             </ListView.RowHeight>
-
-            
-                <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <ContentView 
-                        Padding="5">  
-                    <StackLayout
-                        Orientation="Horizontal"
-                        Padding="5"
-                        HorizontalOptions="Start">
-                            <ic:CircleImage
-                                WidthRequest="80"
-                                HeightRequest="60"
-                                Aspect="AspectFill"
-                                BorderColor="Gray"
-                                BorderThickness="3"
-                                Source="{Binding UserUrl}"/>
-                                    <StackLayout
-                                        Padding="5">
-                                            <Label 
-                                                Text="{Binding Post}"
-                                                FontSize="16" />
-                                            <Label
-                                                Text="{Binding Status}"
-                                                HorizontalOptions="EndAndExpand"
-                                                VerticalOptions="EndAndExpand"
-                                                FontSize="10"
-                                                TextColor="Silver"/>
-                                    </StackLayout>
-                    </StackLayout>                       
+                       
+           <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView 
+                            Padding="5">  
+                        <StackLayout
+                            Orientation="Horizontal"
+                            Padding="5"
+                            HorizontalOptions="Start">
+                                <ic:CircleImage
+                                    WidthRequest="80"
+                                    HeightRequest="60"
+                                    Aspect="AspectFill"
+                                    BorderColor="Gray"
+                                    BorderThickness="3"
+                                    Source="{Binding UserUrl}"/>
+                                        <StackLayout
+                                            Padding="5">
+                                                <Label 
+                                                    Text="{Binding Post}"
+                                                    FontSize="16" />
+                                                <Label
+                                                    Text="{Binding Status}"
+                                                    HorizontalOptions="EndAndExpand"
+                                                    VerticalOptions="EndAndExpand"
+                                                    FontSize="10"
+                                                    TextColor="Silver"/>
+                                        </StackLayout>
+                        </StackLayout>                       
                     </ContentView>
                 </ViewCell>
             </DataTemplate>
