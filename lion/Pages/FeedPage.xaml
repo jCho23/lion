@@ -60,6 +60,7 @@
                                                             <Label 
                                                                 Text="{Binding Post}"
                                                                 FontSize="16"
+                                                                TextColor="Black"
                                                                  />
 
                                                             <Label
