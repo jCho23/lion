@@ -21,7 +21,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="100"/>
-                <RowDefinition Height="25"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="10"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
@@ -55,7 +55,7 @@
                             FontSize="20"
                            />
                         <Label
-                            Margin="0, 50, 5,0"
+                            Margin="0, 5, 5,0"
                             FontSize="10"
                             TextColor="Silver"
                             Text="{Binding Status}"
@@ -86,6 +86,7 @@
             Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
+           
             Keyboard="Text"
             BackgroundColor="Transparent"
             Placeholder="Reply to Post..."
@@ -93,19 +94,23 @@
             VerticalOptions="FillAndExpand"
             Text="{Binding ReplyPost}"
             TextChanged="OnReplyTextLimit"
-            TextColor="White"/>
+            PlaceholderColor="#f6b93b"
+            TextColor="#f6b93b"/>
             <!--Completed="Handle_Completed" 
          -->
           
         <Button
             Grid.Row="2"
             Grid.Column= "1"
+            Margin="0,0,5,6"
             Text="Post"
             BorderColor="Aqua"
-            BackgroundColor="Gold"
+            BackgroundColor="#f6b93b"
+            HeightRequest="30"
+            WidthRequest="40"
             VerticalOptions="End"
             HorizontalOptions="End" 
-            Margin="0,0,0,5"
+
             Clicked="OnReplyPost_Clicked"/>
        
         <ListView
