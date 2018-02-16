@@ -105,9 +105,11 @@
             BackgroundColor="Gold"
             VerticalOptions="End"
             HorizontalOptions="End" 
+            Margin="0,0,0,5"
             Clicked="OnReplyPost_Clicked"/>
        
         <ListView
+            x:Name="PostsDetailsPageListView"
            BackgroundColor="Transparent"
             Grid.Row="4"
             Grid.ColumnSpan="2">
