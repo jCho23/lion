@@ -13,7 +13,7 @@
         Icon="BearsTabLogo.png" />
 
     <localPages:MyPostsPage
-        Title="Posts"
+        Title="My Posts"
         Icon="BearPaw.png" />
    
 </TabbedPage>
