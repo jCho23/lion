@@ -81,14 +81,23 @@
             >
         </BoxView>
 
+        <Frame
+            Margin="5,0,5,0"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            OutlineColor="#f6b93b"
+            Padding="10"
+            HasShadow="false"
+            BackgroundColor="Transparent">
         <Entry
             x:Name="replyPostInput"
             Grid.Row="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-           
-            Keyboard="Text"
             BackgroundColor="Transparent"
+            Keyboard="Text"
+
             Placeholder="Reply to Post..."
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand"
@@ -98,11 +107,11 @@
             TextColor="#f6b93b"/>
             <!--Completed="Handle_Completed" 
          -->
-          
+          </Frame>
         <Button
             Grid.Row="2"
             Grid.Column= "1"
-            Margin="0,0,5,6"
+            Margin="0,0,10,6"
             Text="Post"
             BorderColor="Aqua"
             BackgroundColor="#f6b93b"
