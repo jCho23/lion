@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-
     x:Class="lion.Pages.FeedPage"
     Title="Scholars">
+
+     <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="180">
+            <xfg:GradientStep StepColor="#0c2461" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#1e3799" StepPercentage=".5" />
+            <xfg:GradientStep StepColor="#f6b93b" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem 
@@ -22,7 +30,7 @@
                 PlaceholderColor="Gray"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="#0c2461" />
+                BackgroundColor="Transparent" />
   
                 <ListView
                     x:Name= "listViewFeed"
@@ -30,7 +38,9 @@
                     IsPullToRefreshEnabled="true"
                     Refreshing="Handle_Refreshing"
                     ItemSelected="Handle_ItemSelected"
-                    SeparatorVisibility= "None">
+                    BackgroundColor="Transparent"
+                    SeparatorVisibility= "None"
+                    >
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
                         <On Platform="iOS, Android" Value="120" />
@@ -44,7 +54,7 @@
                                         <Frame
                                             OutlineColor="Gold"
                                             Padding="10"
-                                            HasShadow="true">
+                                            HasShadow="false">
                                                 <StackLayout
                                                     Orientation="Horizontal"
                                                     Padding="5"
