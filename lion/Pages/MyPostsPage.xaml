@@ -3,6 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+        xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+
     x:Class="lion.Pages.MyPostsPage">
 
      <xfg:ContentPageGloss.BackgroundGradient>
@@ -17,14 +19,45 @@
         x:Name="MyPostsListView"
         HasUnevenRows="true"
         BackgroundColor="Transparent">
+
+         <ListView.RowHeight>
+                    <OnPlatform x:TypeArguments="x:Int32">
+                        <On Platform="iOS, Android" Value="120" />
+                    </OnPlatform>
+                </ListView.RowHeight>
+        
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
+                    
+                    <StackLayout
+                                                    Orientation="Horizontal"
+                                                    Padding="5"
+                                                    HorizontalOptions="Start">
+                                                        <ic:CircleImage
+                                                            WidthRequest="60"
+                                                            HeightRequest="60"
+                                                            Aspect="AspectFill"
+                                                            BorderColor="Gray"
+                                                            BorderThickness="3"
+                                                            Source="{Binding UserUrl}"/>
+                                                    <StackLayout
+                                                        Padding="5">
+                                                            <Label 
+                                                                Text="{Binding Post}"
+                                                                FontSize="16"
+                                                                 />
 
-                    <Label
-                    Text="{Binding Post}"
-                    />
+                                                            <Label
+                                                                
+                                                                Text="{Binding Status}"
+                                                                HorizontalOptions="EndAndExpand"
+                                                                VerticalOptions="EndAndExpand"
+                                                                FontSize="8"
+                                                                TextColor="Blue"/>
 
+                                                    </StackLayout>
+                                                        </StackLayout>
                       
 
 
