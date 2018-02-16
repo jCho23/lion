@@ -20,8 +20,8 @@
             <Style 
                 TargetType="NavigationPage">
                     <Setter Property="HasNavigationBar" Value="True" />
-                    <Setter Property="BarTextColor" Value="Gold" />
-                    <Setter Property="BarBackgroundColor" Value="#003366 " />
+                    <Setter Property="BarTextColor" Value="#f6b93b" />
+                    <Setter Property="BarBackgroundColor" Value="#0c2461 " />
                     <Setter Property="TitleIcon" Value="bearpaw.png" />
                     
                
@@ -30,7 +30,7 @@
            <!-- LABELS-->
             <Style
                 TargetType= "Label">
-                    <Setter Property="TextColor" Value="MidnightBlue" />
+                    <Setter Property="TextColor" Value="White" />
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 

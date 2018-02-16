@@ -21,7 +21,7 @@
                 PlaceholderColor="Gray"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="#003366" />
+                BackgroundColor="#0c2461" />
   
                 <ListView
                     x:Name= "listViewFeed"
