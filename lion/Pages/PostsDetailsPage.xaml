@@ -68,6 +68,7 @@
             Grid.Row="1"
             Grid.Column="0"
             Text="Kylie Jenner"
+            Margin="5,5,0,0"
             VerticalOptions="Start"
             HorizontalOptions="Start" 
             BackgroundColor="Transparent"/>
@@ -114,7 +115,7 @@
             Grid.ColumnSpan="2">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
-                    <On Platform="iOS, Android" Value="100" />
+                    <On Platform="iOS, Android" Value="120" />
                 </OnPlatform>
             </ListView.RowHeight>
                        
