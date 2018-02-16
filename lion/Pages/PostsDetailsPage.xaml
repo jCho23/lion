@@ -98,7 +98,9 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
+                            <StackLayout
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center">
                             <Label
                                 Text="This is where the replies live"
                                 TextColor="Black"/>

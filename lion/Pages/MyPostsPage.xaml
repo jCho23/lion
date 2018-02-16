@@ -14,10 +14,31 @@
     </xfg:ContentPageGloss.BackgroundGradient>-->
 
     
-   <StackLayout>
-        <ListView>
+   
+        <ListView
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="StartAndExpand">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                    <StackLayout>
+                        <Label
+                            Text="Here"/>
+
+                    </StackLayout>
+
+                    </ViewCell>
+
+
+                </DataTemplate>
+
+
+       
+
+            </ListView.ItemTemplate>
 
         </ListView>
-    </StackLayout>
+
           
 </ContentPage>
