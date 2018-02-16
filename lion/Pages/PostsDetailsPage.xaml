@@ -113,6 +113,14 @@
            BackgroundColor="Transparent"
             Grid.Row="4"
             Grid.ColumnSpan="2">
+
+              <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32">
+                    <On Platform="iOS, Android" Value="100" />
+                </OnPlatform>
+            </ListView.RowHeight>
+
+            
                 <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
