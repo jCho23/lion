@@ -10,6 +10,15 @@ namespace lion.Pages
         public MyPostsPage()
         {
             InitializeComponent();
+
+            var myPosts = new List<string>
+            {
+                "Jordan",
+                "Rose",
+                "Bob"
+            };
+
+            MyPostsListView.ItemsSource = myPosts;
         }
     }
 }
