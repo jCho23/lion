@@ -50,8 +50,8 @@
                                                 Text="{Binding Status}"
                                                 HorizontalOptions="EndAndExpand"
                                                 VerticalOptions="EndAndExpand"
-                                                FontSize="8"
-                                                TextColor="Black"/>
+                                                FontSize="10"
+                                                TextColor="Silver"/>
                                     </StackLayout>
                     </StackLayout>                       
                     </ContentView>
