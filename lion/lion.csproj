@@ -89,6 +89,7 @@
     <Compile Include="Pages\FeedAddPostModalPage.xaml.cs">
       <DependentUpon>FeedAddPostModalPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
