@@ -17,7 +17,9 @@ namespace lion.Pages
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new FeedPage());
+            var homeView = new ContentPage();
+
+            await Navigation.PushModalAsync(new NavigationPage(new Views.HomeView()));
         }
     }
 }
