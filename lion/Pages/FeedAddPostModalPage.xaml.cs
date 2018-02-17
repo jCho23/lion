@@ -9,7 +9,10 @@ namespace lion.Pages
     {
         public FeedAddPostModalPage()
         {
+			
+
             InitializeComponent();
+
         }
     }
 }
