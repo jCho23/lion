@@ -8,9 +8,20 @@ namespace lion.Pages
 {
     public partial class FeedPage : ContentPage
     {
-        void Handle_Activated(object sender, System.EventArgs e)
+
+       
+
+        async void Handle_Activated(object sender, System.EventArgs e)
         {
-            DisplayAlert("Post new message", "Post new message", "OK");
+            
+            if (AddPost.Activated != null)
+				{
+                var feedAddPostModalPage = new FeedAddPostModalPage();
+                feedAddPostModalPage.BindingContext = e.Activated as Post;
+                feedAddPostModalPage.ActivatedItem = null;
+                await Navigation.PushModalAsync(feedAddPostModalPage);
+				}
+				
         }
 
         async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
@@ -21,6 +32,10 @@ namespace lion.Pages
             var feedDetails = e.SelectedItem as PostMessage;
             await Navigation.PushAsync(new FeedDetailsPage(feedDetails));
             listViewFeed.SelectedItem = null;
+
+
+
+
         }
 
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
