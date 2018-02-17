@@ -44,14 +44,18 @@
         BackgroundColor="Transparent"
         Grid.ColumnSpan="2"
         HasShadow="false">
-        <StackLayout>
+
+    <StackLayout
+        Grid.ColumnSpan="2">
 
         <Entry
             BackgroundColor="Transparent"
-            HorizontalOptions="StartAndExpand"
+            HorizontalOptions="FillAndExpand"
             VerticalOptions="StartAndExpand"
             TextColor="#f6b93b"
+            FontSize="23"
             Grid.Row="1"
+            Grid.Column= "0"
             Grid.ColumnSpan="2"
             Placeholder="Speak your mind!"
             Keyboard="Text" />
