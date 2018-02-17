@@ -6,7 +6,7 @@
 
       <ContentPage.ToolbarItems>
         <ToolbarItem
-            x:Name="AddPost"
+            
             Name="AddPost" 
             Order="Primary" 
             Icon="add.png" 
@@ -16,6 +16,8 @@
 
     <StackLayout>
     <Label
+        VerticalOptions="Center"
+        HorizontalOptions="Center"    
         Text="Black"
         TextColor="Fuchsia"/>
     </StackLayout>
