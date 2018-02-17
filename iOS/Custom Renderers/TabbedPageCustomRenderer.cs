@@ -2,6 +2,7 @@
 using lion.iOS.CustomRenderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using UIKit;
 
 [assembly: ExportRenderer(typeof(TabbedPage), typeof(TabbedPageCustomRenderer))]
 
@@ -17,7 +18,4 @@ namespace lion.iOS.CustomRenderers
             TabBar.BackgroundColor = MonoTouch.UIKit.UIColor.Green;
         }
     }
-
-
-
 }
