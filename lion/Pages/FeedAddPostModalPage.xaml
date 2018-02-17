@@ -29,11 +29,13 @@
 
     <Frame
         Grid.Row="1"
+                     OutlineColor="#f6b93b"
+            BackgroundColor="Transparent"
         Grid.ColumnSpan="2">
         <StackLayout>
 
         <Entry
-            BackgroundColor="Fuchsia"
+            BackgroundColor="Transparent"
             HorizontalOptions="StartAndExpand"
             VerticalOptions="StartAndExpand"
             Grid.Row="1"
