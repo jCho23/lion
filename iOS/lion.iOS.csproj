@@ -139,6 +139,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Custom Renderers\LargeTitleNavBarCustomRenderer.cs" />
+    <Compile Include="Custom Renderers\TabbedPageCustomRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Background.png" />
