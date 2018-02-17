@@ -16,12 +16,14 @@
     </xfg:ContentPageGloss.BackgroundGradient>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem 
+        <ToolbarItem
+            x:Name="AddPost"
             Name="AddPost" 
             Order="Primary" 
             Icon="add.png" 
             Activated="Handle_Activated" 
-            Priority="0" />
+            Priority="0" 
+            />
     </ContentPage.ToolbarItems>
     
     <StackLayout >
