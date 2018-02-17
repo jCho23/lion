@@ -18,8 +18,6 @@ namespace lion.Views
             this.BarBackgroundColor = Color.FromHex("#f6b93b");
             this.BarTextColor = Color.FromHex("#003366");
 
-
-
             switch(Xamarin.Forms.Device.RuntimePlatform)
             {
                 case Xamarin.Forms.Device.iOS:
