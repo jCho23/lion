@@ -57,9 +57,9 @@
          <Button 
             Grid.Row="2"
             Grid.Column= "1"
-            Margin="0,0,10,6"
+            Margin="0,40,0,0"
             Text="Post"
-            BorderColor="Aqua"
+
             BackgroundColor="#f6b93b"
             HeightRequest="30"
             WidthRequest="40"
