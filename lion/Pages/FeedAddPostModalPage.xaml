@@ -8,8 +8,8 @@
         RowSpacing="0"
         Padding="8">
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="350"/>
 
             </Grid.RowDefinitions>
         
@@ -27,6 +27,20 @@
         VerticalOptions="EndAndExpand"
         Text="Cancel" 
         Clicked="Handle_Clicked"/>
+
+        <Frame
+              Grid.Row="1"
+        Grid.ColumnSpan="2">
+    <Entry
+        BackgroundColor="Fuchsia"
+        HorizontalOptions="StartAndExpand"
+        VerticalOptions="StartAndExpand"
+        Grid.Row="1"
+        Grid.ColumnSpan="2"
+        Placeholder="Speak your mind!"
+            Keyboard="Text"
+            />
+        </Frame>
 
 
 
