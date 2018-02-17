@@ -123,7 +123,7 @@
             Clicked="OnReplyPost_Clicked"/>
        
         <ListView
-            x:Name="PostgdfgfgeListView"
+            x:Name="FeedDetailsPageListView"
             BackgroundColor="Transparent"
             Grid.Row="4"
             Grid.ColumnSpan="2">
