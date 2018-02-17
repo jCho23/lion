@@ -84,7 +84,6 @@
     <Compile Include="Pages\FeedPage.xaml.cs">
       <DependentUpon>FeedPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FontAwesome.cs" />
     <Compile Include="Models\PostMessage.cs" />
     <Compile Include="Pages\FeedAddPostModalPage.xaml.cs">
       <DependentUpon>FeedAddPostModalPage.xaml</DependentUpon>
