@@ -19,7 +19,7 @@ namespace lion.Pages
                 return;
 
             var feedDetails = e.SelectedItem as PostMessage;
-            await Navigation.PushAsync(new PostsDetailsPage(feedDetails));
+            await Navigation.PushAsync(new FeedDetailsPage(feedDetails));
             listViewFeed.SelectedItem = null;
         }
 

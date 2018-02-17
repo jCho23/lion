@@ -6,9 +6,9 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    public partial class PostsDetailsPage 
+    public partial class FeedDetailsPage 
     {
-        public PostsDetailsPage(PostMessage feedDetails)
+        public FeedDetailsPage(PostMessage feedDetails)
         {
             if (feedDetails == null)
                 throw new ArgumentNullException();
@@ -17,7 +17,7 @@ namespace lion.Pages
 
             InitializeComponent();
 
-            PostsDetailsPageListView.ItemsSource = new List<PostMessage>{
+            FeedDetailsPageListView.ItemsSource = new List<PostMessage>{
                 new PostMessage {
                     Post = "And the only way to do great work is to love what you do. ",
                     UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",

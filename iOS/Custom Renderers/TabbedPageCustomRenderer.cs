@@ -10,27 +10,16 @@ using lion.iOS.CustomRenderers;
 namespace lion.iOS.CustomRenderers
 {
     public class TabbedPageCustomRenderer : TabbedRenderer
-
     {
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
  
-            View.BackgroundColor = UIColor.Clear;
-            TabBar.TintColor = UIColor.Cyan;
-            TabBar.BarTintColor = UIColor.Clear;
-            TabBar.BackgroundColor = UIColor.Clear;
+            //View.BackgroundColor = UIColor.Clear;
+            //TabBar.TintColor = UIColor.Cyan;
+            //TabBar.BarTintColor = UIColor.Clear;
+            //TabBar.BackgroundColor = UIColor.Clear;
            
         }
- 
-
-
-
-        //public TabbedPageCustomRenderer()
-        //{
-        //    TabBar.TintColor = UIColor.Clear;
-        //    TabBar.BarTintColor = UIColor.Clear;
-        //    TabBar.BackgroundColor = UIColor.Clear;
-        //}
     }
 }
