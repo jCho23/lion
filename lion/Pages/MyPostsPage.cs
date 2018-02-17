@@ -37,6 +37,7 @@ namespace lion.Pages
                     UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
                     Status= "8 replies" }
            
+
             };
         }
     }

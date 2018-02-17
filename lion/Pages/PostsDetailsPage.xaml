@@ -39,6 +39,7 @@
             Orientation="Horizontal"
             HorizontalOptions="StartAndExpand">
                 <ic:CircleImage
+                    
                     WidthRequest="100"
                     HeightRequest="100"
                     Aspect="AspectFill"
@@ -77,8 +78,7 @@
             Grid.Row="1"
             Grid.Column="1" 
             WidthRequest="150"
-            HeightRequest="220" 
-            >
+            HeightRequest="220">
         </BoxView>
 
         <Frame
@@ -108,7 +108,7 @@
             <!--Completed="Handle_Completed" 
          -->
           </Frame>
-        <Button
+        <Button x:Name="postButton"
             Grid.Row="2"
             Grid.Column= "1"
             Margin="0,0,10,6"

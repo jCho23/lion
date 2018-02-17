@@ -43,6 +43,15 @@ namespace lion.Pages
                     UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
                     Status= "8 replies" }
             };
+
+            switch (Xamarin.Forms.Device.RuntimePlatform)
+            {
+                case Xamarin.Forms.Device.iOS:
+                    //postButton.Margin = new Thickness(0, 1, 0, 0);
+                    break;
+                case Xamarin.Forms.Device.Android:
+                    break;
+            }
         }
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
