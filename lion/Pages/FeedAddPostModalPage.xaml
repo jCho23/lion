@@ -10,6 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height="350"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -37,6 +38,17 @@
             Grid.ColumnSpan="2"
             Placeholder="Speak your mind!"
             Keyboard="Text" />
+        <!-- <Button 
+            Grid.Row="2"
+            Grid.Column= "1"
+            Margin="0,0,10,6"
+            Text="Post"
+            BorderColor="Aqua"
+            BackgroundColor="#f6b93b"
+            HeightRequest="30"
+            WidthRequest="40"
+            VerticalOptions="End"
+            HorizontalOptions="End" />-->
     </Frame>
 
 
