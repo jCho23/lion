@@ -30,9 +30,10 @@
         </Grid.ColumnDefinitions>
 
     <Button
+        x:Name="cancelButton"
         Grid.Row="0"
         Grid.Column="1"
-        Margin="0,7,0,0"
+        Margin="0,20,0,0"
         HorizontalOptions="EndAndExpand"
         VerticalOptions="EndAndExpand"
         Text="Cancel" 
