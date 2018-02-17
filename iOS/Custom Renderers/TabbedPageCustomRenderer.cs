@@ -12,11 +12,11 @@ namespace lion.iOS.CustomRenderers
     public class TabbedPageCustomRenderer : TabbedRenderer
 
     {
-        public TabbedPageCustomRenderer()
-        {
-            TabBar.TintColor = UIColor.Black;
-            TabBar.BarTintColor = UIColor.Blue;
-            TabBar.BackgroundColor = UIColor.Green;
-        }
+        //public TabbedPageCustomRenderer()
+        //{
+        //    TabBar.TintColor = UIColor.Clear;
+        //    TabBar.BarTintColor = UIColor.Clear;
+        //    TabBar.BackgroundColor = UIColor.Clear;
+        //}
     }
 }

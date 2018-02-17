@@ -15,8 +15,8 @@ namespace lion.Views
         {
             InitializeComponent();
 
-            //this.BarBackgroundColor = Color.Transparent;
-            //this.BarTextColor = Color.FromHex("#003366");
+            this.BarBackgroundColor = Color.FromHex("#f6b93b");
+            this.BarTextColor = Color.FromHex("#003366");
 
 
             switch(Xamarin.Forms.Device.RuntimePlatform)
