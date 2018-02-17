@@ -14,9 +14,9 @@ namespace lion.iOS.CustomRenderers
     {
         public TabbedPageCustomRenderer()
         {
-            TabBar.TintColor = MonoTouch.UIKit.UIColor.Black;
-            TabBar.BarTintColor = MonoTouch.UIKit.UIColor.Blue;
-            TabBar.BackgroundColor = MonoTouch.UIKit.UIColor.Green;
+            TabBar.TintColor = UIColor.Black;
+            TabBar.BarTintColor = UIColor.Blue;
+            TabBar.BackgroundColor = UIColor.Green;
         }
     }
 }
