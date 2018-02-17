@@ -28,36 +28,20 @@
         Text="Cancel" 
         Clicked="Handle_Clicked"/>
 
-        <Frame
-              Grid.Row="1"
-        Grid.ColumnSpan="2">
-    <Entry
-        BackgroundColor="Fuchsia"
-        HorizontalOptions="StartAndExpand"
-        VerticalOptions="StartAndExpand"
+    <Frame
         Grid.Row="1"
-        Grid.ColumnSpan="2"
-        Placeholder="Speak your mind!"
-            Keyboard="Text"
-            />
-        </Frame>
+        Grid.ColumnSpan="2">
+        <Entry
+            BackgroundColor="Fuchsia"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="StartAndExpand"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Placeholder="Speak your mind!"
+            Keyboard="Text" />
+    </Frame>
 
 
 
     </Grid>
-
-
-
-  <!-- <StackLayout
-        Padding="0,50,0,0">
-    <Label
-        VerticalOptions="Center"
-        HorizontalOptions="Center"    
-        Text="Black"
-        TextColor="Fuchsia"/>
-
-
-    
-    </StackLayout>
--->
 </ContentPage>
