@@ -13,14 +13,8 @@ namespace lion.Pages
 
         async void Handle_Activated(object sender, System.EventArgs e)
         {
-            
-            if (AddPost.Activated != null)
-				{
-                var feedAddPostModalPage = new FeedAddPostModalPage();
-                feedAddPostModalPage.BindingContext = e.Activated as Post;
-                feedAddPostModalPage.ActivatedItem = null;
-                await Navigation.PushModalAsync(feedAddPostModalPage);
-				}
+
+            await Navigation.PushModalAsync(new FeedAddPostModalPage());
 				
         }
 
