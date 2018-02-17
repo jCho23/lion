@@ -3,8 +3,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-using lion.iOS.CustomRenderers;
 using UIKit;
+using lion.iOS.CustomRenderers;
 
 [assembly: ExportRenderer(typeof(NavigationPage),typeof(LargeTitleNavBarCustomRenderer))]
 namespace lion.iOS.CustomRenderers
