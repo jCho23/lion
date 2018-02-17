@@ -4,22 +4,44 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Pages.FeedAddPostModalPage">
 
+  <!--  <Grid
+        RowSpacing="0"
+        Padding="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+
+    </Grid>
+-->
+
+
+   <StackLayout
+        Padding="0,50,0,0">
     <Button
+          
         HorizontalOptions="EndAndExpand"
         VerticalOptions="EndAndExpand"
-        >
-
-
-    </Button>
-
-
-    <StackLayout
-        Padding="0,50,0,0">
+        Text="Cancel" 
+        Clicked="Handle_Clicked"/>
     <Label
         VerticalOptions="Center"
         HorizontalOptions="Center"    
         Text="Black"
         TextColor="Fuchsia"/>
+
+
+    
     </StackLayout>
 
 </ContentPage>

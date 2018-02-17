@@ -9,10 +9,15 @@ namespace lion.Pages
     {
         public FeedAddPostModalPage()
         {
-			
+            
 
             InitializeComponent();
 
+        }
+
+        async void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new FeedPage());
         }
     }
 }
