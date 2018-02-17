@@ -4,13 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Pages.FeedAddPostModalPage">
 
-    <StackLayout
-        x:Name="StackTest">
-        <Label
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Text="Test"/>
-
-    </StackLayout>
+    <Label
+        Text="Black"
+        TextColor="Fuchsia"/>
 
 </ContentPage>
