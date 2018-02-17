@@ -1,11 +1,12 @@
 ﻿using System;
-using lion.iOS.CustomRenderers;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+
 using UIKit;
+using lion.iOS.CustomRenderers;
 
 [assembly: ExportRenderer(typeof(TabbedPage), typeof(TabbedPageCustomRenderer))]
-
 namespace lion.iOS.CustomRenderers
 {
     public class TabbedPageCustomRenderer : TabbedRenderer
