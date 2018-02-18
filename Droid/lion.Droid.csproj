@@ -451,6 +451,10 @@
     <AndroidResource Include="Resources\drawable\Add.png" />
     <AndroidResource Include="Resources\drawable-hdpi\Add.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\SUPREME.otf" />
