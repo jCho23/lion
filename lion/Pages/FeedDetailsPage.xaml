@@ -2,7 +2,7 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-
+    xmlns:controls="clr-namespace:lion;assembly=lion"
     xmlns:local="clr-namespace:lion.Pages;assembly=XFGloss"
     xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
@@ -137,6 +137,7 @@
                        
            <ListView.ItemTemplate>
                 <DataTemplate>
+                   
                     <ViewCell
                         >
                         <ContentView 
@@ -173,6 +174,7 @@
                             </Frame>    
                     </ContentView>
                 </ViewCell>
+                  
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

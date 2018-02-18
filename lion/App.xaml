@@ -34,6 +34,14 @@
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
+            <Style
+                TargetType= "Button">
+                                    <Setter Property="FontFamily" Value="CaviarDreams"/>
+
+
+
+            </Style>
+                
 
 
             <x:Double x:Key="TagTextFontSize">18</x:Double>

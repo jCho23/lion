@@ -50,6 +50,7 @@
                     BackgroundColor="Transparent"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="StartAndExpand"
+                   
                     TextColor="#f6b93b"
                     FontSize="23"
                     Grid.Row="1"

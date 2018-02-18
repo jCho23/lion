@@ -1,4 +1,5 @@
 ﻿using System;
+using lion.Controls;
 using lion.iOS.CustomRenderers;
 using UIKit;
 using Xamarin.Forms;
