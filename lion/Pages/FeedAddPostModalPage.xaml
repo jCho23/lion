@@ -46,7 +46,8 @@
                         <Entry
                             Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
                             FontSize="23"
-                            Keyboard="Text" 
+                            Keyboard="Text"
+                        
                             BackgroundColor="Transparent"
                             Placeholder="Speak your mind!"
                             HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" />              

@@ -18,7 +18,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem
             x:Name="AddPost"
-            Name="AddPost" 
+            Name="AddPost"
             Order="Primary" 
             Icon="add.png" 
             Activated="Handle_Activated" 
@@ -73,21 +73,14 @@
                                                         Padding="5">
                                                             <Label 
                                                                 Text="{Binding Post}"
-                                                                FontSize="16"
-
-                                                                 />
-
+                                                                FontSize="16" />
                                                             <Label
-                                                                
                                                                 Text="{Binding Status}"
                                                                 HorizontalOptions="EndAndExpand"
                                                                 VerticalOptions="EndAndExpand"
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
-
-                                                    </StackLayout>
-                                                            
-                                                   
+                                                    </StackLayout>                 
                                                 </StackLayout>
                                         </Frame>
                                     </ContentView>

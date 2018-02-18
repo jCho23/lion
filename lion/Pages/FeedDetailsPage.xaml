@@ -112,12 +112,10 @@
             HorizontalOptions="End" 
             Clicked="OnReplyPost_Clicked"/>
        
-        <ListView
-            
+        <ListView         
             x:Name="FeedDetailsPageListView"
-            BackgroundColor="Transparent"
-            Grid.Row="4"
-            Grid.ColumnSpan="2">
+            Grid.Row="4" Grid.ColumnSpan="2"
+            BackgroundColor="Transparent">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
                     <On Platform="iOS, Android" Value="120" />
