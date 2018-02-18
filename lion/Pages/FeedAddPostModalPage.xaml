@@ -14,8 +14,8 @@
     </xfg:ContentPageGloss.BackgroundGradient>
 
     <Grid
-        RowSpacing="0"
-        Padding="8">
+        Padding="8"
+        RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height="380"/>
@@ -27,38 +27,38 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-    <Button
-        x:Name="cancelButton"
-        Grid.Row="0" Grid.Column="1"
-        Text="Cancel" 
-        TextColor="Red"
-        Margin="0,20,0,0"
-        Clicked="Handle_Clicked"
-        HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
+            <Button
+                x:Name="cancelButton"
+                Grid.Row="0" Grid.Column="1"
+                Text="Cancel" 
+                TextColor="Red"
+                Margin="0,20,0,0"
+                Clicked="Handle_Clicked"
+                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
 
-    <Frame
-        Grid.Row="1" Grid.ColumnSpan="2"
-        HasShadow="false"
-        OutlineColor="#f6b93b"
-        BackgroundColor="Transparent" >
-            <StackLayout
-                Grid.ColumnSpan="2">
-                <Entry
-                    Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
-                    FontSize="23"
-                    Keyboard="Text" 
-                    BackgroundColor="Transparent"
-                    Placeholder="Speak your mind!"
-                    HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" />              
-                 <Button
-                    x:Name="postMessageButton"
-                    Grid.Row="2" Grid.Column= "1"
-                    Margin="0,40,0,0"
-                    Text="Post Message"
-                    BackgroundColor="#f6b93b"
-                    HeightRequest="30" WidthRequest="140"
-                    HorizontalOptions="End" VerticalOptions="End" />
-            </StackLayout>
-    </Frame>
+            <Frame
+                Grid.Row="1" Grid.ColumnSpan="2"
+                HasShadow="false"
+                OutlineColor="#f6b93b"
+                BackgroundColor="Transparent" >
+                    <StackLayout
+                        Grid.ColumnSpan="2">
+                        <Entry
+                            Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
+                            FontSize="23"
+                            Keyboard="Text" 
+                            BackgroundColor="Transparent"
+                            Placeholder="Speak your mind!"
+                            HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" />              
+                         <Button
+                            x:Name="postMessageButton"
+                            Grid.Row="2" Grid.Column= "1"
+                            Margin="0,40,0,0"
+                            Text="Post Message"
+                            BackgroundColor="#f6b93b"
+                            HeightRequest="30" WidthRequest="140"
+                            HorizontalOptions="End" VerticalOptions="End" />
+                    </StackLayout>
+            </Frame>
     </Grid>
 </ContentPage>
