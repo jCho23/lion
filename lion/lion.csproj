@@ -89,6 +89,7 @@
       <DependentUpon>FeedAddPostModalPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Controls\ExtendedViewCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
