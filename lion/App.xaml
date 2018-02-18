@@ -52,6 +52,8 @@
             <Style
                 TargetType= "Button">
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
+                    <Setter Property="BackgroundColor" Value="#f6b93b"/>
+
             </Style>
    
         </ResourceDictionary>
