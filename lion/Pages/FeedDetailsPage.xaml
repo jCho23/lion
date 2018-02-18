@@ -90,7 +90,6 @@
                 Keyboard="Text"
                 Text="{Binding ReplyPost}"
                 PlaceholderColor="#f6b93b"
-                BackgroundColor="Transparent"
                 Placeholder="Reply to Post..."
                 TextChanged="OnReplyTextLimit"
                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"

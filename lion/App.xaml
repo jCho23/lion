@@ -37,6 +37,7 @@
             <Style
                 TargetType= "SearchBar">
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
+                    <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
             <!--ENTRY-->
@@ -44,8 +45,7 @@
                 TargetType= "Entry">
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
                     <Setter Property="TextColor" Value="#f6b93b" />
-                                    <Setter Property="BackgroundColor" Value="Transparent"/>
-
+                    <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
             <!--BUTTON-->

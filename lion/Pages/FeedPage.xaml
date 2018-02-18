@@ -32,7 +32,7 @@
                 PlaceholderColor="Gray"
                 TextChanged="Handle_TextChanged"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="Transparent" />
+                 />
   
                 <ListView
                     x:Name= "listViewFeed"
