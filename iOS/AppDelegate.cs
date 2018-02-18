@@ -18,7 +18,7 @@ namespace lion.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            PrintFontNamesToConsole();
+            //PrintFontNamesToConsole();
 
             ImageCircleRenderer.Init();
 
@@ -29,16 +29,16 @@ namespace lion.iOS
             return base.FinishedLaunching(app, options);
         }
 
-		[Conditional("DEBUG")]
-		void PrintFontNamesToConsole()
-		{
-			foreach (var fontFamilyName in UIFont.FamilyNames)
-			{
-				Console.WriteLine(fontFamilyName);
+		//[Conditional("DEBUG")]
+		//void PrintFontNamesToConsole()
+		//{
+		//	foreach (var fontFamilyName in UIFont.FamilyNames)
+		//	{
+		//		Console.WriteLine(fontFamilyName);
 				
-				foreach (var fontName in UIFont.FontNamesForFamilyName(fontFamilyName))
-					Console.WriteLine($"={fontName}");
-			}
-		}
+		//		foreach (var fontName in UIFont.FontNamesForFamilyName(fontFamilyName))
+		//			Console.WriteLine($"={fontName}");
+		//	}
+		//}
     }
 }
