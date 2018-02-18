@@ -32,6 +32,11 @@
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
+            <Style
+                TargetType= "SearchBar">
+                    <Setter Property="FontFamily" Value="CaviarDreams"/>
+            </Style>
+
             <!--Entry-->
             <Style
                 TargetType= "Entry">
