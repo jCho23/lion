@@ -32,19 +32,20 @@
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
+            <!--SEARCHBAR-->
             <Style
                 TargetType= "SearchBar">
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
-            <!--Entry-->
+            <!--ENTRY-->
             <Style
                 TargetType= "Entry">
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
                     <Setter Property="TextColor" Value="#f6b93b" />
             </Style>
 
-            <!--Button-->
+            <!--BUTTON-->
             <Style
                 TargetType= "Button">
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
