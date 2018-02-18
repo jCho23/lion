@@ -44,13 +44,14 @@
                 BackgroundColor="Transparent" >
                     <StackLayout
                         Grid.ColumnSpan="2">
-                        <Entry
+                        <Editor
                             Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
                             FontSize="23"
                             Keyboard="Text"
                             HeightRequest="40"
-                            Placeholder="Speak your mind!"
-                            HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" />              
+                            BackgroundColor="Transparent"
+
+                            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />              
                          <Button
                             x:Name="postMessageButton"
                             Grid.Row="2" Grid.Column= "1"

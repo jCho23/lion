@@ -6,8 +6,11 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    public partial class FeedDetailsPage
+    public partial class FeedDetailsPage : ContentPage
     {
+        //public event EventHandler<PostMessage> PostedMessage;
+
+
         public FeedDetailsPage(PostMessage feedDetails)
         {
             if (feedDetails == null)
@@ -44,14 +47,14 @@ namespace lion.Pages
                     Status= "8 replies" }
             };
 
-            switch (Xamarin.Forms.Device.RuntimePlatform)
-            {
-                case Xamarin.Forms.Device.iOS:
-                    //postButton.Margin = new Thickness(0, 1, 0, 0);
-                    break;
-                case Xamarin.Forms.Device.Android:
-                    break;
-            }
+            //switch (Xamarin.Forms.Device.RuntimePlatform)
+            //{
+            //    case Xamarin.Forms.Device.iOS:
+            //        //postButton.Margin = new Thickness(0, 1, 0, 0);
+            //        break;
+            //    case Xamarin.Forms.Device.Android:
+            //        break;
+            //}
         }
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)

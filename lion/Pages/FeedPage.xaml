@@ -68,15 +68,16 @@
                                                             BorderColor="Gray"
                                                             BorderThickness="3"
                                                             Source="{Binding UserUrl}"/>
-                                                    <StackLayout
-                                                        Padding="5">
                                                             <Label 
                                                                 Text="{Binding Post}"
                                                                 FontSize="16" />
+                                                    <StackLayout
+                                                        Orientation="Horizontal"
+                                                        Padding="5">
                                                             <Label
                                                                 Text="{Binding Status}"
-                                                                HorizontalOptions="EndAndExpand"
-                                                                VerticalOptions="EndAndExpand"
+                                                                HorizontalOptions="Start"
+                                                                VerticalOptions="Start"
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
                                                     </StackLayout>                 

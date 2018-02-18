@@ -12,7 +12,7 @@ namespace lion.Pages
 
        
 
-        async void Handle_Activated(object sender, System.EventArgs e)
+        async void OnAddButton_Activated(object sender, System.EventArgs e)
         {
 
             await Navigation.PushModalAsync(new FeedAddPostModalPage());
@@ -88,6 +88,9 @@ namespace lion.Pages
             InitializeComponent();
 
             listViewFeed.ItemsSource = GetPosts();
+
+
+
         }
     }
 }
