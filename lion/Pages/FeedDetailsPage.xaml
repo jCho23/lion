@@ -99,15 +99,12 @@
         
         <Button 
             x:Name="postButton"
-            Grid.Row="2"
-            Grid.Column= "1"
-            Margin="0,7,12,6"
+            Grid.Row="2" Grid.Column= "1"
             Text="Post"
-            HeightRequest="30"
-            WidthRequest="40"
-            VerticalOptions="End"
-            HorizontalOptions="End" 
-            Clicked="OnReplyPost_Clicked"/>
+            Margin="0,7,12,6"
+            Clicked="OnReplyPost_Clicked"
+            HeightRequest="30" WidthRequest="40"
+            VerticalOptions="End" HorizontalOptions="End"/>
        
         <ListView         
             x:Name="FeedDetailsPageListView"
