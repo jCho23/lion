@@ -29,16 +29,15 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                   
-                        <Frame
-                            Margin="5,5,5,0"
-                            OutlineColor="#0c2461"
-                            Padding="10"
-                            HasShadow="false"
-                            BackgroundColor="Transparent">
+                    <Frame
+                        Padding="10"
+                        Margin="5,5,5,0"
+                        HasShadow="false"
+                        OutlineColor="#0c2461"
+                        BackgroundColor="Transparent">
                     <StackLayout
-                        Orientation="Horizontal"
                         Padding="5"
+                        Orientation="Horizontal"
                         HorizontalOptions="Start">
                             <ic:CircleImage
                                 WidthRequest="80"
@@ -53,15 +52,13 @@
                                                 Text="{Binding Post}"
                                                 FontSize="16" />
                                             <Label
-                                                Text="{Binding Status}"
-                                                HorizontalOptions="EndAndExpand"
-                                                VerticalOptions="EndAndExpand"
                                                 FontSize="10"
-                                                TextColor="Silver"/>
+                                                TextColor="Silver"
+                                                Text="{Binding Status}"
+                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
                                     </StackLayout>
                     </StackLayout>                       
-     </Frame>     
-                 
+                    </Frame>     
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
