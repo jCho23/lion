@@ -23,8 +23,6 @@
                     <Setter Property="BarTextColor" Value="#f6b93b" />
                     <Setter Property="BarBackgroundColor" Value="#0c2461 " />
                     <Setter Property="TitleIcon" Value="bearpaw.png" />
-                    
-               
             </Style>
 
            <!-- LABELS-->
@@ -34,19 +32,12 @@
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
+            <!--Button-->
             <Style
                 TargetType= "Button">
-                                    <Setter Property="FontFamily" Value="CaviarDreams"/>
-
-
-
+                    <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
-                
-
-
-            <x:Double x:Key="TagTextFontSize">18</x:Double>
-
-
+   
         </ResourceDictionary>
 	</Application.Resources>
 </Application>
