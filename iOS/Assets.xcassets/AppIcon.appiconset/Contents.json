@@ -13,11 +13,13 @@
       "idiom": "iphone"
     },
     {
+      "filename": "Icon-29@2x.png",
       "size": "29x29",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
+      "filename": "Icon-29@3x.png",
       "size": "29x29",
       "scale": "3x",
       "idiom": "iphone"
@@ -35,11 +37,13 @@
       "idiom": "iphone"
     },
     {
+      "filename": "Icon-60@2x.png",
       "size": "60x60",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
+      "filename": "Icon-60@3x.png",
       "size": "60x60",
       "scale": "3x",
       "idiom": "iphone"
