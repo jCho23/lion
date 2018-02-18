@@ -7,6 +7,7 @@
       "idiom": "iphone"
     },
     {
+      "filename": "Icon-20@3x.png",
       "size": "20x20",
       "scale": "3x",
       "idiom": "iphone"
@@ -28,6 +29,7 @@
       "idiom": "iphone"
     },
     {
+      "filename": "Icon-40@3x.png",
       "size": "40x40",
       "scale": "3x",
       "idiom": "iphone"
@@ -65,6 +67,7 @@
       "idiom": "ipad"
     },
     {
+      "filename": "Icon-20@2x.png",
       "size": "40x40",
       "scale": "1x",
       "idiom": "ipad"
@@ -90,6 +93,7 @@
       "idiom": "ipad"
     },
     {
+      "filename": "Icon-512@2x.png",
       "size": "1024x1024",
       "scale": "1x",
       "idiom": "ios-marketing"
