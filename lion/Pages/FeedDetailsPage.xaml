@@ -137,9 +137,8 @@
                        
            <ListView.ItemTemplate>
                 <DataTemplate>
-                   
                     <ViewCell
-                        >
+                        IsEnabled="false">
                         <ContentView 
                             Padding="5">
                             <Frame
