@@ -19,11 +19,10 @@
         <ToolbarItem
             x:Name="AddPost"
             Name="AddPost"
-            Order="Primary" 
-            Icon="add.png" 
-            Activated="Handle_Activated" 
             Priority="0" 
-            />
+            Icon="add.png" 
+            Order="Primary" 
+            Activated="OnAddButton_Activated" />
     </ContentPage.ToolbarItems>
     
     <StackLayout >
