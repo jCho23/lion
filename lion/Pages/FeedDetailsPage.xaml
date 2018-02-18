@@ -92,28 +92,28 @@
             Padding="10"
             HasShadow="false"
             BackgroundColor="Transparent">
-        <Entry
-            x:Name="replyPostInput"
-            Grid.Row="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            BackgroundColor="Transparent"
-            Keyboard="Text"
-
-            Placeholder="Reply to Post..."
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand"
-            Text="{Binding ReplyPost}"
-            TextChanged="OnReplyTextLimit"
-            PlaceholderColor="#f6b93b"
-            TextColor="#f6b93b"/>
-            <!--Completed="Handle_Completed" 
-         -->
-          </Frame>
-        <Button x:Name="postButton"
+            <Entry
+                x:Name="replyPostInput"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="Transparent"
+                Keyboard="Text"
+                Placeholder="Reply to Post..."
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Text="{Binding ReplyPost}"
+                TextChanged="OnReplyTextLimit"
+                PlaceholderColor="#f6b93b"
+                TextColor="#f6b93b"/>
+                <!--Completed="Handle_Completed"-->
+        </Frame>
+        
+        <Button 
+            x:Name="postButton"
             Grid.Row="2"
             Grid.Column= "1"
-            Margin="0,0,10,6"
+            Margin="0,7,12,6"
             Text="Post"
             BorderColor="Aqua"
             BackgroundColor="#f6b93b"
@@ -121,10 +121,10 @@
             WidthRequest="40"
             VerticalOptions="End"
             HorizontalOptions="End" 
-
             Clicked="OnReplyPost_Clicked"/>
        
         <ListView
+            
             x:Name="FeedDetailsPageListView"
             BackgroundColor="Transparent"
             Grid.Row="4"

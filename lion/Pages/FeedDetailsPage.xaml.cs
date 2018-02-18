@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    public partial class FeedDetailsPage 
+    public partial class FeedDetailsPage
     {
         public FeedDetailsPage(PostMessage feedDetails)
         {
@@ -63,14 +63,16 @@ namespace lion.Pages
             }
         }
 
-		//void OnPostEntry_Completed(object sender, System.EventArgs e)
-		//{
-		//	throw new NotImplementedException();
-		//}
-		
-		void OnReplyPost_Clicked(object sender, System.EventArgs e)
-		{
-			throw new NotImplementedException();
-		}
+
+
+        //void OnPostEntry_Completed(object sender, System.EventArgs e)
+        //{
+        //	throw new NotImplementedException();
+        //}
+
+        void OnReplyPost_Clicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
