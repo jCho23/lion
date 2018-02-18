@@ -29,13 +29,13 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <ContentView 
-                        Padding="5">  
-    <Frame
-                                OutlineColor="#0c2461"
-                                Padding="10"
-                                HasShadow="false"
-                                BackgroundColor="Transparent">
+                   
+                        <Frame
+                            Margin="5,5,5,0"
+                            OutlineColor="#0c2461"
+                            Padding="10"
+                            HasShadow="false"
+                            BackgroundColor="Transparent">
                     <StackLayout
                         Orientation="Horizontal"
                         Padding="5"
@@ -61,7 +61,7 @@
                                     </StackLayout>
                     </StackLayout>                       
      </Frame>     
-                    </ContentView>
+                 
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
