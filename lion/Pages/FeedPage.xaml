@@ -75,35 +75,40 @@
                                                           <Grid.RowDefinitions>
                                                             <RowDefinition Height="60"/>
                                                             <RowDefinition Height="20"/>
-                                                            <RowDefinition Height="60"/>
+                                                            <RowDefinition Height="20"/>
                                                         </Grid.RowDefinitions>
                                                         
                                                         <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
                                                             <ColumnDefinition Width="*"/>
                                                             <ColumnDefinition Width="*"/>
                                                         </Grid.ColumnDefinitions>
                                         
                                                             <Label
                                                                 Grid.Row="0"
-                                                                Grid.ColumnSpan="2"
+                                                                Grid.ColumnSpan="3"
                                                                 Text="{Binding Post}"
                                                                 FontSize="16" />
 
-                                                          <
+                                                          
                                                             <Label
                                                                 Grid.Row="1"
-                                                                Grid.Column="1"
+                                                                Grid.Column="2"
                                                                 Text="{Binding Status}"
                                                                 HorizontalOptions="EndAndExpand"
                                                                 VerticalOptions="EndAndExpand"
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
-                                                             <!--<Label
-                                                                Text="Name"
-                                                                HorizontalOptions="Start"
-                                                                VerticalOptions="Start"
+
+                                                            <Label
+                                                                
+                                                                Grid.Row= "1"
+                                                                Grid.Column="1"
+                                                                Text="Name of Person"
+                                                                HorizontalOptions="Center"
+                                                                VerticalOptions="Center"
                                                                 FontSize="8"
-                                                                TextColor="Silver"/>-->
+                                                                TextColor="Silver"/>
                                                     </Grid>                 
                                                 </StackLayout>
                                         </Frame>
