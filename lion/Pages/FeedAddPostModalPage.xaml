@@ -37,34 +37,27 @@
         HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
 
     <Frame
-        Grid.Row="1"
+        Grid.Row="1" Grid.ColumnSpan="2"
+        HasShadow="false"
         OutlineColor="#f6b93b"
-        BackgroundColor="Transparent"
-        Grid.ColumnSpan="2"
-        HasShadow="false">
+        BackgroundColor="Transparent" >
             <StackLayout
                 Grid.ColumnSpan="2">
                 <Entry
-                    BackgroundColor="Transparent"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="StartAndExpand"                
+                    Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
                     FontSize="23"
-                    Grid.Row="1"
-                    Grid.Column= "0"
-                    Grid.ColumnSpan="2"
+                    Keyboard="Text" 
+                    BackgroundColor="Transparent"
                     Placeholder="Speak your mind!"
-                    Keyboard="Text" />
+                    HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" />              
                  <Button
                     x:Name="postMessageButton"
-                    Grid.Row="2"
-                    Grid.Column= "1"
+                    Grid.Row="2" Grid.Column= "1"
                     Margin="0,40,0,0"
                     Text="Post Message"
                     BackgroundColor="#f6b93b"
-                    HeightRequest="30"
-                    WidthRequest="140"
-                    VerticalOptions="End"
-                    HorizontalOptions="End" />
+                    HeightRequest="30" WidthRequest="140"
+                    HorizontalOptions="End" VerticalOptions="End" />
             </StackLayout>
     </Frame>
     </Grid>
