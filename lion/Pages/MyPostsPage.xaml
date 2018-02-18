@@ -22,7 +22,7 @@
         BackgroundColor="Transparent">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
-                    <On Platform="iOS, Android" Value="100" />
+                    <On Platform="iOS, Android" Value="120" />
                 </OnPlatform>
             </ListView.RowHeight>
 
@@ -42,7 +42,7 @@
                         HorizontalOptions="Start">
                             <ic:CircleImage
                                 WidthRequest="80"
-                                HeightRequest="60"
+                                HeightRequest="80"
                                 Aspect="AspectFill"
                                 BorderColor="Gray"
                                 BorderThickness="3"
