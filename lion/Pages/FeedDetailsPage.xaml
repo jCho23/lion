@@ -103,8 +103,6 @@
             Grid.Column= "1"
             Margin="0,7,12,6"
             Text="Post"
-            BorderColor="Aqua"
-            BackgroundColor="#f6b93b"
             HeightRequest="30"
             WidthRequest="40"
             VerticalOptions="End"
