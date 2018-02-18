@@ -24,6 +24,8 @@
             Order="Primary" 
             Activated="OnAddButton_Activated" />
     </ContentPage.ToolbarItems>
+
+    
     
     <StackLayout >
             <SearchBar
@@ -68,19 +70,41 @@
                                                             BorderColor="Gray"
                                                             BorderThickness="3"
                                                             Source="{Binding UserUrl}"/>
-                                                            <Label 
+                                                    <Grid
+                                                       >
+                                                          <Grid.RowDefinitions>
+                                                            <RowDefinition Height="60"/>
+                                                            <RowDefinition Height="380"/>
+                                                            <RowDefinition Height="60"/>
+                                                        </Grid.RowDefinitions>
+                                                        
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                        
+                                                            <Label
+                                                                Grid.Row="0"
+                                                                Grid.ColumnSpan="2"
                                                                 Text="{Binding Post}"
                                                                 FontSize="16" />
-                                                    <StackLayout
-                                                        Orientation="Horizontal"
-                                                        Padding="5">
+
+                                                            <BoxView
+                                                                HeightRequest="20">
+                                                            </BoxView>
                                                             <Label
                                                                 Text="{Binding Status}"
+                                                                HorizontalOptions="EndAndExpand"
+                                                                VerticalOptions="EndAndExpand"
+                                                                FontSize="8"
+                                                                TextColor="Silver"/>
+                                                             <Label
+                                                                Text="Name"
                                                                 HorizontalOptions="Start"
                                                                 VerticalOptions="Start"
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
-                                                    </StackLayout>                 
+                                                    </Grid>                 
                                                 </StackLayout>
                                         </Frame>
                                     </ContentView>
