@@ -29,14 +29,12 @@
 
     <Button
         x:Name="cancelButton"
-        TextColor="Red"
-        Grid.Row="0"
-        Grid.Column="1"
-        Margin="0,20,0,0"
-        HorizontalOptions="EndAndExpand"
-        VerticalOptions="EndAndExpand"
+        Grid.Row="0" Grid.Column="1"
         Text="Cancel" 
-        Clicked="Handle_Clicked"/>
+        TextColor="Red"
+        Margin="0,20,0,0"
+        Clicked="Handle_Clicked"
+        HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
 
     <Frame
         Grid.Row="1"
@@ -49,9 +47,7 @@
                 <Entry
                     BackgroundColor="Transparent"
                     HorizontalOptions="FillAndExpand"
-                    VerticalOptions="StartAndExpand"
-                   
-                    TextColor="#f6b93b"
+                    VerticalOptions="StartAndExpand"                
                     FontSize="23"
                     Grid.Row="1"
                     Grid.Column= "0"
