@@ -131,6 +131,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29%403x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
