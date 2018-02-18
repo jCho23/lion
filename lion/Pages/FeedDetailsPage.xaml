@@ -143,7 +143,7 @@
                         <ContentView 
                             Padding="5">
                             <Frame
-                                OutlineColor="#f6b93b"
+                                OutlineColor="#0c2461"
                                 Padding="10"
                                 HasShadow="false"
                                 BackgroundColor="Transparent">
