@@ -74,7 +74,7 @@
                                                        >
                                                           <Grid.RowDefinitions>
                                                             <RowDefinition Height="60"/>
-                                                            <RowDefinition Height="380"/>
+                                                            <RowDefinition Height="20"/>
                                                             <RowDefinition Height="60"/>
                                                         </Grid.RowDefinitions>
                                                         
@@ -89,21 +89,21 @@
                                                                 Text="{Binding Post}"
                                                                 FontSize="16" />
 
-                                                            <BoxView
-                                                                HeightRequest="20">
-                                                            </BoxView>
+                                                          <
                                                             <Label
+                                                                Grid.Row="1"
+                                                                Grid.Column="1"
                                                                 Text="{Binding Status}"
                                                                 HorizontalOptions="EndAndExpand"
                                                                 VerticalOptions="EndAndExpand"
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
-                                                             <Label
+                                                             <!--<Label
                                                                 Text="Name"
                                                                 HorizontalOptions="Start"
                                                                 VerticalOptions="Start"
                                                                 FontSize="8"
-                                                                TextColor="Silver"/>
+                                                                TextColor="Silver"/>-->
                                                     </Grid>                 
                                                 </StackLayout>
                                         </Frame>
