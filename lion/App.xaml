@@ -32,10 +32,11 @@
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
             </Style>
 
+            <!--Entry-->
             <Style
                 TargetType= "Entry">
-                                        <Setter Property="FontFamily" Value="CaviarDreams"/>
-
+                    <Setter Property="FontFamily" Value="CaviarDreams"/>
+                    <Setter Property="TextColor" Value="#f6b93b" />
             </Style>
 
             <!--Button-->
