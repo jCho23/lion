@@ -57,6 +57,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\heart1.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
