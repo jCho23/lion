@@ -14,8 +14,11 @@ namespace lion.Pages
 
         void Handle_Completed(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            Application.Current.Properties["Post"] = ModalEditor.Text;
         }
+
+
+
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
