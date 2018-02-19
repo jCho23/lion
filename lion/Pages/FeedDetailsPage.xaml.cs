@@ -6,10 +6,10 @@ using Xamarin.Forms;
 
 namespace lion.Pages
 {
+    
     public partial class FeedDetailsPage : ContentPage
     {
-        //public event EventHandler<PostMessage> PostedMessage;
-
+     
 
         public FeedDetailsPage(PostMessage feedDetails)
         {
