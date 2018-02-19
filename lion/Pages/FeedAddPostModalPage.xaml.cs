@@ -17,7 +17,10 @@ namespace lion.Pages
             Application.Current.Properties["Post"] = ModalEditor.Text;
         }
 
-
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+        }
 
 
         async void Handle_Clicked(object sender, System.EventArgs e)
