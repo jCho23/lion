@@ -38,12 +38,12 @@ namespace lion
             // Handle when your app resumes
         }
 
-        public string Post
+        public string Postß
         {
             get
             {
                 if (Properties.ContainsKey(PostKey))
-                    Properties[PostKey].ToString();
+                    return Properties[PostKey].ToString();
 
                 return "";
             }
