@@ -135,17 +135,43 @@
                                             BorderColor="Gray"
                                             BorderThickness="3"
                                             Source="{Binding UserUrl}"/>
-                                                <StackLayout
-                                                    Padding="5">
-                                                        <Label 
-                                                            FontSize="14" 
-                                                            Text="{Binding Post}" />
-                                                        <Label
-                                                            FontSize="10"
-                                                            TextColor="Silver"
-                                                            Text="{Binding Status}"
-                                                            HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
-                                                </StackLayout>
+                                                <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="60"/>
+                                                            <RowDefinition Height="20"/>
+                                                            <RowDefinition Height="30"/>
+                                                        </Grid.RowDefinitions>
+                                                        
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                        
+                                                            <Label
+                                                                Grid.Row="0" Grid.ColumnSpan="3"
+                                                                FontSize="16" 
+                                                                Margin="5,2,0,0"
+                                                                Text="{Binding Post}"/>
+                                                            <Label
+                                                                Grid.Row="1" Grid.Column="2"
+                                                                FontSize="8"
+                                                                TextColor="Silver"
+                                                                Text="{Binding Status}"
+                                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
+                                                            <Image
+                                                                Grid.Row="1" Grid.Column="1"
+                                                                Margin="0,8,0,0"
+                                                                Aspect="AspectFit" 
+                                                                Source="heart8.png"/>
+                                                            <Label
+                                                                Grid.Row= "1" Grid.Column="1"
+                                                                Text="88"
+                                                                FontSize="8"
+                                                                TextColor="Silver"
+                                                                Margin="30,10,0,0"
+                                                                HorizontalOptions="Center" VerticalOptions="Center"/>
+                                                    </Grid> 
                                 </StackLayout> 
                             </Frame>    
                 </ViewCell>
