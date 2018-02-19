@@ -31,7 +31,7 @@
                 <ViewCell>
                     <Frame
                         Padding="10"
-                        Margin="5,5,5,0"
+                        Margin="7,3,7,3"
                         HasShadow="false"
                         OutlineColor="#0c2461"
                         BackgroundColor="Transparent">
