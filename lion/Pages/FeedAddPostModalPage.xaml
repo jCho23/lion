@@ -48,6 +48,7 @@
                             Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
                             FontSize="23"
                             Keyboard="Text"
+                            TextColor="#f6b93b"
                             HeightRequest="40"
                             BackgroundColor="Transparent"
                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />              
