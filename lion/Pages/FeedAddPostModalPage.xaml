@@ -9,7 +9,7 @@
         <xfg:Gradient Rotation="180">
             <xfg:GradientStep StepColor="#0c2461" StepPercentage="0" />
             <xfg:GradientStep StepColor="#1e3799" StepPercentage=".5" />
-            <xfg:GradientStep StepColor="#f6b93b" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#f6b93b" StepPercentage=".8" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
 
@@ -18,7 +18,7 @@
         RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
-            <RowDefinition Height="380"/>
+            <RowDefinition Height="340"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         
@@ -50,7 +50,6 @@
                             Keyboard="Text"
                             HeightRequest="40"
                             BackgroundColor="Transparent"
-
                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />              
                          <Button
                             x:Name="postMessageButton"

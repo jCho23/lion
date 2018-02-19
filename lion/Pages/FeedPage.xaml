@@ -26,21 +26,19 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout>
-            <SearchBar
-                Placeholder="Search Posts..."
-                PlaceholderColor="Gray"
-                TextChanged="Handle_TextChanged"
-                HorizontalTextAlignment="Center"
-                 />
-                <ListView
-                    x:Name= "listViewFeed"
-                    HasUnevenRows="true"
-                    IsPullToRefreshEnabled="true"
-                    Refreshing="Handle_Refreshing"
-                    ItemSelected="Handle_ItemSelected"
-                    BackgroundColor="Transparent"
-                    SeparatorVisibility= "None"
-                    >
+        <SearchBar
+            Placeholder="Search Posts..."
+            PlaceholderColor="Gray"
+            TextChanged="Handle_TextChanged"
+            HorizontalTextAlignment="Center"/>
+            <ListView
+                x:Name= "listViewFeed"
+                HasUnevenRows="true"
+                IsPullToRefreshEnabled="true"
+                Refreshing="Handle_Refreshing"
+                ItemSelected="Handle_ItemSelected"
+                BackgroundColor="Transparent"
+                SeparatorVisibility= "None">
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
                         <On Platform="iOS, Android" Value="120" />
