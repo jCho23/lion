@@ -88,22 +88,19 @@
                                                                 FontSize="8"
                                                                 TextColor="Silver"
                                                                 Text="{Binding Status}"
-                                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>>
+                                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
                                                             <Image
-                                                                Grid.Row="1"
-                                                                Grid.Column="1"
+                                                                Grid.Row="1" Grid.Column="1"
                                                                 Margin="0,8,0,0"
-                                                                Source="heart8.png"
-                                                                Aspect="AspectFit" />
+                                                                Aspect="AspectFit" 
+                                                                Source="heart8.png"/>
                                                             <Label
-                                                                Grid.Row= "1"
-                                                                Grid.Column="1"
+                                                                Grid.Row= "1" Grid.Column="1"
                                                                 Text="88"
-                                                                Margin="30,10,0,0"
-                                                                HorizontalOptions="Center"
-                                                                VerticalOptions="Center"
                                                                 FontSize="8"
-                                                                TextColor="Silver"/>
+                                                                TextColor="Silver"
+                                                                Margin="30,10,0,0"
+                                                                HorizontalOptions="Center" VerticalOptions="Center"/>
                                                     </Grid>                 
                                                 </StackLayout>
                                         </Frame>
