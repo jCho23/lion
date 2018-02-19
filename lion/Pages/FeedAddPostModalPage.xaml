@@ -49,6 +49,7 @@
                             Grid.Row="1" Grid.Column= "0" Grid.ColumnSpan="2"
                             FontSize="23"
                             Keyboard="Text"
+                            Text="{Binding Post}"
                             TextColor="#f6b93b"
                             Completed="Handle_Completed"
                             HeightRequest="40"

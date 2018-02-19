@@ -7,9 +7,12 @@ namespace lion.Pages
 {
     public partial class FeedAddPostModalPage : ContentPage
     {
+
+
         void Handle_Completed(object sender, System.EventArgs e)
         {
-            Application.Current.Properties["Post"] = ModalEditor.Text;
+            var app = Application.Current as App;
+            app.Post = ModalEditor.Text;
         }
 
         protected override void OnDisappearing()
@@ -28,9 +31,9 @@ namespace lion.Pages
 		public FeedAddPostModalPage()
 		{
 			InitializeComponent();
-			
-			if(Application.Current.Properties.ContainsKey("Post"))
-				ModalEditor.Text = Application.Current.Properties["Post"].ToString();
+
+            BindingContext = Application.Current;
+
 		}
 		
     }
