@@ -11,12 +11,22 @@ namespace lion.Pages
     {
 
        
+		public FeedPage()
+		{
+			InitializeComponent();
+			
+			listViewFeed.ItemsSource = GetPosts();
+			
+			image.Source = ImageSource.FromResource("lion.Images.heart1.png");
+			
+			
+		}
 
         async void OnAddButton_Activated(object sender, System.EventArgs e)
         {
 
             await Navigation.PushModalAsync(new FeedAddPostModalPage());
-				
+                
         }
 
         async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
@@ -83,14 +93,5 @@ namespace lion.Pages
         }
 
 
-        public FeedPage()
-        {
-            InitializeComponent();
-
-            listViewFeed.ItemsSource = GetPosts();
-
-
-
-        }
     }
 }
