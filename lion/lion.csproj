@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Controls\ExtendedViewCell.cs" />
+    <Compile Include="Controls\PlaceholderEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
