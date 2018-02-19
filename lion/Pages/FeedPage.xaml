@@ -49,14 +49,24 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                        <Frame
-                                            Margin="7,3,7,3"
-                                            OutlineColor="#f6b93b"
-                                            HasShadow="false"
-                                            BackgroundColor="Transparent">
-                                                
+                                    <Frame
+                                        Margin="7,3,7,3"
+                                        OutlineColor="#f6b93b"
+                                        HasShadow="false"
+                                        BackgroundColor="Transparent">
+                                            <StackLayout
+                                                Orientation="Horizontal"
+                                                HorizontalOptions="Start">
+                                                    <ic:CircleImage
+                                                        Margin="0,0,5,0"
+                                                        WidthRequest="75"
+                                                        HeightRequest="75"
+                                                        Aspect="AspectFill"
+                                                        BorderColor="Gray"
+                                                        BorderThickness="1"
+                                                        Source="{Binding UserUrl}"/>
                                                     <Grid>
-                                                          <Grid.RowDefinitions>
+                                                        <Grid.RowDefinitions>
                                                             <RowDefinition Height="60"/>
                                                             <RowDefinition Height="20"/>
                                                             <RowDefinition Height="30"/>
@@ -68,14 +78,6 @@
                                                             <ColumnDefinition Width="*"/>
                                                         </Grid.ColumnDefinitions>
                                         
-                                                        <ic:CircleImage
-                                                            Margin="0,0,5,0"
-                                                            WidthRequest="75"
-                                                            HeightRequest="75"
-                                                            Aspect="AspectFill"
-                                                            BorderColor="Gray"
-                                                            BorderThickness="1"
-                                                            Source="{Binding UserUrl}"/>
                                                             <Label
                                                                 Grid.Row="0"
                                                                 Grid.ColumnSpan="3"
@@ -106,7 +108,7 @@
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
                                                     </Grid>                 
-                                               
+                                                </StackLayout>
                                         </Frame>
                                 </ViewCell>
                             </DataTemplate>
