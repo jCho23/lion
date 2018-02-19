@@ -79,19 +79,16 @@
                                                         </Grid.ColumnDefinitions>
                                         
                                                             <Label
-                                                                Grid.Row="0"
-                                                                Grid.ColumnSpan="3"
+                                                                Grid.Row="0" Grid.ColumnSpan="3"
+                                                                FontSize="16" 
                                                                 Margin="5,2,0,0"
-                                                                Text="{Binding Post}"
-                                                                FontSize="16" />
+                                                                Text="{Binding Post}"/>
                                                             <Label
-                                                                Grid.Row="1"
-                                                                Grid.Column="2"
-                                                                Text="{Binding Status}"
-                                                                HorizontalOptions="EndAndExpand"
-                                                                VerticalOptions="EndAndExpand"
+                                                                Grid.Row="1" Grid.Column="2"
                                                                 FontSize="8"
-                                                                TextColor="Silver"/>
+                                                                TextColor="Silver"
+                                                                Text="{Binding Status}"
+                                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>>
                                                             <Image
                                                                 Grid.Row="1"
                                                                 Grid.Column="1"
