@@ -10,6 +10,7 @@ namespace lion
     public partial class App : Application
     {
         private const string PostKey = "Post";
+        private const string ReplyKey = "Reply";
 
         public App()
         {
