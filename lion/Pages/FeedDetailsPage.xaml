@@ -53,6 +53,7 @@
     <Label
         Grid.Row="1" Grid.Column="0"
         Text="Kylie Jenner"
+        TextColor="#f6b93b"
         Margin="10,5,0,0"
         VerticalOptions="Start"
         HorizontalOptions="Start" 
@@ -67,13 +68,13 @@
         VerticalOptions="EndAndExpand"
         HorizontalOptions="EndAndExpand"/>
         
-        <Frame
-            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-            Padding="10"
-            Margin="5,0,5,0"
-            HasShadow="false"
-            OutlineColor="#f6b93b"
-            BackgroundColor="Transparent">
+    <Frame
+        Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+        Padding="10"
+        Margin="5,0,5,0"
+        HasShadow="false"
+        OutlineColor="#f6b93b"
+        BackgroundColor="Transparent">
             <Entry
                 x:Name="replyPostInput"
                 Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
@@ -82,29 +83,28 @@
                 PlaceholderColor="#f6b93b"
                 Placeholder="Reply to Post..."
                 TextChanged="OnReplyTextLimit"
-                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                />
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
                 <!--Completed="Handle_Completed"-->
-        </Frame>
+    </Frame>
         
-        <Button 
-            x:Name="postButton"
-            Grid.Row="2" Grid.Column= "1"
-            Text="Post"
-            Margin="0,7,12,6"
-            Clicked="OnReplyPost_Clicked"
-            HeightRequest="30" WidthRequest="40"
-            VerticalOptions="End" HorizontalOptions="End"/>
-       
-        <ListView         
-            x:Name="FeedDetailsPageListView"
-            Grid.Row="4" Grid.ColumnSpan="2"
-            BackgroundColor="Transparent">
-            <ListView.RowHeight>
-                <OnPlatform x:TypeArguments="x:Int32">
-                    <On Platform="iOS, Android" Value="120" />
-                </OnPlatform>
-            </ListView.RowHeight>
+    <Button 
+        x:Name="postButton"
+        Grid.Row="2" Grid.Column= "1"
+        Text="Post"
+        Margin="0,7,12,6"
+        Clicked="OnReplyPost_Clicked"
+        HeightRequest="30" WidthRequest="40"
+        VerticalOptions="End" HorizontalOptions="End"/>
+   
+    <ListView         
+        x:Name="FeedDetailsPageListView"
+        Grid.Row="4" Grid.ColumnSpan="2"
+        BackgroundColor="Transparent">
+        <ListView.RowHeight>
+            <OnPlatform x:TypeArguments="x:Int32">
+                <On Platform="iOS, Android" Value="120" />
+            </OnPlatform>
+        </ListView.RowHeight>
                        
            <ListView.ItemTemplate>
                 <DataTemplate>
