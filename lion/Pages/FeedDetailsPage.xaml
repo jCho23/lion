@@ -19,18 +19,18 @@
     
     <Grid 
         RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="10"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-        
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
         <StackLayout
             Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
@@ -44,16 +44,12 @@
                     BorderColor="Gray"
                     BorderThickness="3"
                     Source="{Binding UserUrl}"/>
-                       <Label
-                            Margin="14,0,0,0"
-                            VerticalOptions="Center"
-                            HorizontalOptions="Center"
-                            Text="{Binding Post}" 
-                            FontSize="20"
-                           />
-              
-                    
-                
+               <Label
+                    Margin="7,0,0,0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="{Binding Post}" 
+                    FontSize="20"/>
         </StackLayout>
     
         <Label
@@ -63,22 +59,18 @@
             VerticalOptions="Start"
             HorizontalOptions="Start" 
             BackgroundColor="Transparent"/>
-
-                        <Label
-                    Grid.Row="1"
-                    Grid.Column="1"
-
-                            Margin="0, 5, 7,30"
-                            FontSize="10"
-                            TextColor="Silver"
-                            Text="{Binding Status}"
-                            VerticalOptions="EndAndExpand"
-                            HorizontalOptions="EndAndExpand"/>
-        <BoxView
-            Grid.Row="1" Grid.Column="1" 
-            WidthRequest="150" HeightRequest="220">
-        </BoxView>
-
+        
+        <Label
+            Grid.Row="1" Grid.Column="1"
+            Margin="0, 5, 14,30"
+            FontSize="10"
+            TextColor="Silver"
+            Text="{Binding Status}"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand"/>
+        
+       
+        
         <Frame
             Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
             Padding="10"
