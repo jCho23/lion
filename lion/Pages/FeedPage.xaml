@@ -104,9 +104,9 @@
                                                                 Grid.Row="1"
                                                                 Grid.Column="1"
 
-                                                                Source="heart1.png"
+                                                                Source="heart.svg"
                                                                 Aspect="AspectFit" 
-                                                                HeightRequest="15"
+
                                                               />
 
                                                             
