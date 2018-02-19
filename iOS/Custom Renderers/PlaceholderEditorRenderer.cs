@@ -12,67 +12,41 @@ namespace lion.iOS.CustomRenderers
 {
     public class PlaceholderEditorRenderer : EditorRenderer
     {
-        private UILabel _placeholderLabel;
+        private string Placeholder { get; set; }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
         {
             base.OnElementChanged(e);
+            var element = this.Element as PlaceholderEditor;
 
-            if (Element == null)
-                return;
-
-            CreatePlaceholderLabel((PlaceholderEditor)Element, Control);
-
-            //Control.Ended += OnEnded;
-            //Control.TextChanged += OnChanged;
-        }
-
-        private void CreatePlaceholderLabel(PlaceholderEditor element, UITextView parent)
-        {
-            _placeholderLabel = new UILabel
+            if (Control != null && element != null)
             {
-                Text = element.Placeholder,
-                TextColor = element.PlaceholderColor.ToUIColor(),
-                BackgroundColor = UIColor.Clear,
-                Font = UIFont.FromName(element.FontFamily, (nfloat)element.FontSize)
-            };
-            _placeholderLabel.SizeToFit();
+                Placeholder = element.Placeholder;
+                Control.TextColor = UIColor.LightGray;
+                Control.Text = Placeholder;
 
-            parent.AddSubview(_placeholderLabel);
+                Control.ShouldBeginEditing += (UITextView textView) =>
+                {
+                    if (textView.Text == Placeholder)
+                    {
+                        textView.Text = "";
+                        textView.TextColor = UIColor.Black; // Text Color
+                    }
 
-            parent.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
-            parent.AddConstraints(
-                _placeholderLabel.AtLeftOf(parent, 7),
-                _placeholderLabel.WithSameCenterY(parent)
-            );
-            parent.LayoutIfNeeded();
-            _placeholderLabel.Hidden = parent.HasText;
-        }
+                    return true;
+                };
 
-        private void OnEnded(object sender, EventArgs args)
-        {
-            if (!((UITextView)sender).HasText && _placeholderLabel != null)
-                _placeholderLabel.Hidden = false;
-        }
+                Control.ShouldEndEditing += (UITextView textView) =>
+                {
+                    if (textView.Text == "")
+                    {
+                        textView.Text = Placeholder;
+                        textView.TextColor = UIColor.LightGray; // Placeholder Color
+                    }
 
-        private void OnChanged(object sender, EventArgs args)
-        {
-            if (_placeholderLabel != null)
-                _placeholderLabel.Hidden = ((UITextView)sender).HasText;
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                Control.Ended -= OnEnded;
-                Control.Changed -= OnChanged;
-
-                _placeholderLabel?.Dispose();
-                _placeholderLabel = null;
+                    return true;
+                };
             }
-
-            base.Dispose(disposing);
         }
     }
 }

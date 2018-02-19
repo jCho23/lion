@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using lion.Controls;
 using Xamarin.Forms;
 
 namespace lion.Pages
@@ -19,6 +19,13 @@ namespace lion.Pages
 			InitializeComponent();
 
             BindingContext = Application.Current;
+
+            ModalEditor = new PlaceholderEditor
+            {
+                Placeholder = "Placeholder Text"
+            };
 		}
+
+
     }
 }

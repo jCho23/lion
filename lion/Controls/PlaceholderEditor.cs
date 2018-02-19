@@ -6,22 +6,24 @@ namespace lion.Controls
 {
     public class PlaceholderEditor : Editor
     {
-        public static BindableProperty PlaceholderProperty
-            = BindableProperty.Create(nameof(Placeholder), typeof(string), typeof(PlaceholderEditor));
+        public static readonly BindableProperty PlaceholderProperty =
+            BindableProperty.Create<PlaceholderEditor, string>(view => view.Placeholder, String.Empty);
 
-        public static BindableProperty PlaceholderColorProperty
-            = BindableProperty.Create(nameof(PlaceholderColor), typeof(Color), typeof(PlaceholderEditor), Color.Gray);
+        public PlaceholderEditor()
+        {
+        }
 
         public string Placeholder
         {
-            get { return (string)GetValue(PlaceholderProperty); }
-            set { SetValue(PlaceholderProperty, value); }
-        }
+            get
+            {
+                return (string)GetValue(PlaceholderProperty);
+            }
 
-        public Color PlaceholderColor
-        {
-            get { return (Color)GetValue(PlaceholderColorProperty); }
-            set { SetValue(PlaceholderColorProperty, value); }
+            set
+            {
+                SetValue(PlaceholderProperty, value);
+            }
         }
     }
 }
