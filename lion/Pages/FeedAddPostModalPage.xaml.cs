@@ -7,14 +7,6 @@ namespace lion.Pages
 {
     public partial class FeedAddPostModalPage : ContentPage
     {
-        public FeedAddPostModalPage()
-        {
-            InitializeComponent();
-
-            if(Application.Current.Properties.ContainsKey("Post"))
-            ModalEditor.Text = Application.Current.Properties["Post"].ToString();
-        }
-
         void Handle_Completed(object sender, System.EventArgs e)
         {
             Application.Current.Properties["Post"] = ModalEditor.Text;
@@ -32,5 +24,14 @@ namespace lion.Pages
 
             await Navigation.PushModalAsync(new NavigationPage(new Views.HomeView()));
         }
+
+		public FeedAddPostModalPage()
+		{
+			InitializeComponent();
+			
+			if(Application.Current.Properties.ContainsKey("Post"))
+				ModalEditor.Text = Application.Current.Properties["Post"].ToString();
+		}
+		
     }
 }
