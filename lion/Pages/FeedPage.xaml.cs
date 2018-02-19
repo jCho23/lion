@@ -17,7 +17,6 @@ namespace lion.Pages
 			
 			listViewFeed.ItemsSource = GetPosts();
 			
-			image.Source = ImageSource.FromResource("lion.Images.heart1.png");
 			
 			
 		}
