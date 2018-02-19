@@ -18,6 +18,7 @@ namespace lion.Pages
 
             BindingContext = feedDetails;
 
+
             InitializeComponent();
 
             FeedDetailsPageListView.ItemsSource = new List<PostMessage>{
