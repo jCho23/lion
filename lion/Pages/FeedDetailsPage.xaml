@@ -34,30 +34,27 @@
 
     <ic:CircleImage
         Grid.Row="0" Grid.Column="0" 
-        Margin="5,5,0,0"
+        Margin="10,10,0,0"
         WidthRequest="100"
         HeightRequest="100"
         Aspect="AspectFill"
         BorderColor="Gray"
-        BorderThickness="3"
+        BorderThickness="1"
         Source="{Binding UserUrl}"/>
 
     <Label
         Grid.Row="0" Grid.Column="1"
+        FontSize="20"
         Margin="7,0,0,0"
-        VerticalOptions="Center"
-        HorizontalOptions="Center"
         Text="{Binding Post}" 
-        FontSize="20"/>
+        HorizontalOptions="Center" VerticalOptions="Center"/>
     
     <Label
         Grid.Row="1" Grid.Column="0"
-        Text="Kylie Jenner"
-        TextColor="#f6b93b"
         Margin="10,5,0,0"
-        VerticalOptions="Start"
-        HorizontalOptions="Start" 
-        BackgroundColor="Transparent"/>
+        TextColor="#f6b93b"
+        Text="Kylie Jenner"
+        HorizontalOptions="Start" VerticalOptions="Start"/>
     
     <Label
         Grid.Row="1" Grid.Column="1"
@@ -65,8 +62,7 @@
         FontSize="10"
         TextColor="Silver"
         Text="{Binding Status}"
-        VerticalOptions="EndAndExpand"
-        HorizontalOptions="EndAndExpand"/>
+        HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
         
     <Frame
         Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
