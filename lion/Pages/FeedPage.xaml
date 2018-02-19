@@ -52,9 +52,9 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <ContentView 
-                                        Padding="5">
+                                   
                                         <Frame
+                                            Margin="5,3,5,3"
                                             OutlineColor="#f6b93b"
                                             Padding="10"
                                             HasShadow="false"
@@ -87,10 +87,9 @@
                                                             <Label
                                                                 Grid.Row="0"
                                                                 Grid.ColumnSpan="3"
+                                                                Margin="5,2,0,0"
                                                                 Text="{Binding Post}"
                                                                 FontSize="16" />
-
-                                                     
                                                             <Label
                                                                 Grid.Row="1"
                                                                 Grid.Column="2"
@@ -99,20 +98,13 @@
                                                                 VerticalOptions="EndAndExpand"
                                                                 FontSize="8"
                                                                 TextColor="Silver"/>
-
                                                             <Image
                                                                 Grid.Row="1"
                                                                 Grid.Column="1"
                                                                 Margin="0,5,0,0"
                                                                 Source="heart8.png"
-                                                                Aspect="AspectFit" 
-
-                                                              />
-
-                                                            
-
-                                                           <Label
-                                                                
+                                                                Aspect="AspectFit" />
+                                                            <Label
                                                                 Grid.Row= "1"
                                                                 Grid.Column="1"
                                                                 Text="88"
@@ -120,12 +112,11 @@
                                                                 HorizontalOptions="Center"
                                                                 VerticalOptions="Center"
                                                                 FontSize="8"
-
-                                                                TextColor="Black"/>
+                                                                TextColor="Silver"/>
                                                     </Grid>                 
                                                 </StackLayout>
                                         </Frame>
-                                    </ContentView>
+                                   
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>              
