@@ -10,6 +10,9 @@ namespace lion.Pages
         public FeedAddPostModalPage()
         {
             InitializeComponent();
+
+            if(Application.Current.Properties.ContainsKey("Post"))
+            ModalEditor.Text = Application.Current.Properties["Post"].ToString();
         }
 
         void Handle_Completed(object sender, System.EventArgs e)
