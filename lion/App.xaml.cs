@@ -54,5 +54,21 @@ namespace lion
                 Properties[PostKey] = value;
             }
         }
+
+        public string Reply
+        {
+            get
+            {
+                if (Properties.ContainsKey(ReplyKey))
+                    return Properties[ReplyKey].ToString();
+
+                return "";
+            }
+
+            set
+            {
+                Properties[ReplyKey] = value;
+            }
+        }
     }
 }
