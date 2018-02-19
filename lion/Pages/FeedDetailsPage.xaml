@@ -34,13 +34,12 @@
 
     <ic:CircleImage
         Grid.Row="0" Grid.Column="0" 
-        Margin="10,10,0,0"
-        WidthRequest="100"
-        HeightRequest="100"
-        Aspect="AspectFill"
-        BorderColor="Gray"
         BorderThickness="1"
-        Source="{Binding UserUrl}"/>
+        BorderColor="Gray"
+        Margin="10,10,0,0"
+        Aspect="AspectFill"
+        Source="{Binding UserUrl}"
+        HeightRequest="100" WidthRequest="100"/>
 
     <Label
         Grid.Row="0" Grid.Column="1"
@@ -58,9 +57,9 @@
     
     <Label
         Grid.Row="1" Grid.Column="1"
-        Margin="0, 5, 14,30"
         FontSize="10"
         TextColor="Silver"
+        Margin="0, 5, 14,30"
         Text="{Binding Status}"
         HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
         
@@ -115,18 +114,16 @@
                                     Orientation="Horizontal"
                                     HorizontalOptions="Start">
                                         <ic:CircleImage
-                                            WidthRequest="75"
-                                            HeightRequest="75"
-                                            Aspect="AspectFill"
                                             BorderColor="Gray"
                                             BorderThickness="3"
-                                            Source="{Binding UserUrl}"/>
-                                                <Label
-                                                    VerticalOptions="Center"
-                                                    HorizontalOptions="Center"
-                                                    FontSize="16" 
-                                                    Margin="5,2,0,0"
-                                                    Text="{Binding Post}"/>
+                                            Aspect="AspectFill"
+                                            Source="{Binding UserUrl}"
+                                            HeightRequest="75" WidthRequest="75"/>
+                                        <Label
+                                            FontSize="16" 
+                                            Margin="5,2,0,0"
+                                            Text="{Binding Post}"
+                                            HorizontalOptions="Center" VerticalOptions="Center"/>
                                 </StackLayout> 
                             </Frame>    
                 </ViewCell>
