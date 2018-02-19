@@ -9,6 +9,8 @@ namespace lion
 {
     public partial class App : Application
     {
+        private const string PostKey = "Post";
+
         public App()
         {
             InitializeComponent();
@@ -34,6 +36,22 @@ namespace lion
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        public string Post
+        {
+            get
+            {
+                if (Properties.ContainsKey(PostKey))
+                    Properties[PostKey].ToString();
+
+                return "";
+            }
+
+            set
+            {
+                Properties[PostKey] = value;
+            }
         }
     }
 }
