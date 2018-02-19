@@ -38,7 +38,7 @@ namespace lion
             // Handle when your app resumes
         }
 
-        public string Postß
+        public string Post
         {
             get
             {

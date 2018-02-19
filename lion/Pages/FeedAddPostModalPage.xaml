@@ -51,7 +51,6 @@
                             Keyboard="Text"
                             Text="{Binding Post}"
                             TextColor="#f6b93b"
-                            Completed="Handle_Completed"
                             HeightRequest="40"
                             BackgroundColor="Transparent"
                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />              

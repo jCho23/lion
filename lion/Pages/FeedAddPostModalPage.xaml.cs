@@ -9,16 +9,16 @@ namespace lion.Pages
     {
 
 
-        void Handle_Completed(object sender, System.EventArgs e)
-        {
-            var app = Application.Current as App;
-            app.Post = ModalEditor.Text;
-        }
+        //void Handle_Completed(object sender, System.EventArgs e)
+        //{
+        //    var app = Application.Current as App;
+        //    app.Post = ModalEditor.Text;
+        //}
 
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-        }
+        //protected override void OnDisappearing()
+        //{
+        //    base.OnDisappearing();
+        //}
 
 
         async void Handle_Clicked(object sender, System.EventArgs e)
