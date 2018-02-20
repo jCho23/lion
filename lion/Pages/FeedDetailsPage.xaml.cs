@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using lion.Models;
 using lion.Persistence;
+using SQLite;
 using Xamarin.Forms;
 
 namespace lion.Pages
@@ -10,7 +11,8 @@ namespace lion.Pages
     
     public partial class FeedDetailsPage : ContentPage
     {
-     
+
+        private SQLiteAsyncConnection _connection;
 
         public FeedDetailsPage(PostMessage feedDetails)
         {
@@ -21,10 +23,7 @@ namespace lion.Pages
 
             InitializeComponent();
 
-            var connection = DependencyService.Get<ISQLiteDb>().GetConnection();
-            connection.CreateTableAsync<PostMessage>();
-
-            connection.Table<>();
+            _connection = DependencyService.Get<ISQLiteDb>().GetConnection();
 
             FeedDetailsPageListView.ItemsSource = new List<PostMessage>{
                 new PostMessage {
@@ -62,6 +61,17 @@ namespace lion.Pages
             //        break;
             //}
         }
+
+        protected override async void OnAppearing()
+        {
+            await _connection.CreateTableAsync<PostMessage>();
+			
+            var postMessages = await _connection.Table<PostMessage>().ToListAsync();
+
+            base.OnAppearing();
+        }
+
+
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
