@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using lion.Models;
+using lion.Persistence;
 using Xamarin.Forms;
 
 namespace lion.Pages
@@ -18,8 +19,12 @@ namespace lion.Pages
 
             BindingContext = feedDetails;
 
-
             InitializeComponent();
+
+            var connection = DependencyService.Get<ISQLiteDb>().GetConnection();
+            connection.CreateTableAsync<PostMessage>();
+
+            connection.Table<>();
 
             FeedDetailsPageListView.ItemsSource = new List<PostMessage>{
                 new PostMessage {
