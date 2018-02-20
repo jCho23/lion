@@ -92,6 +92,7 @@
     <Compile Include="Controls\ExtendedViewCell.cs" />
     <Compile Include="Controls\PlaceholderEditor.cs" />
     <Compile Include="Persistence\ISQLiteDb.cs" />
+    <Compile Include="ViewModels\FeedDetailsPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
