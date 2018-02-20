@@ -91,9 +91,11 @@ namespace lion.Pages
         //	throw new NotImplementedException();
         //}
 
-        void OnReplyPost_Clicked(object sender, System.EventArgs e)
+        async void OnReplyPost_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            var postMessage = new PostMessage { Post = "Post Reply Message" + DateTime.Now.Ticks };
+            await _connection.InsertAsync(postMessage);        
         }
+
     }
 }
