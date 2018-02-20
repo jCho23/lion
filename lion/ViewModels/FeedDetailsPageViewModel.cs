@@ -6,29 +6,29 @@ using Xamarin.Forms;
 
 namespace lion.ViewModels
 {
-    public class FeedDetailsPageViewModel:INotifyPropertyChanged
-    {
-        string replyPostInput = string.Empty;
-        ICommand postButtonCommand;
+    //public class FeedDetailsPageViewModel:INotifyPropertyChanged
+    //{
+    //    string replyPostInput = string.Empty;
+    //    ICommand postButtonCommand;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+    //    public event PropertyChangedEventHandler PropertyChanged;
 
-        public ICommand PostButtonCommand => postButtonCommand ??
-            (postButtonCommand = new Command(async () => await ExecutePostButtonCommand()));
+    //    public ICommand PostButtonCommand => postButtonCommand ??
+    //        (postButtonCommand = new Command(async () => await ExecutePostButtonCommand()));
 
 
-        async Task ExecutePostButtonCommand()
-        {
-            //try
-            //{
-            //   
-            //}
-            //catch 
-            //{
-            //}
-            //finally
-            //{
-            //}
-        }
-    }
+    //    async Task ExecutePostButtonCommand()
+    //    {
+    //        //try
+    //        //{
+    //        //   
+    //        //}
+    //        //catch 
+    //        //{
+    //        //}
+    //        //finally
+    //        //{
+    //        //}
+    //    }
+    //}
 }
