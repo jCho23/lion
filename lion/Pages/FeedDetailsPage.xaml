@@ -89,6 +89,7 @@
         Text="Post"
         Margin="0,7,12,6"
         Clicked="OnReplyPost_Clicked"
+        Command="{Binding PostButtonCommand}"
         HeightRequest="30" WidthRequest="40"
         VerticalOptions="End" HorizontalOptions="End"/>
    

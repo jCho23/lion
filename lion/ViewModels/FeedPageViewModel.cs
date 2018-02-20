@@ -1,10 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace lion.ViewModels
 {
-    public class FeedPageViewModel
+    public class FeedPageViewModel 
     {
         private ICommand _searchCommand;
         public ICommand SearchCommand
