@@ -1,10 +1,10 @@
 ﻿using System;
+using SQLite;
+
 namespace lion.Persistence
 {
-    public class ISQLiteDb
+    public interface ISQLiteDb
     {
-        public ISQLiteDb()
-        {
-        }
+        SQLiteAsyncConnection GetConnection();
     }
 }
