@@ -6,6 +6,9 @@ using Xamarin.Forms;
 
 namespace lion.ViewModels
 {
+
+
+
     //public class FeedDetailsPageViewModel:INotifyPropertyChanged
     //{
     //    string replyPostInput = string.Empty;

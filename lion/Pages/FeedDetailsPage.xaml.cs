@@ -27,6 +27,8 @@ namespace lion.Pages
 
             _connection = DependencyService.Get<ISQLiteDb>().GetConnection();
 
+
+
             FeedDetailsPageListView.ItemsSource = new List<PostMessage>{
                 new PostMessage {
                     Post = "And the only way to do great work is to love what you do. ",

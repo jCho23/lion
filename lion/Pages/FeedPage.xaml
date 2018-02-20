@@ -30,7 +30,9 @@
             Placeholder="Search Posts..."
             PlaceholderColor="Gray"
             TextChanged="Handle_TextChanged"
-            HorizontalTextAlignment="Center"/>
+            HorizontalTextAlignment="Center"
+            SearchCommand="{Binding SearchCommand}"
+            />
             <ListView
                 x:Name= "listViewFeed"
                 HasUnevenRows="true"
