@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using lion.Models;
 using lion.Pages;
+using lion.ViewModels;
 using Xamarin.Forms;
 
 namespace lion.Pages
@@ -13,6 +14,8 @@ namespace lion.Pages
        
 		public FeedPage()
 		{
+            BindingContext = new FeedPageViewModel();
+
 			InitializeComponent();
 			
 			listViewFeed.ItemsSource = GetPosts();
