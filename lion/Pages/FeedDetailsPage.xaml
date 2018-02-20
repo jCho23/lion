@@ -88,7 +88,6 @@
         Grid.Row="2" Grid.Column= "1"
         Text="Post"
         Margin="0,7,12,6"
-
         Command="{Binding PostButtonCommand}"
         HeightRequest="30" WidthRequest="40"
         VerticalOptions="End" HorizontalOptions="End"/>

@@ -13,7 +13,6 @@ namespace lion.Pages
     public partial class FeedDetailsPage : ContentPage
     {
 
-        private SQLiteAsyncConnection _connection;
         //private ObservableCollection<PostMessage> _postMessages;
 
         public FeedDetailsPage(PostMessage feedDetails)
@@ -24,11 +23,7 @@ namespace lion.Pages
             BindingContext = feedDetails;
 
             InitializeComponent();
-
-            _connection = DependencyService.Get<ISQLiteDb>().GetConnection();
-
-
-
+ 
             FeedDetailsPageListView.ItemsSource = new List<PostMessage>{
                 new PostMessage {
                     Post = "And the only way to do great work is to love what you do. ",
@@ -66,18 +61,18 @@ namespace lion.Pages
             //}
         }
 
-        protected override async void OnAppearing()
-        {
-            //await _connection.CreateTableAsync<PostMessage>();
-			
-            //var postMessages = await _connection.Table<PostMessage>().ToListAsync();
-            //_postMessages = new ObservableCollection<PostMessage>(postMessages);
+        //protected override async void OnAppearing()
+        //{
+        //    //await _connection.CreateTableAsync<PostMessage>();
+			 
+        //    //var postMessages = await _connection.Table<PostMessage>().ToListAsync();
+        //    //_postMessages = new ObservableCollection<PostMessage>(postMessages);
 
-            //FeedDetailsPageListView.ItemsSource = _postMessages;
+        //    //FeedDetailsPageListView.ItemsSource = _postMessages;
 
 
-            base.OnAppearing();
-        }
+        //    base.OnAppearing();
+        //}
 
 
 
