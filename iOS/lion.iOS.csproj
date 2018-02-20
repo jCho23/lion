@@ -157,6 +157,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Custom Renderers\" />
+    <Folder Include="Persistence\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -173,6 +174,7 @@
     <Compile Include="Custom Renderers\TabbedPageCustomRenderer.cs" />
     <Compile Include="Custom Renderers\ViewCellCustomRenderer.cs" />
     <Compile Include="Custom Renderers\PlaceholderEditorRenderer.cs" />
+    <Compile Include="Persistence\SQLiteDb.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Background.png" />
