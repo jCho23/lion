@@ -19,9 +19,6 @@ namespace lion.Pages
             base.OnDisappearing();
         }
 
-
-
-
 		public FeedAddPostModalPage()
 		{
 			InitializeComponent();
