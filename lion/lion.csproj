@@ -94,6 +94,7 @@
     <Compile Include="Persistence\ISQLiteDb.cs" />
     <Compile Include="ViewModels\FeedDetailsPageViewModel.cs" />
     <Compile Include="ViewModels\MyPostsViewModel.cs" />
+    <Compile Include="ViewModels\FeedPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
