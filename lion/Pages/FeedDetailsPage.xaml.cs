@@ -97,13 +97,13 @@ namespace lion.Pages
         //	throw new NotImplementedException();
         //}
 
-        async void OnReplyPost_Clicked(object sender, System.EventArgs e)
-        {
-            //var postMessage = new PostMessage { Post = "Post Reply Message" + DateTime.Now.Ticks };
-            //await _connection.InsertAsync(postMessage); 
+        //async void OnReplyPost_Clicked(object sender, System.EventArgs e)
+        //{
+        //    //var postMessage = new PostMessage { Post = "Post Reply Message" + DateTime.Now.Ticks };
+        //    //await _connection.InsertAsync(postMessage); 
 
-            //_postMessages.Add(postMessage);
-        }
+        //    //_postMessages.Add(postMessage);
+        //}
 
     }
 }
