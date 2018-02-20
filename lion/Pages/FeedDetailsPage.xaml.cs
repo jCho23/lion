@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using lion.Models;
 using lion.Persistence;
@@ -13,6 +14,7 @@ namespace lion.Pages
     {
 
         private SQLiteAsyncConnection _connection;
+        private ObservableCollection<PostMessage> _postMessages;
 
         public FeedDetailsPage(PostMessage feedDetails)
         {
@@ -64,10 +66,12 @@ namespace lion.Pages
 
         protected override async void OnAppearing()
         {
-            await _connection.CreateTableAsync<PostMessage>();
+            //await _connection.CreateTableAsync<PostMessage>();
 			
-            var postMessages = await _connection.Table<PostMessage>().ToListAsync();
-            FeedDetailsPageListView.ItemsSource = postMessages;
+            //var postMessages = await _connection.Table<PostMessage>().ToListAsync();
+            //_postMessages = new ObservableCollection<PostMessage>(postMessages);
+
+            //FeedDetailsPageListView.ItemsSource = _postMessages;
 
 
             base.OnAppearing();
@@ -94,7 +98,9 @@ namespace lion.Pages
         async void OnReplyPost_Clicked(object sender, System.EventArgs e)
         {
             var postMessage = new PostMessage { Post = "Post Reply Message" + DateTime.Now.Ticks };
-            await _connection.InsertAsync(postMessage);        
+            await _connection.InsertAsync(postMessage); 
+
+            _postMessages.Add(postMessage);
         }
 
     }
