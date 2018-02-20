@@ -14,7 +14,7 @@ namespace lion.Pages
     {
 
         private SQLiteAsyncConnection _connection;
-        private ObservableCollection<PostMessage> _postMessages;
+        //private ObservableCollection<PostMessage> _postMessages;
 
         public FeedDetailsPage(PostMessage feedDetails)
         {
@@ -97,10 +97,10 @@ namespace lion.Pages
 
         async void OnReplyPost_Clicked(object sender, System.EventArgs e)
         {
-            var postMessage = new PostMessage { Post = "Post Reply Message" + DateTime.Now.Ticks };
-            await _connection.InsertAsync(postMessage); 
+            //var postMessage = new PostMessage { Post = "Post Reply Message" + DateTime.Now.Ticks };
+            //await _connection.InsertAsync(postMessage); 
 
-            _postMessages.Add(postMessage);
+            //_postMessages.Add(postMessage);
         }
 
     }
