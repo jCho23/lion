@@ -67,6 +67,8 @@ namespace lion.Pages
             await _connection.CreateTableAsync<PostMessage>();
 			
             var postMessages = await _connection.Table<PostMessage>().ToListAsync();
+            FeedDetailsPageListView.ItemsSource = postMessages;
+
 
             base.OnAppearing();
         }
