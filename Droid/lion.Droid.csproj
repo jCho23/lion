@@ -168,6 +168,7 @@
     <Compile Include="CustomRenderers\LabelCustomRenderer.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="CustomRenderers\CustomEditorRenderer.cs" />
+    <Compile Include="Persistence\SQLiteDb.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -485,6 +486,7 @@
   <ItemGroup>
     <Folder Include="CustomRenderers\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Persistence\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
