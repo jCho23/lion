@@ -91,6 +91,7 @@
     <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Controls\ExtendedViewCell.cs" />
     <Compile Include="Controls\PlaceholderEditor.cs" />
+    <Compile Include="Persistence\ISQLiteDb.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
