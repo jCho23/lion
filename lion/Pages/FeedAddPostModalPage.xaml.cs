@@ -20,10 +20,10 @@ namespace lion.Pages
 
             BindingContext = Application.Current;
 
-            ModalEditor = new PlaceholderEditor
-            {
-                Placeholder = "Placeholder Text"
-            };
+            //ModalEditor = new PlaceholderEditor
+            //{
+            //    Placeholder = "Placeholder Text"
+            //};
 		}
 
 
