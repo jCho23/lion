@@ -74,11 +74,12 @@
                 x:Name="replyPostInput"
                 Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                 Keyboard="Text"
-                Text="{Binding Reply}"
                 PlaceholderColor="#f6b93b"
                 Placeholder="Reply to Post..."
                 TextChanged="OnReplyTextLimit"
                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+               <!-- Text="{Binding ReplyPostInput}"
+                Command="{Binding PostButtonCommand}"-->
                 <!--Completed="Handle_Completed"-->
     </Frame>
         
