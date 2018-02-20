@@ -1,19 +1,17 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
+
+using Xamarin.Forms;
+
 using lion.Models;
 using lion.Persistence;
-using SQLite;
-using Xamarin.Forms;
 
 namespace lion.Pages
 {
-    
     public partial class FeedDetailsPage : ContentPage
     {
-
-        //private ObservableCollection<PostMessage> _postMessages;
 
         public FeedDetailsPage(PostMessage feedDetails)
         {
@@ -60,21 +58,6 @@ namespace lion.Pages
             //        break;
             //}
         }
-
-        //protected override async void OnAppearing()
-        //{
-        //    //await _connection.CreateTableAsync<PostMessage>();
-			 
-        //    //var postMessages = await _connection.Table<PostMessage>().ToListAsync();
-        //    //_postMessages = new ObservableCollection<PostMessage>(postMessages);
-
-        //    //FeedDetailsPageListView.ItemsSource = _postMessages;
-
-
-        //    base.OnAppearing();
-        //}
-
-
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
