@@ -2,7 +2,7 @@
 
 namespace lion.ViewModels
 {
-    public class MyPostsViewModel
+    public class MyPostsViewModel : BaseViewModel
     {
        
     }
