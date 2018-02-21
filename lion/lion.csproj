@@ -96,6 +96,7 @@
     <Compile Include="ViewModels\MyPostsViewModel.cs" />
     <Compile Include="ViewModels\FeedPageViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="FakeService\FakeFeedService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
