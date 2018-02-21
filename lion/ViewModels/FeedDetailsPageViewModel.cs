@@ -8,12 +8,12 @@ using System.Runtime.CompilerServices;
 
 namespace lion.ViewModels
 {
-    public class FeedDetailsPageViewModel : INotifyPropertyChanged
+    public class FeedDetailsPageViewModel : BaseViewModel
     {
         string replyPostInput = string.Empty;
         ICommand postButtonCommand;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
 
         public string ReplyPostInput
         {
@@ -39,19 +39,8 @@ namespace lion.ViewModels
             //}
         }
 
-        void SetProperty<T>(ref T backingStore, T value, Action onChanged = null, [CallerMemberName] string propertyname = "")
-        {
-            if (EqualityComparer<T>.Default.Equals(backingStore, value))
-                return;
+      
 
-            backingStore = value;
 
-            onChanged?.Invoke();
-
-            OnPropertyChanged(propertyname);
-        }
-
-        void OnPropertyChanged([CallerMemberName]string propertyName = "") =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
