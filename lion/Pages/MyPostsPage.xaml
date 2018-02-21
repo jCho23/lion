@@ -17,6 +17,7 @@
 
     
    <ListView
+        ItemsSource="{Binding PostMessage}"
         x:Name="MyPostsListView"
         HasUnevenRows="true"
         BackgroundColor="Transparent">

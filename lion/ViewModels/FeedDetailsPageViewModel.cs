@@ -13,8 +13,6 @@ namespace lion.ViewModels
         string replyPostInput = string.Empty;
         ICommand postButtonCommand;
 
-        //public event PropertyChangedEventHandler PropertyChanged;
-
         public string ReplyPostInput
         {
             get => replyPostInput;
