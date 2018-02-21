@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace lion.ViewModels
 {
-    public class FeedPageViewModel 
+    public class FeedPageViewModel : BaseViewModel
     {
         private ICommand _searchCommand;
         public ICommand SearchCommand

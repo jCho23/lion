@@ -8,7 +8,7 @@ using lion.Services;
 
 namespace lion.ViewModels
 {
-    public class FacebookViewModel : INotifyPropertyChanged
+    public class FacebookViewModel : BaseViewModel
     {
         private FacebookProfile _facebookProfile;
 
@@ -29,11 +29,11 @@ namespace lion.ViewModels
             FacebookProfile = await facebookServices.GetFacebookProfileAsync(accessToken);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        ////protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        ////{
+        ////    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        ////}
     }
 }
