@@ -95,6 +95,7 @@
     <Compile Include="ViewModels\FeedDetailsPageViewModel.cs" />
     <Compile Include="ViewModels\MyPostsViewModel.cs" />
     <Compile Include="ViewModels\FeedPageViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
