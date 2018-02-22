@@ -9,6 +9,8 @@ namespace lion.ViewModels
 {
     public class FeedPageViewModel : BaseViewModel
     {
+        
+
         //private ICommand _searchCommand;
         //public ICommand SearchCommand
         //{

@@ -22,6 +22,7 @@
             Priority="0" 
             Icon="add.png" 
             Order="Primary" 
+            Command="{Binding OnAddButtonCommand}"
             Activated="OnAddButton_Activated" />
     </ContentPage.ToolbarItems>
 
