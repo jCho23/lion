@@ -9,7 +9,7 @@ namespace lion.ViewModels
 {
     public class FeedPageViewModel : BaseViewModel
     {
-        
+        public ICommand OnAddButtonCommand { get; private set; }
 
         //private ICommand _searchCommand;
         //public ICommand SearchCommand
