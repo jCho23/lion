@@ -16,7 +16,11 @@ namespace lion.ViewModels
             OnAddButtonCommand = new Command(AddButton);
         }
 
+        async private void AddButton()
+        {
+            await Navigation.PushModalAsync(new FeedAddPostModalPage());
 
+        }
 
         //private ICommand _searchCommand;
         //public ICommand SearchCommand
@@ -30,10 +34,5 @@ namespace lion.ViewModels
         //    }
         //}
 
-        //async public void OnAddButton_Activated()
-        //{
-        //    await Navigation.PushModalAsync(new FeedAddPostModalPage());
-
-        //}
     }
 }
