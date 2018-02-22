@@ -21,10 +21,10 @@
             Name="AddPost"
             Priority="0" 
             Icon="add.png" 
-            Order="Primary" 
-            Command="{Binding OnAddButtonCommand}"
-            Activated="OnAddButton_Activated" />
-    </ContentPage.ToolbarItems>
+            Order="Primary" />
+          <!--  Activated="OnAddButton_Activated" -->
+<!--            Command="{Binding OnAddButtonCommand}"
+-->    </ContentPage.ToolbarItems>
 
     <StackLayout>
         <SearchBar
@@ -32,9 +32,9 @@
             PlaceholderColor="Gray"
             TextChanged="Handle_TextChanged"
             HorizontalTextAlignment="Center"
-            SearchCommand="{Binding SearchCommand}"
             />
-            <ListView
+<!--            SearchCommand="{Binding SearchCommand}"
+-->            <ListView
                 x:Name= "listViewFeed"
                 HasUnevenRows="true"
                 IsPullToRefreshEnabled="true"

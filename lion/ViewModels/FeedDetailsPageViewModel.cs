@@ -19,23 +19,23 @@ namespace lion.ViewModels
             set => SetProperty(ref replyPostInput, value);
         }
 
-        public ICommand PostButtonCommand => postButtonCommand ??
-            (postButtonCommand = new Command(async () => await ExecutePostButtonCommand()));
+        //public ICommand PostButtonCommand => postButtonCommand ??
+            //(postButtonCommand = new Command(async () => await ExecutePostButtonCommand()));
 
 
-        async Task ExecutePostButtonCommand()
-        {
-            //try
-            //{
-            //   
-            //}
-            //catch 
-            //{
-            //}
-            //finally
-            //{
-            //}
-        }
+        //async Task ExecutePostButtonCommand()
+        //{
+        //    //try
+        //    //{
+        //    //   
+        //    //}
+        //    //catch 
+        //    //{
+        //    //}
+        //    //finally
+        //    //{
+        //    //}
+        //}
 
       
 

@@ -11,15 +11,15 @@ namespace lion.ViewModels
     {
         public ICommand OnAddButtonCommand { get; private set; }
 
-        public FeedPageViewModel()
-        {
-            OnAddButtonCommand = new Command<FeedPageViewModel>(async vm => await AddButton(vm));
-        }
+        //public FeedPageViewModel()
+        //{
+        //    OnAddButtonCommand = new Command<FeedPageViewModel>(async vm => await AddButton(vm));
+        //}
 
-        public async void AddButton()
-        {
-            await Navigation.PushModalAsync(new FeedAddPostModalPage());
-        }
+        //private async void AddButton()
+        //{
+        //    await Navigation.PushModalAsync(new FeedAddPostModalPage());
+        //}
 
         //private ICommand _searchCommand;
         //public ICommand SearchCommand
