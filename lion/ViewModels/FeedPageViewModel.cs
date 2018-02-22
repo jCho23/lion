@@ -11,6 +11,13 @@ namespace lion.ViewModels
     {
         public ICommand OnAddButtonCommand { get; private set; }
 
+        public FeedPageViewModel()
+        {
+            OnAddButtonCommand = new Command(AddButton);
+        }
+
+
+
         //private ICommand _searchCommand;
         //public ICommand SearchCommand
         //{
