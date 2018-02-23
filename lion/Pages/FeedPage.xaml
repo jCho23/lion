@@ -18,9 +18,8 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem
             x:Name="AddPost"
-            Name="AddPost"
             Priority="0" 
-            Icon="add.png" 
+            Icon="Add.png" 
             Order="Primary" />
           <!--  Activated="OnAddButton_Activated" -->
 <!--            Command="{Binding OnAddButtonCommand}"

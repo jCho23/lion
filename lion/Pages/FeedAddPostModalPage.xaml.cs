@@ -11,7 +11,7 @@ namespace lion.Pages
         {
             var homeView = new ContentPage();
 
-            await Navigation.PushModalAsync(new NavigationPage(new Views.HomeView()));
+            await Navigation.PushModalAsync(new NavigationPage(new Views.LionTabbedPage()));
         }
 
         protected override void OnDisappearing()

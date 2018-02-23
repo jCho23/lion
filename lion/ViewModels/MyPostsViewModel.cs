@@ -6,8 +6,8 @@ namespace lion.ViewModels
 {
     public class MyPostsViewModel : BaseViewModel
     {
-        private ObservableCollection<PostMessage> _myPostMessages = new ObservableCollection<PostMessage>();
-        public ObservableCollection<PostMessage> MyPostMessages
+        private ObservableCollection<PostMessageModel> _myPostMessages = new ObservableCollection<PostMessageModel>();
+        public ObservableCollection<PostMessageModel> MyPostMessages
         {
             get{
                 return _myPostMessages;

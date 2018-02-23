@@ -2,7 +2,7 @@
 
 namespace lion.Models
 {
-    public class FacebookProfile
+    public class FacebookProfileModel
     {
         public string Name { get; set; }
         public Picture Picture { get; set; }
