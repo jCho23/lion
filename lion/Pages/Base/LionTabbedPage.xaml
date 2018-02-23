@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:localPages="clr-namespace:lion.Pages;assembly=lion"
-    x:Class="lion.Pages.Base.LionTabbedPage"
+    x:Class="lion.Pages.LionTabbedPage"
     Title="Scholars">
 
     <localPages:FeedPage
