@@ -128,24 +128,5 @@ namespace lion.ViewModels
             set => SetProperty(ref listViewItemSource, value);
         }
 
-
-
-        //async Task ExecutePostButtonCommand()
-        //{
-        //    //try
-        //    //{
-        //    //   
-        //    //}
-        //    //catch 
-        //    //{
-        //    //}
-        //    //finally
-        //    //{
-        //    //}
-        //}
-
-
-
-
     }
 }
