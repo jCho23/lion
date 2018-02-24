@@ -67,9 +67,6 @@
                      <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
-
-          
-   
         </ResourceDictionary>
 	</Application.Resources>
 </Application>

@@ -8,8 +8,7 @@
     <ViewCell.View>
         <Frame
             Margin="7,3,7,3"
-            OutlineColor="#f6b93b"
-            BackgroundColor="Transparent">
+            OutlineColor="#f6b93b">
                 <StackLayout
                     Orientation="Horizontal"
                     HorizontalOptions="Start">
