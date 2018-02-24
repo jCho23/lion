@@ -35,7 +35,6 @@
 <!--            SearchCommand="{Binding SearchCommand}"
 -->            <ListView
                 x:Name= "listViewFeed"
-                HasUnevenRows="true"
                 IsPullToRefreshEnabled="true"
                 Refreshing="Handle_Refreshing"
                 ItemSelected="Handle_ItemSelected"
