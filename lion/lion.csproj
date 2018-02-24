@@ -102,7 +102,7 @@
     <Compile Include="Persistence\ISQLiteDb.cs" />
     <Compile Include="ViewModels\FeedDetailsPageViewModel.cs" />
     <Compile Include="ViewModels\MyPostsViewModel.cs" />
-    <Compile Include="ViewModels\FeedPageViewModel.cs" />
+    <Compile Include="ViewModels\FeedViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="Models\ReplyMessageModel.cs" />
     <Compile Include="Views\FeedDetailsViewCell.xaml.cs">

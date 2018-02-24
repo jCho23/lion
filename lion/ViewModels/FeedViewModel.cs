@@ -11,13 +11,13 @@ using System.Collections;
 
 namespace lion.ViewModels
 {
-    public class FeedPageViewModel : BaseViewModel
+    public class FeedViewModel : BaseViewModel
     {
         string  numberOfReplies;
 
         ObservableCollection<PostMessageModel> listViewItemSource2;
 
-        public FeedPageViewModel()
+        public FeedViewModel()
         {
           
 

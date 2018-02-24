@@ -53,10 +53,6 @@ namespace lion.ViewModels
                 ListViewItemSource.Add(dummyPostMessage);
             });
 
-
-
-
-
             ListViewItemSource = new ObservableCollection<ReplyMessageModel>
             {
                 new ReplyMessageModel

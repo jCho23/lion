@@ -12,7 +12,7 @@ namespace lion.Pages
     {
         public FeedPage()
         {
-            var feedPageViewModel = new FeedPageViewModel();
+            var feedPageViewModel = new FeedViewModel();
             this.BindingContext = feedPageViewModel;
 
             InitializeComponent();
