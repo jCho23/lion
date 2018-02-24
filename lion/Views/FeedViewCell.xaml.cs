@@ -20,6 +20,7 @@ namespace lion.Views
 
             PostMessageLabel.Text = model.PostText;
             UserProfilePicture.Source = model.PostUser.PictureUrl;
+            //PostNumberOfRepliesLabel. = model.NumberOfReplies;
         }
     }
 }
