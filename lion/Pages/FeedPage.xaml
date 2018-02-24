@@ -25,15 +25,7 @@
             Activated="OnAddButton_Activated"
             Order="Primary" />
    </ContentPage.ToolbarItems>
-      <!--Command="{Binding OnAddButtonCommand}"-->
-
-          Activated="OnAddButton_Activated"
-            Order="Primary" />
-          <!--  Activated="OnAddButton_Activated" -->
-
-
-<!--            Command="{Binding OnAddButtonCommand}"
--->    </ContentPage.ToolbarItems>
+      
 
     <StackLayout>
         <SearchBar

@@ -18,7 +18,7 @@ namespace lion.Pages
 
             InitializeComponent();
 
-            //listViewFeed.ItemsSource = GetPosts();
+            listViewFeed.ItemsSource = GetPosts();
 
 
 
