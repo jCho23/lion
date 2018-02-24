@@ -20,8 +20,13 @@
             x:Name="AddPost"
             Priority="0" 
             Icon="Add.png" 
+
             Order="Primary" />
           <!--  Activated="OnAddButton_Activated" -->
+
+            Order="Primary" 
+          Activated="OnAddButton_Activated"/>
+
 <!--            Command="{Binding OnAddButtonCommand}"
 -->    </ContentPage.ToolbarItems>
 
