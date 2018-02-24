@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace lion.Views
 {
-    public partial class FeedViewCell : ContentPage
+    public partial class FeedViewCell : ViewCell
     {
         public FeedViewCell()
         {
