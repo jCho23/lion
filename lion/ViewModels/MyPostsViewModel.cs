@@ -16,8 +16,6 @@ namespace lion.ViewModels
             set{
                 _myPostMessages = value;
             }
-
-
         }
 
 
