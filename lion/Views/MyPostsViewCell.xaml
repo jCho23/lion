@@ -28,7 +28,7 @@
                                     <StackLayout
                                         Padding="5">
                                             <Label
-                                                x:Name = "MyPostMessageLabel"
+                                                x:Name = "MyPostsMessageLabel"
                                                
                                                 FontSize="16" />
                                             <Label
