@@ -105,7 +105,6 @@
                 <On Platform="iOS, Android" Value="120" />
             </OnPlatform>
         </ListView.RowHeight>
-                       
            <ListView.ItemTemplate>
                 <DataTemplate>
                     <views:FeedDetailsViewCell/>

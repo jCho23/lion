@@ -3,6 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+    xmlns:views="clr-namespace:lion.Views;assembly=lion"
+
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="lion.Pages.FeedPage"
     Title="Scholars">
@@ -20,6 +22,10 @@
             x:Name="AddPost"
             Priority="0" 
             Icon="Add.png" 
+            Activated="OnAddButton_Activated"
+            Order="Primary" />
+   </ContentPage.ToolbarItems>
+      <!--Command="{Binding OnAddButtonCommand}"-->
 
           Activated="OnAddButton_Activated"
             Order="Primary" />
@@ -44,6 +50,7 @@
                 Refreshing="Handle_Refreshing"
                 ItemSelected="Handle_ItemSelected"
                 BackgroundColor="Transparent"
+                ItemsSource="{Binding ListViewItemSource2}"
                 SeparatorVisibility= "None">
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
@@ -52,63 +59,7 @@
                 </ListView.RowHeight>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <ViewCell>
-                                    <Frame
-                                        Margin="7,3,7,3"
-                                        OutlineColor="#f6b93b"
-                                        HasShadow="false"
-                                        BackgroundColor="Transparent">
-                                            <StackLayout
-                                                Orientation="Horizontal"
-                                                HorizontalOptions="Start">
-                                                    <ic:CircleImage
-                                                        Margin="0,0,5,0"
-                                                        WidthRequest="75"
-                                                        HeightRequest="75"
-                                                        Aspect="AspectFill"
-                                                        BorderColor="Gray"
-                                                        BorderThickness="1"
-                                                        Source="{Binding UserUrl}"/>
-                                                    <Grid>
-                                                        <Grid.RowDefinitions>
-                                                            <RowDefinition Height="60"/>
-                                                            <RowDefinition Height="20"/>
-                                                            <RowDefinition Height="30"/>
-                                                        </Grid.RowDefinitions>
-                                                        
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition Width="*"/>
-                                                            <ColumnDefinition Width="*"/>
-                                                            <ColumnDefinition Width="*"/>
-                                                        </Grid.ColumnDefinitions>
-                                        
-                                                            <Label
-                                                                Grid.Row="0" Grid.ColumnSpan="3"
-                                                                FontSize="16" 
-                                                                Margin="5,2,0,0"
-                                                                Text="{Binding Post}"/>
-                                                            <Label
-                                                                Grid.Row="1" Grid.Column="2"
-                                                                FontSize="8"
-                                                                TextColor="Silver"
-                                                                Text="{Binding Status}"
-                                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
-                                                            <Image
-                                                                Grid.Row="1" Grid.Column="1"
-                                                                Margin="0,10,0,0"
-                                                                Aspect="AspectFit" 
-                                                                Source="heart8.png"/>
-                                                            <Label
-                                                                Grid.Row= "1" Grid.Column="1"
-                                                                Text="88"
-                                                                FontSize="8"
-                                                                TextColor="Silver"
-                                                                Margin="30,10,0,0"
-                                                                HorizontalOptions="Center" VerticalOptions="Center"/>
-                                                    </Grid>                 
-                                                </StackLayout>
-                                        </Frame>
-                                </ViewCell>
+                               <views:FeedViewCell/>
                             </DataTemplate>
                         </ListView.ItemTemplate>              
                 </ListView>

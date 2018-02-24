@@ -18,7 +18,7 @@ namespace lion.Pages
 
             InitializeComponent();
 
-            listViewFeed.ItemsSource = GetPosts();
+            //listViewFeed.ItemsSource = GetPosts();
 
 
 
@@ -26,7 +26,11 @@ namespace lion.Pages
 
         async void OnAddButton_Activated(object sender, System.EventArgs e)
         {
+
+
             await Navigation.PushModalAsync(new FeedAddPostModalPage());
+
+        
         }
 
 
@@ -54,56 +58,56 @@ namespace lion.Pages
             //Call to a remote service, placeholder for now
             var posts = new List<PostMessageModel>
             {
-                new PostMessageModel
-                {
-                    PostText = "And the only way to do great work is to love what you do. ",
-                    NumberOfReplies =23,
-                    PostUser= new UserProfileModel
-                    {
-                        Name = "Sarah Jenner",
-                        PictureUrl = "https://lion.blob.core.windows.net/pic1/pic1.jpeg"
-                    }
-                },
-                new PostMessageModel
-                {
-                    PostText = "Everything around you that you call life was made up by people that were no smarter than you",
-                    NumberOfReplies = 8,
-                    PostUser= new UserProfileModel
-                    {
-                        Name = "Suzanne Jenner",
-                        PictureUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
-                    }
-                },
-                new PostMessageModel
-                {
-                    PostText = "What's the best pizza joint around campus? ",
-                    NumberOfReplies = 48,
-                    PostUser= new UserProfileModel
-                    {
-                        Name = "The Rock",
-                        PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    }
-                },
-                new PostMessageModel
-                {
-                    PostText = "Everything around you that you call life was made up by people that were no smarter than you",
-                    NumberOfReplies = 8,
-                    PostUser= new UserProfileModel
-                    {
-                        Name = "Kylie Jenner",
-                        PictureUrl = "https://cdn.inquisitr.com/wp-content/uploads/2016/04/kylie-jenner-paper-photoshoot.png",
-                    }
-                },
-                new PostMessageModel
-                {
-                    PostText = "Everything around you that you call life was made up by people that were no smarter than you",
-                    NumberOfReplies = 8,
-                    PostUser= new UserProfileModel
-                    {
-                        Name = "Kevin Hart",
-                        PictureUrl = "https://healthyceleb.com/wp-content/uploads/2016/07/Kevin-Hart-headshot.jpg",
-                    }
-                },
+                //new PostMessageModel
+                //{
+                //    PostText = "And the only way to do great work is to love what you do. ",
+                //    NumberOfReplies =23,
+                //    PostUser= new UserProfileModel
+                //    {
+                //        Name = "Sarah Jenner",
+                //        PictureUrl = "https://lion.blob.core.windows.net/pic1/pic1.jpeg"
+                //    }
+                //},
+                //new PostMessageModel
+                //{
+                //    PostText = "Everything around you that you call life was made up by people that were no smarter than you",
+                //    NumberOfReplies = 8,
+                //    PostUser= new UserProfileModel
+                //    {
+                //        Name = "Suzanne Jenner",
+                //        PictureUrl = "https://lion.blob.core.windows.net/pic2/pic2.jpeg",
+                //    }
+                //},
+                //new PostMessageModel
+                //{
+                //    PostText = "What's the best pizza joint around campus? ",
+                //    NumberOfReplies = 48,
+                //    PostUser= new UserProfileModel
+                //    {
+                //        Name = "The Rock",
+                //        PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                //    }
+                //},
+                //new PostMessageModel
+                //{
+                //    PostText = "Everything around you that you call life was made up by people that were no smarter than you",
+                //    NumberOfReplies = 8,
+                //    PostUser= new UserProfileModel
+                //    {
+                //        Name = "Kylie Jenner",
+                //        PictureUrl = "https://cdn.inquisitr.com/wp-content/uploads/2016/04/kylie-jenner-paper-photoshoot.png",
+                //    }
+                //},
+                //new PostMessageModel
+                //{
+                //    PostText = "Everything around you that you call life was made up by people that were no smarter than you",
+                //    NumberOfReplies = 8,
+                //    PostUser= new UserProfileModel
+                //    {
+                //        Name = "Kevin Hart",
+                //        PictureUrl = "https://healthyceleb.com/wp-content/uploads/2016/07/Kevin-Hart-headshot.jpg",
+                //    }
+                //},
                 new PostMessageModel
                 {
                     PostText = "Everything around you that you call life was made up by people that were no smarter than you",
