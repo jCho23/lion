@@ -7,14 +7,6 @@
 	<Application.Resources>
         <ResourceDictionary>
 
-            <!--COLORS-->
-            <Color x:Key="HeaderTextColor">#585858</Color>
-            <Color x:Key="BodyTextColor">#C3C3C3</Color>
-            <Color x:Key="ButtonBackgroundColor">#85bb65</Color>
-            <Color x:Key="BackgroundColor">#FFFFFF</Color>
-            <Color x:Key="LoginButtonBackgroundColor">#000000</Color>
-
-
             <!--PAGES-->
             <Style 
                 TargetType="NavigationPage">
@@ -53,7 +45,6 @@
                     <Setter Property="FontFamily" Value="CaviarDreams"/>
                     <Setter Property="BackgroundColor" Value="#f6b93b"/>
             </Style>
-
 
             <!--LISTVIEW-->
             <Style
