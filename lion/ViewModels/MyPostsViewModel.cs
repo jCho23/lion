@@ -23,7 +23,6 @@ namespace lion.ViewModels
                     {
                         PictureUrl="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
                     }
-
                 },
 
                 new PostMessageModel()
@@ -34,7 +33,6 @@ namespace lion.ViewModels
                     {
                         PictureUrl="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
                     }
-
                 },
 
                 new PostMessageModel()
@@ -45,7 +43,6 @@ namespace lion.ViewModels
                     {
                         PictureUrl="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
                     }
-
                 },
 
                 new PostMessageModel()
@@ -56,7 +53,6 @@ namespace lion.ViewModels
                     {
                         PictureUrl="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
                     }
-
                 },
 
                 new PostMessageModel()
@@ -67,7 +63,6 @@ namespace lion.ViewModels
                     {
                         PictureUrl="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
                     }
-
                 },
 
                 new PostMessageModel()
@@ -78,7 +73,6 @@ namespace lion.ViewModels
                     {
                         PictureUrl="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
                     }
-
                 }
             };
                    
