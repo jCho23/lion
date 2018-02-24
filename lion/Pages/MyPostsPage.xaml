@@ -16,7 +16,6 @@
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
 
-    
    <ListView
         x:Name="MyPostsListView"
         HasUnevenRows="true"

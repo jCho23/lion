@@ -15,7 +15,6 @@
             <Color x:Key="LoginButtonBackgroundColor">#000000</Color>
 
 
-
             <!--PAGES-->
             <Style 
                 TargetType="NavigationPage">
@@ -55,13 +54,13 @@
                     <Setter Property="BackgroundColor" Value="#f6b93b"/>
             </Style>
 
-
-            
             <!--LISTVIEW-->
             <Style
                 TargetType= "ListView">
                     <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
+
+          
    
         </ResourceDictionary>
 	</Application.Resources>

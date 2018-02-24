@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
     xmlns:views="clr-namespace:lion.Views;assembly=lion"
-
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="lion.Pages.FeedPage"
     Title="Scholars">
@@ -22,15 +21,14 @@
             x:Name="AddPost"
             Priority="0" 
             Icon="Add.png" 
-            Activated="OnAddButton_Activated"
-            Order="Primary" />
+            Order="Primary" 
+            Activated="OnAddButton_Activated"/>
    </ContentPage.ToolbarItems>
-      
 
     <StackLayout>
         <SearchBar
-            Placeholder="Search Posts..."
             PlaceholderColor="Gray"
+            Placeholder="Search Posts..."
             TextChanged="Handle_TextChanged"
             HorizontalTextAlignment="Center"
             />

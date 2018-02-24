@@ -24,13 +24,6 @@ namespace lion.Pages
 			InitializeComponent();
 
             BindingContext = Application.Current;
-
-            //ModalEditor = new PlaceholderEditor
-            //{
-            //    Placeholder = "Placeholder Text"
-            //};
 		}
-
-
     }
 }
