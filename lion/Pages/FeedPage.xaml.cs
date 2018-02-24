@@ -14,7 +14,7 @@ namespace lion.Pages
 
         public FeedPage()
         {
-            BindingContext = new FeedPageViewModel();
+            //BindingContext = new FeedPageViewModel();
 
             InitializeComponent();
 
@@ -26,14 +26,7 @@ namespace lion.Pages
 
         async void OnAddButton_Activated(object sender, System.EventArgs e)
         {
-
-
-        //    await Navigation.PushModalAsync(new FeedAddPostModalPage());
-
-        //}
-
             await Navigation.PushModalAsync(new FeedAddPostModalPage());
-                
         }
 
 

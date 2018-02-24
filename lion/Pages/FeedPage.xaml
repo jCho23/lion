@@ -21,11 +21,10 @@
             Priority="0" 
             Icon="Add.png" 
 
+          Activated="OnAddButton_Activated"
             Order="Primary" />
           <!--  Activated="OnAddButton_Activated" -->
 
-            Order="Primary" 
-          Activated="OnAddButton_Activated"/>
 
 <!--            Command="{Binding OnAddButtonCommand}"
 -->    </ContentPage.ToolbarItems>
