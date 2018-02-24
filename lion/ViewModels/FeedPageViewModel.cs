@@ -13,11 +13,13 @@ namespace lion.ViewModels
 {
     public class FeedPageViewModel : BaseViewModel
     {
-        string numberOfReplies;
+        string  numberOfReplies;
+
         ObservableCollection<PostMessageModel> listViewItemSource2;
 
         public FeedPageViewModel()
         {
+          
 
             //if (postMessage.NumberOfReplies == 1)
             //    NumberOfReplies = $"{postMessage.NumberOfReplies} Reply";
@@ -27,7 +29,7 @@ namespace lion.ViewModels
 
             //IEnumerable<PostMessageModel> GetPosts(string searchText = null)
             //{
-            ListViewItemSource2 = new ObservableCollection<PostMessageModel>
+                ListViewItemSource2 = new ObservableCollection<PostMessageModel>
             {
                 new PostMessageModel
                 {
@@ -91,8 +93,6 @@ namespace lion.ViewModels
                 }
             };
         }
-
-
         //if (string.IsNullOrWhiteSpace(searchText))
         //    return posts;
 
@@ -101,6 +101,8 @@ namespace lion.ViewModels
 
 
         //        }
+
+       
         public string NumberOfReplies
         {
             get => numberOfReplies;
