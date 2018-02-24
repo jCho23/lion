@@ -20,7 +20,6 @@
    <ListView
         x:Name="MyPostsListView"
         HasUnevenRows="true"
-        BackgroundColor="Transparent"
         ItemsSource="{Binding MyPostsListViewItemSource}">
          <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
