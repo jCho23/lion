@@ -22,7 +22,7 @@
                             Aspect="AspectFill"
                             BorderColor="Gray"
                             BorderThickness="1"
-                            Source="{Binding UserUrl}"/>
+                            />
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="60"/>

@@ -23,18 +23,19 @@
                                 HeightRequest="80"
                                 Aspect="AspectFill"
                                 BorderColor="Gray"
-                                BorderThickness="3"
-                                />
+                                BorderThickness="1" />
                                     <StackLayout
                                         Padding="5">
                                             <Label
                                                 x:Name = "MyPostsMessageLabel"
-                                               
+                                                Text="{Binding PostText}"
                                                 FontSize="16" />
                                             <Label
+                                                x:Name="PostNumberOfRepliesLabel"
                                                 FontSize="10"
                                                 TextColor="Silver"
-                                                Text="{Binding Status}"
+                                                            Text="{Binding NumberOfReplies}"
+
                                                 HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
                                     </StackLayout>
                     </StackLayout>                       
