@@ -69,7 +69,6 @@
         Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
         Padding="10"
         Margin="5,0,5,0"
-        HasShadow="false"
         OutlineColor="#f6b93b"
         BackgroundColor="Transparent">
             <Entry

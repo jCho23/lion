@@ -160,7 +160,6 @@
     <Folder Include="LoginPages\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Controls\" />
     <Folder Include="Persistence\" />
     <Folder Include="Pages\Base\" />

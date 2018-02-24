@@ -60,6 +60,12 @@
                     <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
+            <Style
+                TargetType= "Frame">
+                    <Setter Property="HasShadow" Value="false"/>
+            </Style>
+
+
           
    
         </ResourceDictionary>

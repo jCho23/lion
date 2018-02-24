@@ -9,7 +9,6 @@
         <Frame
             Margin="7,3,7,3"
             OutlineColor="#f6b93b"
-            HasShadow="false"
             BackgroundColor="Transparent">
                 <StackLayout
                     Orientation="Horizontal"

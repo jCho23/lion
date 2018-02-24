@@ -13,9 +13,7 @@ namespace lion.Pages
             var myPostsViewModel = new MyPostsViewModel();
             this.BindingContext = myPostsViewModel;
 
-
             InitializeComponent();
-
         }
     }
 }

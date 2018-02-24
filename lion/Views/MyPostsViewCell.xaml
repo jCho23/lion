@@ -9,7 +9,6 @@
         <Frame
             Padding="10"
             Margin="7,3,7,3"
-            HasShadow="false"
             OutlineColor="#0c2461"
             BackgroundColor="Transparent">
                 <StackLayout

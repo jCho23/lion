@@ -39,7 +39,6 @@
 
             <Frame
                 Grid.Row="1" Grid.ColumnSpan="2"
-                HasShadow="false"
                 OutlineColor="#f6b93b"
                 BackgroundColor="Transparent" >
                     <StackLayout
