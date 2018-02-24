@@ -95,7 +95,6 @@
         <ListView         
             x:Name="FeedDetailsPageListView"
             Grid.Row="4" Grid.ColumnSpan="2"
-            SeparatorVisibility="None"
             ItemsSource="{Binding ListViewItemSource}">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">

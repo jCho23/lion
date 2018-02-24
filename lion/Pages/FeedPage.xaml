@@ -39,8 +39,7 @@
                 IsPullToRefreshEnabled="true"
                 Refreshing="Handle_Refreshing"
                 ItemSelected="Handle_ItemSelected"
-                ItemsSource="{Binding ListViewItemSource2}"
-                SeparatorVisibility= "None">
+                ItemsSource="{Binding ListViewItemSource2}">
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
                         <On Platform="iOS, Android" Value="120" />
