@@ -13,15 +13,14 @@ namespace lion.ViewModels
 {
     public class FeedPageViewModel : BaseViewModel
     {
-        ObservableCollection<ReplyMessageModel> listViewItemSource2;
-
+        ObservableCollection<PostMessageModel> listViewItemSource2;
 
         public FeedPageViewModel()
         {
-            ListViewItemSource2 = IEnumerable<PostMessageModel> GetPosts(string searchText = null)
-            {
-                //Call to a remote service, placeholder for now
-                var posts = new ObservableCollection<PostMessageModel>
+
+            //IEnumerable<PostMessageModel> GetPosts(string searchText = null)
+            //{
+            ListViewItemSource2 = new ObservableCollection<PostMessageModel>
             {
                 new PostMessageModel
                 {
@@ -85,12 +84,12 @@ namespace lion.ViewModels
                 }
             };
 
-                if (string.IsNullOrWhiteSpace(searchText))
-                    return posts;
+            //if (string.IsNullOrWhiteSpace(searchText))
+            //    return posts;
 
 
-                return posts.Where(x => x.Id.ToLower().Contains(searchText.ToLower()));
-            }
+            //return posts.Where(x => x.Id.ToLower().Contains(searchText.ToLower()));
+
 
         }
 
@@ -99,7 +98,6 @@ namespace lion.ViewModels
             get => listViewItemSource2;
             set => SetProperty(ref listViewItemSource2, value);
         }
-
 
     }
 }
