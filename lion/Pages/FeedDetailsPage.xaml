@@ -33,81 +33,81 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-    <ic:CircleImage
-        Grid.Row="0" Grid.Column="0" 
-        BorderThickness="1"
-        BorderColor="Gray"
-        Margin="10,10,0,0"
-        Aspect="AspectFill"
-        Source="{Binding PostUserProfileUrl}"
-        HeightRequest="100" WidthRequest="100"/>
+        <ic:CircleImage
+            Grid.Row="0" Grid.Column="0" 
+            BorderThickness="1"
+            BorderColor="Gray"
+            Margin="10,10,0,0"
+            Aspect="AspectFill"
+            Source="{Binding PostUserProfileUrl}"
+            HeightRequest="100" WidthRequest="100"/>
 
-    <Label
-        Grid.Row="0" Grid.Column="1"
-        FontSize="20"
-        Margin="7,0,0,0"
-        Text="{Binding PostUserPostText}" 
-        HorizontalOptions="Center" VerticalOptions="Center"/>
-    
-    <Label
-        Grid.Row="1" Grid.Column = "0"
-        Margin="10,5,0,0"
-        TextColor="#f6b93b"
-        FontSize="14"
-        Text="{Binding PostUserName}"
-        HorizontalOptions= "StartAndExpand" VerticalOptions="StartAndExpand"/>
-    
-    <Label
-        Grid.Row="1" Grid.Column="1"
-        FontSize="10"
-        TextColor="Silver"
-        Margin="0, 5, 14,30"
-        Text="{Binding NumberOfReplies}"
-        HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
+        <Label
+            Grid.Row="0" Grid.Column="1"
+            FontSize="20"
+            Margin="7,0,0,0"
+            Text="{Binding PostUserPostText}" 
+            HorizontalOptions="Center" VerticalOptions="Center"/>
         
-    <Frame
-        Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-        Padding="10"
-        Margin="5,0,5,0"
-        OutlineColor="#f6b93b">
-            <Entry
-                x:Name="replyPostInput"
-                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-                Keyboard="Text"
-                PlaceholderColor="#f6b93b"
-                Placeholder="Reply to Post..."
-                TextChanged="OnReplyTextLimit"
-                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-               <!-- Text="{Binding ReplyPostInput}"
-                Command="{Binding PostButtonCommand}"-->
-                <!--Completed="Handle_Completed"-->
-    </Frame>
+        <Label
+            Grid.Row="1" Grid.Column = "0"
+            Margin="10,5,0,0"
+            TextColor="#f6b93b"
+            FontSize="14"
+            Text="{Binding PostUserName}"
+            HorizontalOptions= "StartAndExpand" VerticalOptions="StartAndExpand"/>
         
-    <Button 
-        x:Name="postButton"
-        Grid.Row="2" Grid.Column= "1"
-        Text="Post"
-        Margin="0,7,12,6"
-        Command="{Binding PostButtonCommand}"
-        HeightRequest="30" WidthRequest="40"
-        VerticalOptions="End" HorizontalOptions="End"/>
-   
-    <ListView         
-        x:Name="FeedDetailsPageListView"
-        Grid.Row="4" Grid.ColumnSpan="2"
-        ItemsSource="{Binding ListViewItemSource}"
-        SeparatorVisibility="None">
-        <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32">
-                <On Platform="iOS, Android" Value="120" />
-            </OnPlatform>
-        </ListView.RowHeight>
-           <ListView.ItemTemplate>
-                <DataTemplate>
-                    <views:FeedDetailsViewCell/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+        <Label
+            Grid.Row="1" Grid.Column="1"
+            FontSize="10"
+            TextColor="Silver"
+            Margin="0, 5, 14,30"
+            Text="{Binding NumberOfReplies}"
+            HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
+            
+        <Frame
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+            Padding="10"
+            Margin="5,0,5,0"
+            OutlineColor="#f6b93b">
+                <Entry
+                    x:Name="replyPostInput"
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                    Keyboard="Text"
+                    PlaceholderColor="#f6b93b"
+                    Placeholder="Reply to Post..."
+                    TextChanged="OnReplyTextLimit"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                   <!-- Text="{Binding ReplyPostInput}"
+                    Command="{Binding PostButtonCommand}"-->
+                    <!--Completed="Handle_Completed"-->
+        </Frame>
+            
+        <Button 
+            x:Name="postButton"
+            Grid.Row="2" Grid.Column= "1"
+            Text="Post"
+            Margin="0,7,12,6"
+            Command="{Binding PostButtonCommand}"
+            HeightRequest="30" WidthRequest="40"
+            VerticalOptions="End" HorizontalOptions="End"/>
+       
+        <ListView         
+            x:Name="FeedDetailsPageListView"
+            Grid.Row="4" Grid.ColumnSpan="2"
+            SeparatorVisibility="None"
+            ItemsSource="{Binding ListViewItemSource}">
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32">
+                    <On Platform="iOS, Android" Value="120" />
+                </OnPlatform>
+            </ListView.RowHeight>
+               <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <views:FeedDetailsViewCell/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </Grid>
 </ContentPage>
