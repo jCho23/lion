@@ -10,12 +10,11 @@ using lion.Models;
 
 namespace lion.ViewModels
 {
-    public class FeedDetailsPageViewModel : BaseViewModel
+    public class FeedDetailsViewModel : BaseViewModel
     {
         string postUserProfileUrl, postUserPostText, postUserName, numberOfReplies;
 
         string userInputEntryText = string.Empty;
-        ICommand submitButtonCommand;
 
         ObservableCollection<ReplyMessageModel> listViewItemSource;
 
@@ -26,7 +25,7 @@ namespace lion.ViewModels
 
 
 
-        public FeedDetailsPageViewModel(PostMessageModel postMessage)
+        public FeedDetailsViewModel(PostMessageModel postMessage)
         {
             //Pull all ReplyMessageModels from the database where ReplyMessageModel.PostMessageId == postMessage.Id
             PostUserProfileUrl = postMessage.PostUser.PictureUrl;

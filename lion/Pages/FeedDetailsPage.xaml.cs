@@ -15,7 +15,7 @@ namespace lion.Pages
     {
         public FeedDetailsPage(PostMessageModel postMessage)
         {
-            var feedDetailsPageViewModel = new FeedDetailsPageViewModel(postMessage);
+            var feedDetailsPageViewModel = new FeedDetailsViewModel(postMessage);
             this.BindingContext = feedDetailsPageViewModel;
 
             InitializeComponent();

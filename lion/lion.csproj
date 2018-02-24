@@ -100,7 +100,7 @@
     <Compile Include="Controls\ExtendedViewCell.cs" />
     <Compile Include="Controls\PlaceholderEditor.cs" />
     <Compile Include="Persistence\ISQLiteDb.cs" />
-    <Compile Include="ViewModels\FeedDetailsPageViewModel.cs" />
+    <Compile Include="ViewModels\FeedDetailsViewModel.cs" />
     <Compile Include="ViewModels\MyPostsViewModel.cs" />
     <Compile Include="ViewModels\FeedViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
