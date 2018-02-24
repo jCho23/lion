@@ -84,7 +84,6 @@ namespace lion.ViewModels
                    
         }
 
-
         public string NumberOfReplies
         {
             get => numberOfReplies;
@@ -96,7 +95,6 @@ namespace lion.ViewModels
             get => myPostsListViewItemSource;
             set => SetProperty(ref myPostsListViewItemSource, value);
         }
-
 
     }
 }
