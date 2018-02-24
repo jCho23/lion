@@ -6,18 +6,7 @@ namespace lion.ViewModels
 {
     public class MyPostsViewModel : BaseViewModel
     {
-        private ObservableCollection<PostMessageModel> _myPostMessages = new ObservableCollection<PostMessageModel>();
-        public ObservableCollection<PostMessageModel> MyPostMessages
-        {
-            get{
-                return _myPostMessages;
-            }
-
-            set{
-                _myPostMessages = value;
-            }
-        }
-
+        ObservableCollection<ReplyMessageModel> myPostsListViewItemSource; 
 
         //IList<PostMessage> 
         //MyPostsListView.ItemsSource = new List<PostMessage>{
