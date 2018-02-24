@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+    xmlns:views="clr-namespace:lion.Views;assembly=lion"
     xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="lion.Pages.MyPostsPage"
     Title="My Posts">
@@ -29,38 +30,7 @@
 
         <ListView.ItemTemplate>
             <DataTemplate>
-                <ViewCell>
-                    <Frame
-                        Padding="10"
-                        Margin="7,3,7,3"
-                        HasShadow="false"
-                        OutlineColor="#0c2461"
-                        BackgroundColor="Transparent">
-                    <StackLayout
-                        Padding="5"
-                        Orientation="Horizontal"
-                        HorizontalOptions="Start">
-                            <ic:CircleImage
-                                WidthRequest="80"
-                                HeightRequest="80"
-                                Aspect="AspectFill"
-                                BorderColor="Gray"
-                                BorderThickness="3"
-                                Source="{Binding UserUrl}"/>
-                                    <StackLayout
-                                        Padding="5">
-                                            <Label 
-                                                Text="{Binding Post}"
-                                                FontSize="16" />
-                                            <Label
-                                                FontSize="10"
-                                                TextColor="Silver"
-                                                Text="{Binding Status}"
-                                                HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
-                                    </StackLayout>
-                    </StackLayout>                       
-                    </Frame>     
-                </ViewCell>
+                <views:MyPostsViewCell/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
