@@ -15,18 +15,11 @@ namespace lion.ViewModels
     {
         ObservableCollection<PostMessageModel> listViewItemSource2;
 
-
-
-
-
-
         public FeedPageViewModel()
         {
 
-
             //IEnumerable<PostMessageModel> GetPosts(string searchText = null)
             //{
-            //Call to a remote service, placeholder for now
             ListViewItemSource2 = new ObservableCollection<PostMessageModel>
             {
                 new PostMessageModel

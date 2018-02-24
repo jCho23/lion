@@ -22,10 +22,10 @@
             x:Name="AddPost"
             Priority="0" 
             Icon="Add.png" 
+            Activated="OnAddButton_Activated"
             Order="Primary" />
    </ContentPage.ToolbarItems>
-<!--          Activated="OnAddButton_Activated"
-      Command="{Binding OnAddButtonCommand}"-->
+      <!--Command="{Binding OnAddButtonCommand}"-->
 
     <StackLayout>
         <SearchBar
