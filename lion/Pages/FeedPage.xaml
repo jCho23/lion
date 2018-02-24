@@ -41,7 +41,6 @@
                 IsPullToRefreshEnabled="true"
                 Refreshing="Handle_Refreshing"
                 ItemSelected="Handle_ItemSelected"
-                BackgroundColor="Transparent"
                 ItemsSource="{Binding ListViewItemSource2}"
                 SeparatorVisibility= "None">
                 <ListView.RowHeight>
