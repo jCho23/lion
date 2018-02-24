@@ -20,11 +20,7 @@ namespace lion.Pages
 
         async void OnAddButton_Activated(object sender, System.EventArgs e)
         {
-
-
             await Navigation.PushModalAsync(new FeedAddPostModalPage());
-
-        
         }
 
 
@@ -36,10 +32,6 @@ namespace lion.Pages
             var postMessage = e.SelectedItem as PostMessageModel;
             await Navigation.PushAsync(new FeedDetailsPage(postMessage));
             listViewFeed.SelectedItem = null;
-
-
-
-
         }
 
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
@@ -127,7 +119,5 @@ namespace lion.Pages
 
             listViewFeed.EndRefresh();
         }
-
-
     }
 }
