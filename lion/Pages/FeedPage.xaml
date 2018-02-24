@@ -21,9 +21,9 @@
             Priority="0" 
             Icon="Add.png" 
             Order="Primary" />
-          <!--  Activated="OnAddButton_Activated" -->
-<!--            Command="{Binding OnAddButtonCommand}"
--->    </ContentPage.ToolbarItems>
+   </ContentPage.ToolbarItems>
+<!--          Activated="OnAddButton_Activated"
+      Command="{Binding OnAddButtonCommand}"-->
 
     <StackLayout>
         <SearchBar
