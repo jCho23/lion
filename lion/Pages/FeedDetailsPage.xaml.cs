@@ -13,15 +13,12 @@ namespace lion.Pages
 {
     public partial class FeedDetailsPage : ContentPage
     {
-
         public FeedDetailsPage(PostMessageModel postMessage)
         {
-
-            BindingContext = new FeedDetailsPageViewModel(postMessage);    
+            var feedDetailsPageViewModel = new FeedDetailsPageViewModel(postMessage);
+            this.BindingContext = feedDetailsPageViewModel;
 
             InitializeComponent();
- 
-           
         }
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)

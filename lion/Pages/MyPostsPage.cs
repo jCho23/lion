@@ -16,13 +16,6 @@ namespace lion.Pages
 
             InitializeComponent();
 
-            //MyPostsListView.ItemsSource = new List<PostMessage>();
-            //{
-            //    GetPostMessages
-            //};
-
-
-
         }
     }
 }
