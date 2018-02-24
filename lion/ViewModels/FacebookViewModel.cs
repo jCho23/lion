@@ -10,9 +10,9 @@ namespace lion.ViewModels
 {
     public class FacebookViewModel : BaseViewModel
     {
-        private FacebookProfile _facebookProfile;
+        private FacebookProfileModel _facebookProfile;
 
-        public FacebookProfile FacebookProfile
+        public FacebookProfileModel FacebookProfile
         {
             get { return _facebookProfile; }
             set

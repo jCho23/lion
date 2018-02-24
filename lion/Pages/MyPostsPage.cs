@@ -10,8 +10,8 @@ namespace lion.Pages
     {
         public MyPostsPage()
         {
-			var myPostsViewModel = new MyPostsViewModel();
-			this.BindingContext = myPostsViewModel;
+            var myPostsViewModel = new MyPostsViewModel();
+            this.BindingContext = myPostsViewModel;
 
             InitializeComponent();
 
@@ -19,35 +19,63 @@ namespace lion.Pages
             //{
             //    GetPostMessages
             //};
-           
 
-            MyPostsListView.ItemsSource = new List <PostMessage>{
-                new PostMessage {
-                    Post = "And the only way to do great work is to love what you do. ",
-                    UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "23 replies"},
-                new PostMessage {
-                    Post = "Everything around you that you call life was made up by people that were no smarter than you",
-                    UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "8 replies" },
-                new PostMessage {
-                    Post = "What's the best pizza joint around campus? ",
-                    UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "48 replies" },
-                new PostMessage {
-                    Post = "Everything around you that you call life was made up by people that were no smarter than you",
-                    UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "8 replies" },
-                new PostMessage {
-                    Post = "Everything around you that you call life was made up by people that were no smarter than you",
-                    UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "8 replies" },
-                new PostMessage {
-                    Post = "Everything around you that you call life was made up by people that were no smarter than you",
-                    UserUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
-                    Status= "8 replies" }
-           
 
+            MyPostsListView.ItemsSource = new List<PostMessageModel>{
+                new PostMessageModel
+                {
+                    PostText = "And the only way to do great work is to love what you do. ",
+                    NumberOfReplies= 23,
+                    PostUser = new UserProfileModel
+                    {
+                       PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                    }
+                },
+                new PostMessageModel
+                {
+                    Id = "Everything around you that you call life was made up by people that were no smarter than you",
+                    NumberOfReplies= 8,
+                    PostUser = new UserProfileModel
+                    {
+                       PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                    }
+                },
+                new PostMessageModel
+                {
+                    Id = "What's the best pizza joint around campus? ",
+                    NumberOfReplies= 48,
+                    PostUser = new UserProfileModel
+                    {
+                       PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                    }
+                },
+                new PostMessageModel
+                {
+                    Id = "Everything around you that you call life was made up by people that were no smarter than you",
+                    NumberOfReplies= 8,
+                    PostUser = new UserProfileModel
+                    {
+                       PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                    }
+                },
+                new PostMessageModel
+                {
+                    Id = "Everything around you that you call life was made up by people that were no smarter than you",
+                    NumberOfReplies= 8,
+                    PostUser = new UserProfileModel
+                    {
+                       PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                    }
+                },
+                new PostMessageModel
+                {
+                    Id = "Everything around you that you call life was made up by people that were no smarter than you",
+                    NumberOfReplies= 8,
+                    PostUser = new UserProfileModel
+                    {
+                       PictureUrl = "http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg",
+                    }
+                }
             };
         }
     }

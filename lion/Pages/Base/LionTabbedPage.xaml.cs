@@ -4,14 +4,13 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-using lion.Pages;
 using lion.Models;
 
-namespace lion.Views
+namespace lion.Pages
 {
-    public partial class HomeView : TabbedPage
+    public partial class LionTabbedPage : TabbedPage
     {
-        public HomeView()
+        public LionTabbedPage()
         {
             InitializeComponent();
 

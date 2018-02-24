@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="lion.Views.FeedDetailsViewCell"
+    xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+	<ViewCell.View
+        IsEnabled="false">
+        
+        <Frame
+            OutlineColor="#0c2461"
+            Margin="7,3,7,3"
+            HasShadow="false"
+            BackgroundColor="Transparent">
+            
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="Start">
+                
+                <ic:CircleImage
+                    x:Name = "UserProfilePicture"
+                    BorderColor="Gray"
+                    BorderThickness="3"
+                    Aspect="AspectFill"
+                    HeightRequest="75" WidthRequest="75"/>
+                <Label
+                    x:Name = "ReplyMessageLabel"
+                    FontSize="16" 
+                    Margin="5,2,0,0"
+                    HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout> 
+            
+        </Frame>    
+        
+	</ViewCell.View>
+</ViewCell>
