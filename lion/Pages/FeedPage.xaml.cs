@@ -10,18 +10,12 @@ namespace lion.Pages
 {
     public partial class FeedPage : ContentPage
     {
-
-
         public FeedPage()
         {
-            BindingContext = new FeedPageViewModel();
+            var feedPageViewModel = new FeedPageViewModel();
+            this.BindingContext = feedPageViewModel;
 
             InitializeComponent();
-
-            //listViewFeed.ItemsSource = GetPosts();
-
-
-
         }
 
         async void OnAddButton_Activated(object sender, System.EventArgs e)
