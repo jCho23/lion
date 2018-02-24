@@ -13,6 +13,11 @@ namespace lion.ViewModels
 
         public MyPostsViewModel()
         {
+            //if (postMessage.NumberOfReplies == 1)
+            //    NumberOfReplies = $"{postMessage.NumberOfReplies} Reply";
+            //else
+                //NumberOfReplies = $"{postMessage.NumberOfReplies} Replies";
+
             myPostsListViewItemSource = new ObservableCollection<PostMessageModel>
             {
                 new PostMessageModel()
