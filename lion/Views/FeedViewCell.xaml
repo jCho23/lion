@@ -27,7 +27,6 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="60"/>
                                 <RowDefinition Height="20"/>
-                                <RowDefinition Height="30"/>
                             </Grid.RowDefinitions>
                             
                             <Grid.ColumnDefinitions>
@@ -38,11 +37,12 @@
             
                                 <Label
                                     x:Name="PostMessageLabel"
-                                    Grid.Row="0" Grid.Column="3"
+                                    Grid.Row="0" Grid.ColumnSpan="2"
                                     FontSize="16" 
                                     Margin="5,2,0,0"
                                     Text="{Binding Post}"/>
-                                <Label
+                               <Label
+                                    x:Name="PostNumberOfRepliesLabel"
                                     Grid.Row="1" Grid.Column="2"
                                     FontSize="8"
                                     TextColor="Silver"
