@@ -21,16 +21,7 @@ namespace lion.Pages
 
             InitializeComponent();
  
-          
-
-            //switch (Xamarin.Forms.Device.RuntimePlatform)
-            //{
-            //    case Xamarin.Forms.Device.iOS:
-            //        //postButton.Margin = new Thickness(0, 1, 0, 0);
-            //        break;
-            //    case Xamarin.Forms.Device.Android:
-            //        break;
-            //}
+           
         }
 
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
