@@ -8,8 +8,7 @@
         IsEnabled="false">
         <Frame
             OutlineColor="#0c2461"
-            Margin="7,3,7,3"
-            BackgroundColor="Transparent">
+            Margin="7,3,7,3">
             <StackLayout
                 Orientation="Horizontal"
                 HorizontalOptions="Start">

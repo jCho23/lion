@@ -60,9 +60,11 @@
                     <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
+            <!--FRAME-->
             <Style
                 TargetType= "Frame">
                     <Setter Property="HasShadow" Value="false"/>
+                     <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
 
