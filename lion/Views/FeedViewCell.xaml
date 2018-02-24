@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
+<ViewCell
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="lion.Views.FeedViewCell">
-
-
-
-
-
-
-    
-</ContentPage>
+    <ViewCell.View>
+        <Frame
+            Margin="7,3,7,3"
+            OutlineColor="#f6b93b"
+            HasShadow="false"
+            BackgroundColor="Transparent">
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Start">
+                        <ic:CircleImage
+                            Margin="0,0,5,0"
+                            WidthRequest="75"
+                            HeightRequest="75"
+                            Aspect="AspectFill"
+                            BorderColor="Gray"
+                            BorderThickness="1"
+                            Source="{Binding UserUrl}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+            
+                                <Label
+                                    Grid.Row="0" Grid.ColumnSpan="3"
+                                    FontSize="16" 
+                                    Margin="5,2,0,0"
+                                    Text="{Binding Post}"/>
+                                <Label
+                                    Grid.Row="1" Grid.Column="2"
+                                    FontSize="8"
+                                    TextColor="Silver"
+                                    Text="{Binding Status}"
+                                    HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
+                                <Image
+                                    Grid.Row="1" Grid.Column="1"
+                                    Margin="0,10,0,0"
+                                    Aspect="AspectFit" 
+                                    Source="heart8.png"/>
+                                <Label
+                                    Grid.Row= "1" Grid.Column="1"
+                                    Text="88"
+                                    FontSize="8"
+                                    TextColor="Silver"
+                                    Margin="30,10,0,0"
+                                    HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Grid>                 
+                    </StackLayout>
+            </Frame>
+    </ViewCell.View>
+</ViewCell>
