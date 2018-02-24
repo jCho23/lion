@@ -19,9 +19,9 @@
    <ListView
         x:Name="MyPostsListView"
         HasUnevenRows="true"
-        BackgroundColor="Transparent">
-<!--        ItemsSource="{Binding PostMessage}"
--->            <ListView.RowHeight>
+        BackgroundColor="Transparent"
+        ItemsSource="{Binding MyPostsListViewItemSource}">
+         <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
                     <On Platform="iOS, Android" Value="120" />
                 </OnPlatform>

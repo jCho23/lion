@@ -13,7 +13,17 @@ namespace lion.ViewModels
     public class FeedDetailsPageViewModel : BaseViewModel
     {
         string postUserProfileUrl, postUserPostText, postUserName, numberOfReplies;
+
+        string userInputEntryText = string.Empty;
+        ICommand submitButtonCommand;
+
         ObservableCollection<ReplyMessageModel> listViewItemSource;
+
+
+
+        //public ICommand SubmitButtonCommand => submitButtonCommand ??
+           //(submitButtonCommand = new Command(async () => await ExecuteSubmitButtonCommand()));
+
 
 
         public FeedDetailsPageViewModel(PostMessageModel postMessage)
@@ -42,6 +52,10 @@ namespace lion.ViewModels
 
                 ListViewItemSource.Add(dummyPostMessage);
             });
+
+
+
+
 
             ListViewItemSource = new ObservableCollection<ReplyMessageModel>
             {
