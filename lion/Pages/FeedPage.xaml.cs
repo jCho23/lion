@@ -14,11 +14,11 @@ namespace lion.Pages
 
         public FeedPage()
         {
-            //BindingContext = new FeedPageViewModel();
+            BindingContext = new FeedPageViewModel();
 
             InitializeComponent();
 
-            listViewFeed.ItemsSource = GetPosts();
+            //listViewFeed.ItemsSource = GetPosts();
 
 
 
