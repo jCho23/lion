@@ -36,7 +36,6 @@
                 Clicked="Handle_Clicked"
                 BackgroundColor="Transparent"
                 HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
-
             <Frame
                 Grid.Row="1" Grid.ColumnSpan="2"
                 OutlineColor="#f6b93b">
