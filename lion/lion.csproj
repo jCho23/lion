@@ -117,6 +117,7 @@
     <Compile Include="Views\MyPostsViewCell.xaml.cs">
       <DependentUpon>MyPostsViewCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\FeedAddPostModalViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
