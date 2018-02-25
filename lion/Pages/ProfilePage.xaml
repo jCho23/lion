@@ -20,7 +20,7 @@
         BackgroundColor="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="320"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -33,12 +33,21 @@
             Grid.Column="0"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            Source="Bears.png"
-                        x:Name = "UserProfilePicture"
-                        BorderColor="Gray"
-                        BorderThickness="3"
-                        Aspect="AspectFill"
-                        HeightRequest="123" WidthRequest="123"/>
+            Source="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
+            x:Name = "UserProfilePicture"
+            BorderColor="Gray"
+            BorderThickness="3"
+            Aspect="AspectFill"
+            HeightRequest="145" WidthRequest="145"/>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Text="The Rock"
+            Margin="0,190, 0, 0"
+            FontSize="23"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
 
 
 
