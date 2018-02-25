@@ -15,9 +15,18 @@ namespace lion.Pages
             {
                 Source = "Bears.png",
                 WidthRequest = 100,
-                HeightRequest= 100
+                HeightRequest = 100
             };
-                
+
+            AbsoluteLayout.SetLayoutFlags(splashImage, 
+                AbsoluteLayoutFlags.PositionProportional);
+            AbsoluteLayout.SetLayoutBounds(splashImage,
+                new Rectangle(0.5,0.5, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
+
+            splashLayout.Children.Add(splashImage);
+
+            this.BackgroundColor = Color.Accent;
+            this.Content = splashLayout;
         }
     }
 }
