@@ -53,7 +53,7 @@
 
         <Frame
             Grid.Row="1" Grid.Column="0"
-            Margin="10,10,10,10"
+            Margin="10,40,10,10"
             Padding="40,40,40,40"
             OutlineColor="#f6b93b">
             <StackLayout
