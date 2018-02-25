@@ -28,10 +28,8 @@
             </Grid.ColumnDefinitions>
 
          <ic:CircleImage
-            Grid.Row="0"
-            Grid.Column="0"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
+            Grid.Row="0" Grid.Column="0"
+            HorizontalOptions="Center" VerticalOptions="Center"
             Source="http://www.profightdb.com/img/wrestlers/thumbs-600/6baee11272the-rock.jpg"
             x:Name = "UserProfilePicture"
             BorderColor="Gray"
@@ -40,24 +38,18 @@
             HeightRequest="145" WidthRequest="145"/>
 
         <Label
-            Grid.Row="0"
-            Grid.Column="0"
+            Grid.Row="0" Grid.Column="0"
             Text="The Rock"
             Margin="0,200, 0, 0"
             FontSize="32"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+            HorizontalOptions="Center" VerticalOptions="Center"/>
 
         <Label
-            Grid.Row="0"
-            Grid.Column="0"
-            Text="San Francisco, CA"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
+            Grid.Row="0" Grid.Column="0"
             FontSize="12"
-            Margin="0,250,0,0"/>
-
-        
+            Text="San Francisco, CA"
+            Margin="0,250,0,0"
+            HorizontalOptions="Center" VerticalOptions="Center" />
 
         <Frame
             Grid.Row="1"
@@ -78,7 +70,7 @@
                         Text="About Section Scrapped" />
 
                     <Button
-            Grid.Row="2"
+                        Grid.Row="2"
                         BackgroundColor="#0c2461"
                         WidthRequest="300"
                         TextColor="#f6b93b"
@@ -88,18 +80,6 @@
                         Text="Connect on LinkedIn" />
             </StackLayout>
         </Frame>
-
-
-            
-
-
-
-
-
-
-
-
-
 
     </Grid>
     
