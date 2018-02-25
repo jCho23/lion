@@ -64,20 +64,21 @@
         <Frame
             Grid.Row="1"
             Grid.Column="0"
+            Padding="40,40,40,40"
             Margin="10,10,10,10"
             OutlineColor="Fuchsia">
 
             <StackLayout
                 Spacing="35">
             <Label
-           
+                
                 Text="Current Job Title is stated here"/>
 
                 <Label
                     Text="LinkedIn profile link" />
 
                 <Label
-                    Text="Email address goes here" />
+                    Text="DwayneJohnson@therock.com" />
 
 
 
