@@ -19,8 +19,9 @@
     <Grid
         BackgroundColor="Transparent">
         <Grid.RowDefinitions>
-            <RowDefinition Height="320"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -44,10 +45,44 @@
             Grid.Row="0"
             Grid.Column="0"
             Text="The Rock"
-            Margin="0,190, 0, 0"
-            FontSize="23"
+            Margin="0,200, 0, 0"
+            FontSize="32"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Text="San Francisco, CA"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="12"
+            Margin="0,250,0,0"/>
+
+        
+
+        <Frame
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="10,10,10,10"
+            OutlineColor="Fuchsia">
+
+            <StackLayout>
+            <Label
+           
+                Text="Current Job Title is stated here"/>
+
+                <Label
+                    Text="LinkedIn profile link" />
+
+
+
+            </StackLayout>
+
+        </Frame>
+
+
+            
 
 
 
