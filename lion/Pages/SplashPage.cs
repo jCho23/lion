@@ -28,5 +28,15 @@ namespace lion.Pages
             this.BackgroundColor = Color.Accent;
             this.Content = splashLayout;
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            await splashImage.ScaleTo(1, 2000);
+            await splashImage.ScaleTo(0.9, 1500, Easing.Linear);
+            await splashImage.ScaleTo(150, 1200, Easing.Linear);
+            Application.Current.MainPage = new NavigationPage(new LionTabbedPage());
+        }
     }
 }

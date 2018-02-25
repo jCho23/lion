@@ -16,7 +16,7 @@ namespace lion
         {
             InitializeComponent();
 
-            var navigationPage = new Xamarin.Forms.NavigationPage(new Pages.LionTabbedPage());
+            var navigationPage = new Xamarin.Forms.NavigationPage(new Pages.SplashPage());
             navigationPage.On<Xamarin.Forms.PlatformConfiguration.iOS>().SetPrefersLargeTitles(true);
 
             MainPage = navigationPage;
