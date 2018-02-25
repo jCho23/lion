@@ -16,6 +16,6 @@
 
     <localPages:ProfilePage
         Title="Profile"
-        Icon="user.svg" />
+        Icon="user.png" />
    
 </TabbedPage>
