@@ -39,48 +39,41 @@
 
         <Label
             Grid.Row="0" Grid.Column="0"
+            FontSize="32"
             Text="The Rock"
             Margin="0,200, 0, 0"
-            FontSize="32"
             HorizontalOptions="Center" VerticalOptions="Center"/>
 
         <Label
             Grid.Row="0" Grid.Column="0"
             FontSize="12"
-            Text="San Francisco, CA"
             Margin="0,250,0,0"
+            Text="San Francisco, CA"
             HorizontalOptions="Center" VerticalOptions="Center" />
 
         <Frame
-            Grid.Row="1"
-            Grid.Column="0"
-            Padding="40,40,40,40"
+            Grid.Row="1" Grid.Column="0"
             Margin="10,10,10,10"
+            Padding="40,40,40,40"
             OutlineColor="#f6b93b">
             <StackLayout
                 Spacing="35">
                     <Label
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Text="Current Job Title is stated here"/>
-
+                        Text="Current Job Title is stated here"
+                        HorizontalOptions="Center" VerticalOptions="Center"/>
                     <Label
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Text="About Section Scrapped" />
-
+                        Text="About Section Scrapped" 
+                        HorizontalOptions="Center" VerticalOptions="Center"/>
                     <Button
                         Grid.Row="2"
-                        BackgroundColor="#0c2461"
+                        FontSize="23"
                         WidthRequest="300"
                         TextColor="#f6b93b"
-                        FontSize="23"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Text="Connect on LinkedIn" />
+                        BackgroundColor="#0c2461"
+                        Text="Connect on LinkedIn" 
+                        HorizontalOptions="Center" VerticalOptions="Center"/>
             </StackLayout>
         </Frame>
 
     </Grid>
-    
 </ContentPage>
