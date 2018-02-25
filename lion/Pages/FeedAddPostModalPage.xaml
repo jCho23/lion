@@ -57,6 +57,7 @@
                             Grid.Row="2" Grid.Column= "1"
                             Margin="0,40,0,0"
                             Text="Post Message"
+                            Command="{Binding PostMessageCommand}"
                             HeightRequest="30" WidthRequest="140"
                             HorizontalOptions="End" VerticalOptions="End" />
                     </StackLayout>

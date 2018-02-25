@@ -19,8 +19,6 @@ namespace lion.ViewModels
 
         public FeedViewModel()
         {
-          
-
             //if (postMessage.NumberOfReplies == 1)
             //    NumberOfReplies = $"{postMessage.NumberOfReplies} Reply";
             //else
@@ -114,8 +112,6 @@ namespace lion.ViewModels
             get => listViewItemSource2;
             set => SetProperty(ref listViewItemSource2, value);
         }
-
-
     }
 }
 
