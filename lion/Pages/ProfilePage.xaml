@@ -21,7 +21,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="300"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="AUTO"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -67,13 +67,17 @@
             Margin="10,10,10,10"
             OutlineColor="Fuchsia">
 
-            <StackLayout>
+            <StackLayout
+                Spacing="35">
             <Label
            
                 Text="Current Job Title is stated here"/>
 
                 <Label
                     Text="LinkedIn profile link" />
+
+                <Label
+                    Text="Email address goes here" />
 
 
 
