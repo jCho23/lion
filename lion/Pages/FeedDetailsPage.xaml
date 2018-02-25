@@ -78,9 +78,6 @@
                     Placeholder="Reply to Post..."
                     TextChanged="OnReplyTextLimit"
                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                   <!-- Text="{Binding ReplyPostInput}"
-                    Command="{Binding PostButtonCommand}"-->
-                    <!--Completed="Handle_Completed"-->
         </Frame>
             
         <Button 
