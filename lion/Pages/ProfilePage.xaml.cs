@@ -8,10 +8,10 @@ namespace lion.Pages
 {
     public partial class ProfilePage : ContentPage
     {
-        public ProfilePage(PostMessageModel postMessage)
+        public ProfilePage()
         {
-            var profileViewModel = new ProfileViewModel(postMessage);
-            this.BindingContext = profileViewModel;
+            //var profileViewModel = new ProfileViewModel(postMessage);
+            //this.BindingContext = profileViewModel;
                 
 
             InitializeComponent();

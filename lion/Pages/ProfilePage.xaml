@@ -3,11 +3,21 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+            xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
 
     x:Class="lion.Pages.ProfilePage"
     Title="My Profile">
 
-    <Grid>
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="180">
+            <xfg:GradientStep StepColor="#0c2461" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#1e3799" StepPercentage=".5" />
+            <xfg:GradientStep StepColor="#f6b93b" StepPercentage=".8" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+
+    <Grid
+        BackgroundColor="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="320"/>
             <RowDefinition Height="*"/>
@@ -23,7 +33,7 @@
             Grid.Column="0"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            Source="{Binding PostUserProfileUrl}"
+            Source="Bears.png"
                         x:Name = "UserProfilePicture"
                         BorderColor="Gray"
                         BorderThickness="3"
