@@ -20,7 +20,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="300"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="AUTO"/>
+               
             </Grid.RowDefinitions>
             
             <Grid.ColumnDefinitions>
@@ -75,12 +75,17 @@
                     <Label
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
-                        Text="LinkedIn profile link" />
+                        Text="About Section Scrapped" />
 
-                    <Label
+                    <Button
+            Grid.Row="2"
+                        BackgroundColor="#0c2461"
+                        WidthRequest="300"
+                        TextColor="#f6b93b"
+                        FontSize="23"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
-                        Text="DwayneJohnson@therock.com" />
+                        Text="Connect on LinkedIn" />
             </StackLayout>
         </Frame>
 
