@@ -15,11 +15,6 @@ namespace lion.Pages
             await Navigation.PushModalAsync(new NavigationPage(new Pages.LionTabbedPage()));
         }
 
-        //protected override void OnDisappearing()
-        //{
-        //    base.OnDisappearing();
-        //}
-
 		public FeedAddPostModalPage()
 		{
 			InitializeComponent();
