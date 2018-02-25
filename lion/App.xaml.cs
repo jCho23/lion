@@ -9,8 +9,8 @@ namespace lion
 {
     public partial class App : Application
     {
-        private const string PostKey = "Post";
-        private const string ReplyKey = "Reply";
+        private const string PostKey = "PostText";
+        private const string ReplyKey = "ReplyText";
 
         public App()
         {
@@ -39,7 +39,7 @@ namespace lion
             // Handle when your app resumes
         }
 
-        public string Post
+        public string PostText
         {
             get
             {
@@ -55,7 +55,7 @@ namespace lion
             }
         }
 
-        public string Reply
+        public string ReplyText
         {
             get
             {
