@@ -21,6 +21,16 @@ namespace lion.Pages
             InitializeComponent();
         }
 
+        //async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        //{
+        //    if (e.SelectedItem == null)
+        //        return;
+
+        //    var postMessage = e.SelectedItem as PostMessageModel;
+        //    await Navigation.PushAsync(new ProfilePage(postMessage));
+        //    FeedDetailsPageListView.SelectedItem = null;
+        //}
+
         void OnReplyTextLimit(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
             if (e.NewTextValue.Length > 23)

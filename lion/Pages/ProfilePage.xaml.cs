@@ -9,6 +9,8 @@ namespace lion.Pages
     {
         public ProfilePage()
         {
+
+
             InitializeComponent();
         }
 
@@ -18,9 +20,7 @@ namespace lion.Pages
 
             var model = BindingContext as PostMessageModel;
 
-          
             UserProfilePicture.Source = model.PostUser.PictureUrl;
-            //PostNumberOfRepliesLabel. = model.NumberOfReplies;
         }
     }
 }
