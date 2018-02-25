@@ -15,6 +15,8 @@ namespace lion.Pages
                 
 
             InitializeComponent();
+
+
         }
 
         protected override void OnBindingContextChanged()
