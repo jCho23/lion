@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using lion.Models;
 using Xamarin.Forms;
+using lion.ViewModels;
 
 namespace lion.Pages
 {
     public partial class ProfilePage : ContentPage
     {
-        public ProfilePage()
+        public ProfilePage(PostMessageModel postMessage)
         {
-
+            var profileViewModel = new ProfileViewModel(postMessage);
+            this.BindingContext = profileViewModel;
+                
 
             InitializeComponent();
         }

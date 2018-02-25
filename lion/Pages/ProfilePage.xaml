@@ -23,6 +23,7 @@
             Grid.Column="0"
             HorizontalOptions="Center"
             VerticalOptions="Center"
+            Source="{Binding PostUserProfileUrl}"
                         x:Name = "UserProfilePicture"
                         BorderColor="Gray"
                         BorderThickness="3"
