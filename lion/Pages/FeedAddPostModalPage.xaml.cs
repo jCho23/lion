@@ -14,6 +14,11 @@ namespace lion.Pages
             await Navigation.PushModalAsync(new NavigationPage(new Pages.LionTabbedPage()));
         }
 
+        void Handle_Completed(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
