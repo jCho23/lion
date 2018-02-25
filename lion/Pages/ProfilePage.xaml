@@ -18,7 +18,7 @@
     <Grid
         BackgroundColor="Transparent">
             <Grid.RowDefinitions>
-                <RowDefinition Height="300"/>
+                <RowDefinition Height="280"/>
                 <RowDefinition Height="*"/>
                
             </Grid.RowDefinitions>
@@ -67,7 +67,7 @@
                     <Button
                         Grid.Row="2"
                         FontSize="23"
-                        WidthRequest="300"
+                        WidthRequest="250"
                         TextColor="#f6b93b"
                         BackgroundColor="#0c2461"
                         Text="Connect on LinkedIn" 
