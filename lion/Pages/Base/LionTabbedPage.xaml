@@ -14,8 +14,8 @@
         Title="My Posts"
         Icon="BearPaw.png" />
 
-    <localPages:ProfilePage
+<!--    <localPages:ProfilePage
         Title="Profile"
-        Icon="user.png" />
+        Icon="user.png" />-->
    
 </TabbedPage>
