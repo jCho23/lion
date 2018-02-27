@@ -18,8 +18,8 @@ namespace lion.Views
 
             var model = BindingContext as PostMessageModel;
 
-            PostMessageLabel.Text = model.PostText;
-            UserProfilePicture.Source = model.PostUser.PictureUrl;
+            PostMessageLabel.Text = model?.PostText;
+            UserProfilePicture.Source = model?.PostUser.PictureUrl;
             //PostNumberOfRepliesLabel. = model.NumberOfReplies;
         }
     }
