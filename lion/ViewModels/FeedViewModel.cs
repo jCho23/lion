@@ -14,7 +14,32 @@ namespace lion.ViewModels
 {
     public class FeedViewModel : BaseViewModel
     {
-        string  numberOfReplies;
+        string numberOfReplies;
+
+        private Command _searchCommand;
+        public ICommand SearchCommand;
+
+        private string _searchText;
+        public string SearchText
+        {
+            get
+            {
+                return _searchText;
+            }
+
+            set
+            {
+                if (_searchText != value)
+                { _searchText = value; RaisePropertyChanged(() => SearchText); }
+            }
+                
+
+        }
+
+        private void RaisePropertyChanged(Func<string> p)
+        {
+            throw new NotImplementedException();
+        }
 
         List<PostMessageModel> originalMessages = new List<PostMessageModel>();
         ObservableCollection<PostMessageModel> listViewItemSource2 = new ObservableCollection<PostMessageModel>();
@@ -24,12 +49,11 @@ namespace lion.ViewModels
             //if (postMessage.NumberOfReplies == 1)
             //    NumberOfReplies = $"{postMessage.NumberOfReplies} Reply";
             //else
-                //NumberOfReplies = $"{postMessage.NumberOfReplies} Replies";
+            //NumberOfReplies = $"{postMessage.NumberOfReplies} Replies";
 
 
-            //IEnumerable<PostMessageModel> GetPosts(string searchText = null)
-            //{
-                ListViewItemSource2 = new ObservableCollection<PostMessageModel>
+
+            ListViewItemSource2 = new ObservableCollection<PostMessageModel>
             {
                 new PostMessageModel
                 {
@@ -95,14 +119,7 @@ namespace lion.ViewModels
 
             originalMessages = ListViewItemSource2.ToList();
         }
-        //if (string.IsNullOrWhiteSpace(searchText))
-        //    return posts;
 
-
-        //return posts.Where(x => x.Id.ToLower().Contains(searchText.ToLower()));
-
-
-        //        }
 
 
 
@@ -117,7 +134,7 @@ namespace lion.ViewModels
                 foreach (var item in searchResults)
                     ListViewItemSource2.Add(item);
             }
-            else if(string.IsNullOrWhiteSpace(text))
+            else if (string.IsNullOrWhiteSpace(text))
             {
                 foreach (var item in originalMessages)
                     ListViewItemSource2.Add(item);
@@ -130,7 +147,7 @@ namespace lion.ViewModels
             }
         }
 
-       
+
         public string NumberOfReplies
         {
             get => numberOfReplies;
@@ -144,4 +161,3 @@ namespace lion.ViewModels
         }
     }
 }
-
