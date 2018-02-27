@@ -37,7 +37,16 @@ namespace lion.ViewModels
             }
         }
 
-
+        bool _isRefreshing;
+        public bool IsRefreshing
+        {
+            get { return _isRefreshing; }
+            set
+            {
+                _isRefreshing = value;
+                OnPropertyChanged(nameof(IsRefreshing));
+            }
+        }
 
         List<PostMessageModel> originalMessages = new List<PostMessageModel>();
         ObservableCollection<PostMessageModel> listViewItemSource2 = new ObservableCollection<PostMessageModel>();
