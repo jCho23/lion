@@ -16,18 +16,17 @@ namespace lion.ViewModels
     {
         string numberOfReplies;
 
+        Command _refreshCommand;
 
-        private ICommand _searchCommand;
-        public ICommand SearchCommand
+        public Command RefreshCommand
         {
             get
             {
-                return _searchCommand ?? (_searchCommand = new Command<string>((text) =>
-                {
-                    // The text parameter can now be used for searching.
-                }));
+                return _refreshCommand;
             }
         }
+
+
 
 
         List<PostMessageModel> originalMessages = new List<PostMessageModel>();
@@ -107,8 +106,16 @@ namespace lion.ViewModels
             };
 
             originalMessages = ListViewItemSource2.ToList();
+            //_refreshCommand = new Command(RefreshList);
+
+
         }
 
+        //public async void RefreshList()
+        //{
+        //    //In this case I am calling again my async method that populates my list
+        //    ListView = await ListViewItemSource2();
+        //}
 
 
 
