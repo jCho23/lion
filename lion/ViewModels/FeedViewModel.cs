@@ -16,57 +16,19 @@ namespace lion.ViewModels
     {
         string numberOfReplies;
 
-        Command _searchCommand;
 
-
+        private ICommand _searchCommand;
         public ICommand SearchCommand
         {
             get
             {
-                _searchCommand = _searchCommand ?? new Command(DoSearchCommand, CanExecuteSearchCommand);
-                return _searchCommand;
+                return _searchCommand ?? (_searchCommand = new Command<string>((text) =>
+                {
+                    // The text parameter can now be used for searching.
+                }));
             }
         }
 
-        private void DoSearchCommand()
-
-        {
-
-            // Refresh the list, which will automatically apply the search text
-
-            RaisePropertyChanged(() => ListViewItemSource2);
-
-        }
-
-        private bool CanExecuteSearchCommand()
-
-        {
-
-            return true;
-
-        }
-
-        private string _searchText;
-        public string SearchText
-        {
-            get
-            {
-                return _searchText;
-            }
-
-            set
-            {
-                if (_searchText != value)
-                { _searchText = value; RaisePropertyChanged(() => SearchText); }
-            }
-                
-
-        }
-
-        private void RaisePropertyChanged(Func<string> p)
-        {
-            throw new NotImplementedException();
-        }
 
         List<PostMessageModel> originalMessages = new List<PostMessageModel>();
         ObservableCollection<PostMessageModel> listViewItemSource2 = new ObservableCollection<PostMessageModel>();

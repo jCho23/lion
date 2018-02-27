@@ -30,10 +30,10 @@
             PlaceholderColor="Gray"
             Placeholder="Search Posts..."
             TextChanged="Handle_TextChanged"
+            SearchCommand="{Binding SearchCommand}"
             HorizontalTextAlignment="Center"
             />
-<!--            SearchCommand="{Binding SearchCommand}"
--->            <ListView
+            <ListView
                 x:Name= "listViewFeed"
                 IsPullToRefreshEnabled="true"
                 ItemSelected="Handle_ItemSelected"
