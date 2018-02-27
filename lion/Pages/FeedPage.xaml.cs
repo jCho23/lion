@@ -40,6 +40,8 @@ namespace lion.Pages
             //listViewFeed.ItemsSource = GetPosts(e.NewTextValue);
         }
 
+
+
         //void Handle_Refreshing(object sender, System.EventArgs e)
         //{
         //    listViewFeed.ItemsSource = GetPosts();
