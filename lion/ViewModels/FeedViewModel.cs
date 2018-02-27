@@ -16,8 +16,35 @@ namespace lion.ViewModels
     {
         string numberOfReplies;
 
-        private Command _searchCommand;
-        public ICommand SearchCommand;
+        Command _searchCommand;
+
+
+        public ICommand SearchCommand
+        {
+            get
+            {
+                _searchCommand = _searchCommand ?? new Command(DoSearchCommand, CanExecuteSearchCommand);
+                return _searchCommand;
+            }
+        }
+
+        private void DoSearchCommand()
+
+        {
+
+            // Refresh the list, which will automatically apply the search text
+
+            RaisePropertyChanged(() => ListViewItemSource2);
+
+        }
+
+        private bool CanExecuteSearchCommand()
+
+        {
+
+            return true;
+
+        }
 
         private string _searchText;
         public string SearchText
