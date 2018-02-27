@@ -36,6 +36,7 @@
             <ListView
                 x:Name= "listViewFeed"
                 IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy}"
                 ItemSelected="Handle_ItemSelected"
                 RefreshCommand="{Bindiing RefreshCommand}"
                 ItemsSource="{Binding ListViewItemSource2}">
