@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using lion.Models;
-using lion.Pages;
-using lion.ViewModels;
+using System.Collections.Generic;
+
 using Xamarin.Forms;
+
+using lion.Pages;
+using lion.Models;
+using lion.ViewModels;
 
 namespace lion.Pages
 {
