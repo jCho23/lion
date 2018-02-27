@@ -39,5 +39,10 @@ namespace lion.Pages
 
             }
         }
+
+        void OnItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
