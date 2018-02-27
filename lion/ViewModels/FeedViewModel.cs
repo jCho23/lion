@@ -16,26 +16,23 @@ namespace lion.ViewModels
     {
         string numberOfReplies;
 
-        Command _refreshCommand;
+       
 
-        public Command RefreshCommand
+        public ICommand RefreshCommand
         {
             get
             {
-                return _refreshCommand;
-            }
-        }
+                return new Command(async () =>
+                {
+                    IsRefreshing = true;
 
-        bool _isBusy;
-        public bool IsBusy
-        {
-            get { return _isBusy; }
-            set
-            {
-                _isBusy = value;
-                OnPropertyChanged(nameof(IsBusy));
+                    await listViewItemSource2();
+
+                    IsRefreshing = false;
+                });
             }
         }
+       
 
         bool _isRefreshing;
         public bool IsRefreshing
