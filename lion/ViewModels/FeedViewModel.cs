@@ -26,6 +26,16 @@ namespace lion.ViewModels
             }
         }
 
+        bool _isBusy;
+        public bool IsBusy
+        {
+            get { return _isBusy; }
+            set
+            {
+                _isBusy = value;
+                OnPropertyChanged(nameof(IsBusy));
+            }
+        }
 
 
 
@@ -34,6 +44,9 @@ namespace lion.ViewModels
 
         public FeedViewModel()
         {
+			originalMessages = ListViewItemSource2.ToList();
+			_refreshCommand = new Command(RefreshListViewFeed);
+			
             //if (postMessage.NumberOfReplies == 1)
             //    NumberOfReplies = $"{postMessage.NumberOfReplies} Reply";
             //else
@@ -105,9 +118,6 @@ namespace lion.ViewModels
                 }
             };
 
-            originalMessages = ListViewItemSource2.ToList();
-            _refreshCommand = new Command(RefreshListViewFeed);
-
 
         }
 
@@ -116,12 +126,7 @@ namespace lion.ViewModels
             listViewFeed = await originalMessages();
         }
 
-        //public async void RefreshList()
-        //{
-        //    ObservableCollection = await ListViewItemSource2();
-        //}
-
-
+       
 
         public async Task ExecuteSearch(string text)
         {
