@@ -37,6 +37,7 @@
                 x:Name= "listViewFeed"
                 IsPullToRefreshEnabled="true"
                 ItemSelected="Handle_ItemSelected"
+                RefreshCommand="{Bindiing RefreshCommand}"
                 ItemsSource="{Binding ListViewItemSource2}">
                 <!--Refreshing="Handle_Refreshing"-->
                 <ListView.RowHeight>
