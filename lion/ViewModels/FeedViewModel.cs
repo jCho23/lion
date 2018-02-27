@@ -8,6 +8,7 @@ using lion.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
+using System.Threading.Tasks;
 
 namespace lion.ViewModels
 {
@@ -15,7 +16,8 @@ namespace lion.ViewModels
     {
         string  numberOfReplies;
 
-        ObservableCollection<PostMessageModel> listViewItemSource2;
+        List<PostMessageModel> originalMessages = new List<PostMessageModel>();
+        ObservableCollection<PostMessageModel> listViewItemSource2 = new ObservableCollection<PostMessageModel>();
 
         public FeedViewModel()
         {
@@ -90,6 +92,8 @@ namespace lion.ViewModels
                     }
                 }
             };
+
+            originalMessages = ListViewItemSource2.ToList();
         }
         //if (string.IsNullOrWhiteSpace(searchText))
         //    return posts;
@@ -99,6 +103,32 @@ namespace lion.ViewModels
 
 
         //        }
+
+
+
+        public async Task ExecuteSearch(string text)
+        {
+            ListViewItemSource2.Clear();
+
+            var searchResults = originalMessages.Where(message => message.PostText.ToLower().Contains(text.ToLower()));
+
+            if (searchResults.Count() > 0)
+            {
+                foreach (var item in searchResults)
+                    ListViewItemSource2.Add(item);
+            }
+            else if(string.IsNullOrWhiteSpace(text))
+            {
+                foreach (var item in originalMessages)
+                    ListViewItemSource2.Add(item);
+            }
+            else
+            {
+                //Change UI Label to show that no records are found
+
+
+            }
+        }
 
        
         public string NumberOfReplies
