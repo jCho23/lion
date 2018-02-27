@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using lion.Controls;
+
 using Xamarin.Forms;
+
+using lion.Controls;
 
 namespace lion.Pages
 {
     public partial class FeedAddPostModalPage : ContentPage
     {
+		public FeedAddPostModalPage()
+		{
+			InitializeComponent();
+			
+			BindingContext = Application.Current;
+		}
 
         async void OnCanceled_Clicked(object sender, System.EventArgs e)
         {
@@ -15,11 +23,5 @@ namespace lion.Pages
             await Navigation.PushModalAsync(new NavigationPage(new Pages.LionTabbedPage()));
         }
 
-		public FeedAddPostModalPage()
-		{
-			InitializeComponent();
-
-            BindingContext = Application.Current;
-		}
     }
 }
