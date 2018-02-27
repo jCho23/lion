@@ -106,15 +106,19 @@ namespace lion.ViewModels
             };
 
             originalMessages = ListViewItemSource2.ToList();
-            //_refreshCommand = new Command(RefreshList);
+            _refreshCommand = new Command(RefreshListViewFeed);
 
 
         }
 
+        async  void RefreshListViewFeed()
+        {
+            listViewFeed = await originalMessages();
+        }
+
         //public async void RefreshList()
         //{
-        //    //In this case I am calling again my async method that populates my list
-        //    ListView = await ListViewItemSource2();
+        //    ObservableCollection = await ListViewItemSource2();
         //}
 
 
