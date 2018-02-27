@@ -37,16 +37,7 @@ namespace lion.Pages
         async void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
             await ((FeedViewModel)BindingContext)?.ExecuteSearch(e.NewTextValue);
-            //listViewFeed.ItemsSource = GetPosts(e.NewTextValue);
         }
 
-
-
-        //void Handle_Refreshing(object sender, System.EventArgs e)
-        //{
-        //    listViewFeed.ItemsSource = GetPosts();
-
-        //    listViewFeed.EndRefresh();
-        //}
     }
 }
