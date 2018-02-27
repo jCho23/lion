@@ -38,9 +38,8 @@
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsBusy}"
                 ItemSelected="Handle_ItemSelected"
-                RefreshCommand="{Bindiing RefreshCommand}"
                 ItemsSource="{Binding ListViewItemSource2}">
-                <!--Refreshing="Handle_Refreshing"-->
+                <!--RefreshCommand="{Bindiing RefreshCommand}"-->
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
                         <On Platform="iOS, Android" Value="120" />
