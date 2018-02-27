@@ -34,9 +34,10 @@ namespace lion.Pages
             listViewFeed.SelectedItem = null;
         }
 
-        void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        async void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
-            listViewFeed.ItemsSource = GetPosts(e.NewTextValue);
+            await ((FeedViewModel)BindingContext)?.ExecuteSearch(e.NewTextValue);
+            //listViewFeed.ItemsSource = GetPosts(e.NewTextValue);
         }
 
         IEnumerable<PostMessageModel> GetPosts(string searchText = null)
