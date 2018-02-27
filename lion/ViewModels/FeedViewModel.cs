@@ -53,9 +53,7 @@ namespace lion.ViewModels
 
         public FeedViewModel()
         {
-			originalMessages = ListViewItemSource2.ToList();
-			//_refreshCommand = new Command(RefreshListViewFeed);
-			
+            
             //if (postMessage.NumberOfReplies == 1)
             //    NumberOfReplies = $"{postMessage.NumberOfReplies} Reply";
             //else
@@ -127,6 +125,8 @@ namespace lion.ViewModels
                 }
             };
 
+            originalMessages = ListViewItemSource2.ToList();
+			//_refreshCommand = new Command(RefreshListViewFeed);
 
         }
 
