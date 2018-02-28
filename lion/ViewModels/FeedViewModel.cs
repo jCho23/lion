@@ -34,7 +34,32 @@ namespace lion.ViewModels
         //}
        
 
-       
+        private Command loadPostsCommand;
+
+        public Command LoadPostsCommand
+        {
+            get
+            {
+                return loadPostsCommand ?? (loadPostsCommand = new Command(ExecuteLoadTweetsCommand, () =>
+                {
+                    return !IsBusy;
+                }));
+            }
+        }
+
+        private async void ExecuteLoadTweetsCommand()
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+            LoadPostsCommand.ChangeCanExecute();
+
+            //DoStuff
+
+            IsBusy = false;
+            LoadPostsCommand.ChangeCanExecute();
+        }
 
         private bool isBusy;
         public bool IsBusy
