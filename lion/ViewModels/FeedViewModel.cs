@@ -16,49 +16,29 @@ namespace lion.ViewModels
     {
         string numberOfReplies;
 
-       
+        ICommand getPostsCommand;
 
-        //public ICommand RefreshCommand
-        //{
-        //    get
-        //    {
-        //        return new Command(async () =>
-        //        {
-        //            IsRefreshing = true;
-
-        //            await listViewItemSource2();
-
-        //            IsRefreshing = false;
-        //        });
-        //    }
-        //}
-       
-
-        private Command getPostsCommand;
-
-        public Command GetPostsCommand
+        public ICommand GetPostsCommand
         {
-            get
-            {
-                return getPostsCommand ?? (getPostsCommand = new Command(ExecuteGetPostsCommand, () =>
-                {
-                    return !IsBusy;
-                }));
-            }
+            get { return getPostsCommand ?? (getPostsCommand = new Command(async () => await ExecuteGetPostsCommand())); }
         }
+  
 
-        private async void ExecuteGetPostsCommand()
+        async Task ExecuteGetPostsCommand()
         {
             if (IsBusy)
                 return;
 
             IsBusy = true;
-            GetPostsCommand.ChangeCanExecute();
+            listViewItemSource2.Clear();
 
-            //DoStuff
+            var GetPosts = originalMessages;
 
-            IsBusy = false;
-            GetPostsCommand.ChangeCanExecute();
+            if (GetPosts.Count() > 0)
+            {
+                foreach (var item in GetPosts)
+                    ListViewItemSource2.Add(item);
+            }
         }
 
         private bool isBusy;
