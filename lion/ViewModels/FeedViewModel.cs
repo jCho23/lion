@@ -32,9 +32,10 @@ namespace lion.ViewModels
             IsBusy = true;
             listViewItemSource2.Clear();
 
-            var GetPosts = listViewItemSource2;
+            var ClearedList = listViewItemSource2;
+            var GetPosts = originalMessages;
 
-            if (GetPosts.Count() > 0)
+            if (ClearedList.Count() == 0)
             {
                 foreach (var item in GetPosts)
                     ListViewItemSource2.Add(item);
@@ -44,7 +45,6 @@ namespace lion.ViewModels
 
             else
             {
-                
             }
         }
 
