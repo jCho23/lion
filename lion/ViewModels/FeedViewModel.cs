@@ -38,6 +38,13 @@ namespace lion.ViewModels
             {
                 foreach (var item in GetPosts)
                     ListViewItemSource2.Add(item);
+
+                IsBusy = false;
+            }
+
+            else
+            {
+                
             }
         }
 
@@ -133,16 +140,8 @@ namespace lion.ViewModels
             };
 
             originalMessages = ListViewItemSource2.ToList();
-			//_refreshCommand = new Command(RefreshListViewFeed);
 
         }
-
-        //async  void RefreshListViewFeed()
-        //{
-        //    listViewFeed = await originalMessages();
-        //}
-
-       
 
         public async Task ExecuteSearch(string text)
         {
