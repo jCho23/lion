@@ -32,7 +32,7 @@ namespace lion.ViewModels
             IsBusy = true;
             listViewItemSource2.Clear();
 
-            var GetPosts = originalMessages;
+            var GetPosts = listViewItemSource2;
 
             if (GetPosts.Count() > 0)
             {
