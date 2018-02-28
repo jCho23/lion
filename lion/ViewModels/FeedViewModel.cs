@@ -18,20 +18,20 @@ namespace lion.ViewModels
 
        
 
-        //public ICommand RefreshCommand
-        //{
-        //    get
-        //    {
-        //        return new Command(async () =>
-        //        {
-        //            IsRefreshing = true;
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    IsRefreshing = true;
 
-        //            await listViewItemSource2();
+                    await listViewItemSource2();
 
-        //            IsRefreshing = false;
-        //        });
-        //    }
-        //}
+                    IsRefreshing = false;
+                });
+            }
+        }
        
 
         bool _isRefreshing;
