@@ -16,15 +16,15 @@ namespace lion.ViewModels
     {
         string numberOfReplies;
 
-        ICommand getPostsCommand;
+        ICommand refreshCommand;
 
-        public ICommand GetPostsCommand
+        public ICommand RefreshCommand
         {
-            get { return getPostsCommand ?? (getPostsCommand = new Command(async () => await ExecuteGetPostsCommand())); }
+            get { return refreshCommand ?? (refreshCommand = new Command(async () => await ExecuteRefreshCommand())); }
         }
   
 
-        async Task ExecuteGetPostsCommand()
+        async Task ExecuteRefreshCommand()
         {
             if (IsBusy)
                 return;
