@@ -24,29 +24,6 @@ namespace lion.ViewModels
         }
   
 
-        async Task ExecuteRefreshCommand()
-        {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-            listViewItemSource2.Clear();
-
-            var ClearedList = listViewItemSource2;
-            var GetPosts = originalMessages;
-
-            if (ClearedList.Count() == 0)
-            {
-                foreach (var item in GetPosts)
-                    ListViewItemSource2.Add(item);
-
-                IsBusy = false;
-            }
-
-            else
-            {
-            }
-        }
 
         private bool isBusy;
         public bool IsBusy
@@ -142,6 +119,30 @@ namespace lion.ViewModels
             originalMessages = ListViewItemSource2.ToList();
 
         }
+
+		async Task ExecuteRefreshCommand()
+		{
+			if (IsBusy)
+				return;
+			
+			IsBusy = true;
+			listViewItemSource2.Clear();
+			
+			var ClearedList = listViewItemSource2;
+			var GetPosts = originalMessages;
+			
+			if (ClearedList.Count() == 0)
+			{
+				foreach (var item in GetPosts)
+					ListViewItemSource2.Add(item);
+				
+				IsBusy = false;
+			}
+			
+			else
+			{
+			}
+		}
 
         public async Task ExecuteSearch(string text)
         {
