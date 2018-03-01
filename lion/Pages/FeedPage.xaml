@@ -31,18 +31,17 @@
             Placeholder="Search Posts..."
             TextChanged="Handle_TextChanged"
             SearchCommand="{Binding SearchCommand}"
-            HorizontalTextAlignment="Center"
-            />
+            HorizontalTextAlignment="Center"/>
             <ListView
                 x:Name= "listViewFeed"
                 IsPullToRefreshEnabled="true"
-                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                 ItemSelected="Handle_ItemSelected"
                 RefreshCommand="{Binding RefreshCommand}"
-                ItemsSource="{Binding ListViewItemSource2}">
+                ItemsSource="{Binding ListViewItemSource2}"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}">
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
-                        <On Platform="iOS, Android" Value="120" />
+                        <On Platform="iOS, Android" Value="120"/>
                     </OnPlatform>
                 </ListView.RowHeight>
                         <ListView.ItemTemplate>

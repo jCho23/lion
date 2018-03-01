@@ -23,8 +23,6 @@ namespace lion.ViewModels
             get { return refreshCommand ?? (refreshCommand = new Command(async () => await ExecuteRefreshCommand())); }
         }
   
-
-
         private bool isBusy;
         public bool IsBusy
         {
