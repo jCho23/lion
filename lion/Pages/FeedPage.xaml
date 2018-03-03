@@ -37,7 +37,7 @@
                 IsPullToRefreshEnabled="true"
                 ItemSelected="Handle_ItemSelected"
                 RefreshCommand="{Binding RefreshCommand}"
-                ItemsSource="{Binding ListViewItemSource2}"
+                ItemsSource="{Binding ItemsCurrentlyDisplayedInList}"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}">
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
