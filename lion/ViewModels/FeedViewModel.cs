@@ -50,7 +50,7 @@ namespace lion.ViewModels
 
 
 
-            ListViewItemSource2 = new ObservableCollection<PostMessageModel>
+            ItemsCurrentlyDisplayedInList = new ObservableCollection<PostMessageModel>
             {
                 new PostMessageModel
                 {
@@ -114,11 +114,11 @@ namespace lion.ViewModels
                 }
             };
 
-            originalMessages = ListViewItemSource2.ToList();
+            originalMessages = ItemsCurrentlyDisplayedInList.ToList();
 
         }
 
-		async Task ExecuteRefreshCommand()
+		async Task  ExecuteRefreshCommand()
 		{
 			if (IsBusy)
 				return;
@@ -132,7 +132,7 @@ namespace lion.ViewModels
 			if (ClearedList.Count() == 0)
 			{
 				foreach (var item in GetPosts)
-					ListViewItemSource2.Add(item);
+					ItemsCurrentlyDisplayedInList.Add(item);
 				
 				IsBusy = false;
 			}
@@ -144,20 +144,42 @@ namespace lion.ViewModels
 
         public async Task ExecuteSearch(string text)
         {
-            ListViewItemSource2.Clear();
+            var messagesToDisplay = originalMessages.Where(
+                message => message.PostText.ToLower()
+                    .Contains(text.ToLower()));
 
-            var searchResults = originalMessages.Where(message => message.PostText.ToLower().Contains(text.ToLower()));
-
-            if (searchResults.Count() > 0)
+            if (messagesToDisplay.Count() == 0)
+                ItemsCurrentlyDisplayedInList.Clear();
+            else if (messagesToDisplay.Count() > 0)
             {
-                foreach (var item in searchResults)
-                    ListViewItemSource2.Add(item);
+                var messagesToAdd = messagesToDisplay.Except(ItemsCurrentlyDisplayedInList).ToList();
+                foreach (var message in messagesToAdd)
+                    ItemsCurrentlyDisplayedInList.Add(message);
+
+                var messagesToRemove = ItemsCurrentlyDisplayedInList.Except(messagesToDisplay).ToList();
+                foreach (var message in messagesToRemove)
+                    ItemsCurrentlyDisplayedInList.Remove(message);
             }
             else if (string.IsNullOrWhiteSpace(text))
             {
-                foreach (var item in originalMessages)
-                    ListViewItemSource2.Add(item);
+                var messagesToAdd = originalMessages.Except(ItemsCurrentlyDisplayedInList).ToList();
+                foreach (var item in messagesToAdd)
+                    ItemsCurrentlyDisplayedInList.Add(item);
             }
+            //ListViewItemSource2.Clear();
+
+            //var searchResults = originalMessages.Where(message => message.PostText.ToLower().Contains(text.ToLower()));
+
+            //if (searchResults.Count() > 0)
+            //{
+            //    foreach (var item in searchResults)
+            //        ListViewItemSource2.Add(item);
+            //}
+            //else if (string.IsNullOrWhiteSpace(text))
+            //{
+            //    foreach (var item in originalMessages)
+            //        ListViewItemSource2.Add(item);
+            //}
             else
             {
                 //Change UI Label to show that no records are found
@@ -173,7 +195,9 @@ namespace lion.ViewModels
             set => SetProperty(ref numberOfReplies, value);
         }
 
-        public ObservableCollection<PostMessageModel> ListViewItemSource2
+        public ObservableCollection<PostMessageModel> ListViewItemSource { get; set; } = new ObservableCollection<PostMessageModel>();
+
+        public ObservableCollection<PostMessageModel> ItemsCurrentlyDisplayedInList
         {
             get => listViewItemSource2;
             set => SetProperty(ref listViewItemSource2, value);
