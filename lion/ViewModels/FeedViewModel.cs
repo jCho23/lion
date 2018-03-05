@@ -38,7 +38,7 @@ namespace lion.ViewModels
         }
 
         List<PostMessageModel> originalMessages = new List<PostMessageModel>();
-        ObservableCollection<PostMessageModel> listViewItemSource2 = new ObservableCollection<PostMessageModel>();
+        ObservableCollection<PostMessageModel> feedListViewItemSource = new ObservableCollection<PostMessageModel>();
 
         public FeedViewModel()
         {
@@ -124,9 +124,9 @@ namespace lion.ViewModels
 				return;
 			
 			IsBusy = true;
-			listViewItemSource2.Clear();
+			feedListViewItemSource.Clear();
 			
-			var ClearedList = listViewItemSource2;
+			var ClearedList = feedListViewItemSource;
 			var GetPosts = originalMessages;
 			
 			if (ClearedList.Count() == 0)
@@ -199,8 +199,8 @@ namespace lion.ViewModels
 
         public ObservableCollection<PostMessageModel> ItemsCurrentlyDisplayedInList
         {
-            get => listViewItemSource2;
-            set => SetProperty(ref listViewItemSource2, value);
+            get => feedListViewItemSource;
+            set => SetProperty(ref feedListViewItemSource, value);
         }
     }
 }
