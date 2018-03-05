@@ -16,7 +16,7 @@ namespace lion.ViewModels
 
         string userInputEntryText = string.Empty;
 
-        ObservableCollection<ReplyMessageModel> listViewItemSource;
+        ObservableCollection<ReplyMessageModel> feedDetailsListViewItemSource;
 
 
 
@@ -49,10 +49,10 @@ namespace lion.ViewModels
                     }
                 };
 
-                ListViewItemSource.Add(dummyPostMessage);
+                FeedDetailsListViewItemSource.Add(dummyPostMessage);
             });
 
-            ListViewItemSource = new ObservableCollection<ReplyMessageModel>
+            FeedDetailsListViewItemSource = new ObservableCollection<ReplyMessageModel>
             {
                 new ReplyMessageModel
                 {
@@ -131,10 +131,10 @@ namespace lion.ViewModels
             set => SetProperty(ref numberOfReplies, value);
         }
 
-        public ObservableCollection<ReplyMessageModel> ListViewItemSource
+        public ObservableCollection<ReplyMessageModel> FeedDetailsListViewItemSource
         {
-            get => listViewItemSource;
-            set => SetProperty(ref listViewItemSource, value);
+            get => feedDetailsListViewItemSource;
+            set => SetProperty(ref feedDetailsListViewItemSource, value);
         }
 
     }
