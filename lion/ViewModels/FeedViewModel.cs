@@ -166,20 +166,6 @@ namespace lion.ViewModels
                 foreach (var item in messagesToAdd)
                     ItemsCurrentlyDisplayedInList.Add(item);
             }
-            //ListViewItemSource2.Clear();
-
-            //var searchResults = originalMessages.Where(message => message.PostText.ToLower().Contains(text.ToLower()));
-
-            //if (searchResults.Count() > 0)
-            //{
-            //    foreach (var item in searchResults)
-            //        ListViewItemSource2.Add(item);
-            //}
-            //else if (string.IsNullOrWhiteSpace(text))
-            //{
-            //    foreach (var item in originalMessages)
-            //        ListViewItemSource2.Add(item);
-            //}
             else
             {
                 //Change UI Label to show that no records are found
