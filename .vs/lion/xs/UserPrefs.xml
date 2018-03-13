@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{DE997A6D-2FC2-4FFD-B911-5F581C73E892}|Default">
+  <MonoDevelop.Ide.ItemProperties.lion.Droid PreferredExecutionTarget="Android.Pixel_2_XL_API_25" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="lion/Pages/SplashPage.cs">
+    <Files>
+      <File FileName="lion/Pages/FeedDetailsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="110" Column="15" />
+      <File FileName="lion/Pages/FeedPage.xaml" Line="55" Column="15" />
+      <File FileName="lion/Pages/FeedPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="lion/ViewModels/FeedViewModel.cs" Line="177" Column="9" />
+      <File FileName="lion/ViewModels/BaseViewModel.cs" Line="27" Column="24" />
+      <File FileName="lion/ViewModels/FeedDetailsViewModel.cs" Line="55" Column="42" />
+      <File FileName="lion/Views/FeedDetailsViewCell.xaml" Line="32" Column="1" />
+      <File FileName="lion/Pages/SplashPage.cs" Line="42" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/june/Documents/GitHub/lion/lion/Pages/MyPostsPage.xaml" relfile="lion/Pages/MyPostsPage.xaml" line="29" column="1" />
+      <Breakpoint file="/Users/june/Documents/GitHub/lion/lion/Pages/FeedPage.xaml" relfile="lion/Pages/FeedPage.xaml" line="84" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.lion.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C4E177B6-03E3-4A33-A3AE-12C6698EC97C" automaticSigning="False" />
+</Properties>
