@@ -92,7 +92,6 @@
         <ListView         
             x:Name="FeedDetailsPageListView"
             Grid.Row="4" Grid.ColumnSpan="2"
-
             ItemsSource="{Binding FeedDetailsListViewItemSource}" >
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
