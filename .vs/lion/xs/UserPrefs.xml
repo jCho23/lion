@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="lion/Pages/FeedDetailsPage.xaml">
     <Files>
       <File FileName="lion/Pages/FeedDetailsPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="110" Column="15" />
+      <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="95" Column="1" />
       <File FileName="lion/Pages/FeedPage.xaml" Line="55" Column="15" />
       <File FileName="lion/Pages/FeedPage.xaml.cs" Line="1" Column="1" />
       <File FileName="lion/ViewModels/FeedViewModel.cs" Line="177" Column="9" />
