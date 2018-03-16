@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{DE997A6D-2FC2-4FFD-B911-5F581C73E892}|Default">
   <MonoDevelop.Ide.ItemProperties.lion.Droid PreferredExecutionTarget="Android.Pixel_2_XL_API_25" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lion/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lion/Pages/SplashPage.cs">
     <Files>
       <File FileName="lion/Pages/FeedDetailsPage.xaml.cs" Line="1" Column="1" />
       <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="110" Column="15" />
@@ -10,7 +10,7 @@
       <File FileName="lion/ViewModels/BaseViewModel.cs" Line="27" Column="24" />
       <File FileName="lion/ViewModels/FeedDetailsViewModel.cs" Line="55" Column="42" />
       <File FileName="lion/Views/FeedDetailsViewCell.xaml" Line="32" Column="1" />
-      <File FileName="lion/Pages/SplashPage.cs" Line="30" Column="11" />
+      <File FileName="lion/Pages/SplashPage.cs" Line="10" Column="10" />
       <File FileName="lion/App.xaml.cs" Line="19" Column="77" />
     </Files>
   </MonoDevelop.Ide.Workbench>
