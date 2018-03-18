@@ -1,10 +1,10 @@
-﻿using System;
-using SQLite;
+﻿//using System;
+//using SQLite;
 
-namespace lion.Persistence
-{
-    public interface ISQLiteDb
-    {
-        SQLiteAsyncConnection GetConnection();
-    }
-}
+//namespace lion.Persistence
+//{
+//    public interface ISQLiteDb
+//    {
+//        SQLiteAsyncConnection GetConnection();
+//    }
+//}
