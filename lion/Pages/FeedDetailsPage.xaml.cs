@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 using lion.Models;
 using lion.ViewModels;
-using lion.Persistence;
+//using lion.Persistence;
 
 namespace lion.Pages
 {
