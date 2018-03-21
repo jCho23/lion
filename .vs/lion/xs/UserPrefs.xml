@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{DE997A6D-2FC2-4FFD-B911-5F581C73E892}|Default">
   <MonoDevelop.Ide.ItemProperties.lion.Droid PreferredExecutionTarget="Android.Pixel_2_XL_API_25" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Persistence/SQLiteDb.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Persistence/SQLiteDb.cs">
     <Files>
       <File FileName="lion/Pages/FeedDetailsPage.xaml.cs" Line="8" Column="19" />
       <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="109" Column="15" />
@@ -14,7 +14,8 @@
       <File FileName="lion/App.xaml.cs" Line="19" Column="77" />
       <File FileName="lion/Pages/FeedAddPostModalPage.xaml" Line="64" Column="15" />
       <File FileName="lion/Persistence/ISQLiteDb.cs" Line="11" Column="1" />
-      <File FileName="iOS/Persistence/SQLiteDb.cs" Line="4" Column="6" />
+      <File FileName="iOS/Persistence/SQLiteDb.cs" Line="23" Column="1" />
+      <File FileName="Droid/Persistence/SQLiteDb.cs" Line="4" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
