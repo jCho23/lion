@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-//using lion.Droid.Persistence;
-//using lion.Persistence;
+using lion.Droid.Persistence;
+using lion.Persistence;
 using SQLite;
 using Xamarin.Forms;
 
