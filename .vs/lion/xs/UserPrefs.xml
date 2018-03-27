@@ -15,7 +15,7 @@
       <File FileName="lion/Pages/FeedAddPostModalPage.xaml" Line="64" Column="15" />
       <File FileName="lion/Persistence/ISQLiteDb.cs" Line="11" Column="1" />
       <File FileName="iOS/Persistence/SQLiteDb.cs" Line="23" Column="1" />
-      <File FileName="Droid/Persistence/SQLiteDb.cs" Line="3" Column="1" />
+      <File FileName="Droid/Persistence/SQLiteDb.cs" Line="3" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
