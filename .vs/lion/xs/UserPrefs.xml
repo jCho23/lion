@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{5CF6CB23-36DA-4322-A391-F93742E8CB33}|Default">
   <MonoDevelop.Ide.ItemProperties.lion.Droid PreferredExecutionTarget="Android.Pixel_2_XL_API_25" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lion/ViewModels/FeedViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lion/ViewModels/BaseViewModel.cs">
     <Files>
       <File FileName="lion/Pages/FeedDetailsPage.xaml.cs" Line="8" Column="19" />
       <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="109" Column="15" />
       <File FileName="lion/Pages/FeedPage.xaml" Line="55" Column="15" />
       <File FileName="lion/Pages/FeedPage.xaml.cs" Line="1" Column="1" />
       <File FileName="lion/ViewModels/FeedViewModel.cs" Line="177" Column="9" />
-      <File FileName="lion/ViewModels/BaseViewModel.cs" Line="27" Column="24" />
+      <File FileName="lion/ViewModels/BaseViewModel.cs" Line="11" Column="9" />
       <File FileName="lion/ViewModels/FeedDetailsViewModel.cs" Line="55" Column="42" />
       <File FileName="lion/Views/FeedDetailsViewCell.xaml" Line="32" Column="1" />
       <File FileName="lion/Pages/SplashPage.cs" Line="10" Column="10" />
@@ -17,6 +17,7 @@
       <File FileName="iOS/Persistence/SQLiteDb.cs" Line="23" Column="1" />
       <File FileName="Droid/Persistence/SQLiteDb.cs" Line="3" Column="3" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="lion/ViewModels/FacebookViewModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
