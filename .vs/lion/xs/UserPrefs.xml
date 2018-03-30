@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.lion.Droid PreferredExecutionTarget="Android.Pixel_2_XL_API_25" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.Workbench ActiveDocument="lion/Pages/ProfilePage.xaml">
     <Files>
-      <File FileName="lion/Pages/ProfilePage.xaml" Line="7" Column="5" />
-      <File FileName="lion/Pages/MyPostsPage.xaml" Line="11" Column="2" />
+      <File FileName="lion/Pages/ProfilePage.xaml" Line="21" Column="1" />
+      <File FileName="lion/Pages/MyPostsPage.xaml" Line="34" Column="15" />
       <File FileName="lion/Pages/ProfilePage.xaml.cs" Line="14" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
