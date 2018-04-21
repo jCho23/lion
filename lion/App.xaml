@@ -20,7 +20,7 @@
             <Style
                 TargetType= "Label">
                     <Setter Property="TextColor" Value="White" />
-                    <Setter Property="FontFamily" Value="CaviarDreams"/>
+                    <Setter Property="FontFamily" Value="BebasNeue-Regular"/>
                     <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 

@@ -1,10 +1,43 @@
-﻿<Properties StartupConfiguration="{5CF6CB23-36DA-4322-A391-F93742E8CB33}|Default">
+﻿<Properties StartupConfiguration="{DE997A6D-2FC2-4FFD-B911-5F581C73E892}|Default">
   <MonoDevelop.Ide.ItemProperties.lion.Droid PreferredExecutionTarget="Android.Pixel_2_XL_API_25" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lion/Pages/ProfilePage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lion/Views/FeedViewCell.xaml">
     <Files>
-      <File FileName="lion/Pages/ProfilePage.xaml" Line="19" Column="5" />
-      <File FileName="lion/Pages/MyPostsPage.xaml" Line="34" Column="15" />
+      <File FileName="lion/Pages/ProfilePage.xaml" Line="21" Column="1" />
+      <File FileName="lion/Pages/MyPostsPage.xaml" Line="6" Column="31" />
       <File FileName="lion/Pages/ProfilePage.xaml.cs" Line="14" Column="6" />
+      <File FileName="lion/Pages/FeedPage.xaml" Line="25" Column="13" />
+      <File FileName="lion/Pages/FeedPage.xaml.cs" Line="36" Column="46" />
+      <File FileName="lion/Views/FeedViewCell.xaml" Line="12" Column="29" />
+      <File FileName="lion/Views/FeedViewCell.xaml.cs" Line="15" Column="8" />
+      <File FileName="iOS/AppDelegate.cs" Line="25" Column="13" />
+      <File FileName="Droid/MainActivity.cs" Line="30" Column="40" />
+      <File FileName="lion/ViewModels/FeedViewModel.cs" Line="192" Column="2" />
+      <File FileName="lion/ViewModels/BaseViewModel.cs" Line="40" Column="2" />
+      <File FileName="lion/Models/UserProfileModel.cs" Line="11" Column="2" />
+      <File FileName="lion/Models/PostMessageModel.cs" Line="7" Column="6" />
+      <File FileName="lion/packages.config" Line="1" Column="1" />
+      <File FileName="lion/App.xaml.cs" Line="30" Column="10" />
+      <File FileName="lion/Pages/FeedDetailsPage.xaml" Line="6" Column="10" />
+      <File FileName="lion/Pages/FeedDetailsPage.xaml.cs" Line="15" Column="1" />
+      <File FileName="lion/ViewModels/FeedDetailsViewModel.cs" Line="1" Column="1" />
+      <File FileName="lion/Models/ReplyMessageModel.cs" Line="16" Column="1" />
+      <File FileName="lion/App.xaml" Line="30" Column="70" />
+      <File FileName="lion/Pages/Base/LionTabbedPage.xaml" Line="8" Column="5" />
+      <File FileName="lion/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="lion/Controls/ExtendedViewCell.cs" Line="1" Column="1" />
+      <File FileName="lion/Controls/PlaceholderEditor.cs" Line="1" Column="1" />
+      <File FileName="lion/Views/MyPostsViewCell.xaml" Line="5" Column="40" />
+      <File FileName="lion/Views/FeedDetailsViewCell.xaml" Line="5" Column="41" />
+      <File FileName="lion/Views/FeedDetailsViewCell.xaml.cs" Line="15" Column="1" />
+      <File FileName="iOS/Custom Renderers/TabbedPageCustomRenderer.cs" Line="1" Column="1" />
+      <File FileName="lion/Pages/Base/LionTabbedPage.xaml.cs" Line="20" Column="12" />
+      <File FileName="lion/Pages/FeedAddPostModalPage.xaml" Line="8" Column="4" />
+      <File FileName="lion/Pages/FeedAddPostModalPage.xaml.cs" Line="14" Column="10" />
+      <File FileName="lion/ViewModels/FeedAddPostModalViewModel.cs" Line="1" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="lion/Pages/MyPostsPage.cs" Line="13" Column="13" />
+      <File FileName="lion/ViewModels/MyPostsViewModel.cs" Line="100" Column="1" />
+      <File FileName="lion/Views/MyPostsViewCell.xaml.cs" Line="15" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

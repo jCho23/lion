@@ -53,9 +53,9 @@
                                     Source="heart8.png"/>
                                 <Label
                                     Grid.Row= "1" Grid.Column="1"
-                                    Text="88"
+                                    Text="Replies: 8"
                                     FontSize="8"
-                                    TextColor="Silver"
+                                    TextColor="Black"
                                     Margin="30,10,0,0"
                                     HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Grid>                 
